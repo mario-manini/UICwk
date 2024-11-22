@@ -4,7 +4,7 @@
 
 using namespace std;
 
-void SampleSete::loadData(const string& filename)
+void SampleSet::load_data(const string& filename)
 {
     csv::CSVReader reader(filename);
     data.clear();
@@ -19,3 +19,4 @@ void SampleSete::loadData(const string& filename)
         data.push_back(temp);
     }
 }
+
