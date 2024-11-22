@@ -6,17 +6,24 @@
 class Determinand
 {
     public:
-        Determinand(const std::string&, std::string);
+        Determinand(const std::string&, const std::string&);
         std::string getName() const { return name; }
+        //getter methods
         int getID() { return group_id; }
         double getSafeLevel() { return safe_level; }
         std::string getUnits() const { return units; }
-        int calcGroup(const std::string&) {}
-        double calcSafe(int) {}
+        //setter methods
+        void setSafeLevel(int level) { safe_level = level; }
+        void setGroup(int group) {group_id = group; }
+        void incrementCount() { number_entries++; }
+        //general calculation
+        int calcGroup(const std::string&);
+        double calcSafe(int);
 
     private:
         std::string name;
         int group_id;
         double safe_level;
         std::string units;
+        int number_entries;
 };

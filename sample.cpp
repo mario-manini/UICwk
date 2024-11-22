@@ -1,5 +1,6 @@
 //implementation of samples class
 #include <stdexcept>
+#include <sstream>
 #include "sample.hpp"
 
 using namespace std;

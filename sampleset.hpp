@@ -4,6 +4,7 @@
 
 #include <vector>
 #include "sample.hpp"
+#include "determinand.hpp"
 
 class SampleSet
 {
@@ -11,10 +12,13 @@ class SampleSet
         //constructor with and without reading from a file
         SampleSet() {}
         SampleSet(const std::string& filename) { loadData(filename); }
-        void load_data(const std::string&);
-        int sample_size() const { return sample_data.size(); }
-        int deter_search(const std::string&) {}
-        Sample operator[](int index) const { return data.at(index); }
+        void loadData(const std::string&);
+        int sampleSize() const { return sample_data.size(); }
+        int deterSize() const { return deter_data.size(); }
+        int deterSearch(const std::string& name);
+        //outputs from 2 vectors
+        Sample sampleAt(int index) { return sample_data.at(index); }
+        Determinand determinandAt(int index) { return deter_data.at(index); }
     
     private:
         std::vector<Sample> sample_data;
