@@ -13,6 +13,7 @@ class SampleSet
         SampleSet() {}
         SampleSet(const std::string& filename) { loadData(filename); }
         void loadData(const std::string&);
+        //getter methods
         int sampleSize() const { return sample_data.size(); }
         int deterSize() const { return deter_data.size(); }
         int deterSearch(const std::string& name);
@@ -21,6 +22,8 @@ class SampleSet
         Determinand determinandAt(int index) { return deter_data.at(index); }
     
     private:
+        //array of sample/determinand objects
+        //samples are instances of determinands that are measurable instances
         std::vector<Sample> sample_data;
         std::vector<Determinand> deter_data;
 };

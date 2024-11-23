@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/testRead.dir/testRead.cpp.o CMakeFiles/testRead.dir/sampleset.cpp.o CMakeFiles/testRead.dir/sample.cpp.o CMakeFiles/testRead.dir/determinand.cpp.o  -o testRead 
+/usr/bin/c++     CMakeFiles/testRead.dir/testRead.cpp.o CMakeFiles/testRead.dir/sampleset.cpp.o CMakeFiles/testRead.dir/sample.cpp.o CMakeFiles/testRead.dir/determinand.cpp.o  -o testRead  -lpthread 

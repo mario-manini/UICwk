@@ -8,6 +8,7 @@ using namespace std;
 Sample::Sample(const string& loc, double lev, const string& det, const string& qual):
     location(loc), level(lev), determinand_name(det), qualifier(qual)
 {
+    //makes sure level is above 0 (correct value)
     ostringstream error;
     if (level < 0.0) {
         error << "Invalid level: " << level;

@@ -7,8 +7,9 @@
 class Sample
 {
     public:
-    //construct with location/determinand/level/qualifier
+        //construct with location/determinand/level/qualifier
         Sample(const std::string&, double, const std::string&, const std::string&);
+        //getter methods
         std::string getLocation() const { return location; }
         std::string getDeterminand() const { return determinand_name; }
         double getLevel() const { return level; }

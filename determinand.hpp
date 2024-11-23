@@ -14,9 +14,9 @@ class Determinand
         std::string getUnits() const { return units; }
         //setter methods
         void setSafeLevel(int level) { safe_level = level; }
-        void setGroup(int group) {group_id = group; }
+        void setGroup(int group) { group_id = group; }
         void incrementCount() { number_entries++; }
-        //general calculation
+        //general calculation for additional values
         int calcGroup(const std::string&);
         double calcSafe(int);
 

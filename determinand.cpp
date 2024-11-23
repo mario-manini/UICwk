@@ -7,13 +7,14 @@ Determinand::Determinand(const string& name, const string& units):
     name(name), units(units), number_entries(0)
 {}
 
+//finds out which of the group we want to travk each element is 
 int Determinand::calcGroup(const string& name) {
     //fluorates group id 1
     //pbas group id 2
     //litter group id 3
     //common pollutatns group id 4
     int group_id = -1;
-    string group_list[3] = {"fluoro", "PBA", "Litter"};
+    string group_list[3] = {"Fluoro", "PBA", "Litter"};
     //placeholder for common pollutants list
     string common_poll[0] = {};
     //checks if a group identifier can be found
@@ -43,6 +44,7 @@ double Determinand::calcSafe(int group_id) {
         {3, 3.2},
         {4, 5.2}
     };
+    //iterates through array to find matching group id + returns the corresponding safe level
     for (int i=0; i<sizeof(level_arr); i++) {
         if (getID() == level_arr[i][0]) {
             safe = level_arr[i][1];

@@ -19,3 +19,6 @@ add_executable(testRead
     sample.cpp         
     determinand.cpp    
 )
+
+# Create Pthreads
+target_link_libraries(testRead pthread)
