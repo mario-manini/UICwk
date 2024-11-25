@@ -17,8 +17,9 @@ void SampleSet::loadData(const string& filename)
         string det = row["determinand.label"].get<string>();
         double lev = row["result"].get<double>();
         string qual = row["resultQualifier.notation"].get<string>();
+        string time = row["sample.sampleDateTime"].get<>();
         
-        Sample temp(loc, lev, det, qual);
+        Sample temp(loc, lev, det, qual, time);
         sample_data.push_back(temp);
 
         //values to go into a determinand array
@@ -27,7 +28,7 @@ void SampleSet::loadData(const string& filename)
         int group_id = temp2.calcGroup(det);
         temp2.setGroup(group_id);
 
-        //uncomment to only track of groups
+        //uncomment to only track groups
         //if (group_id != -1) {
         temp2.setSafeLevel(temp2.calcSafe(group_id));
         //if not in the array already adds new entry
@@ -51,4 +52,47 @@ int SampleSet::deterSearch(const string& name) {
         }
     }
     return found_flag;
+}
+
+//return all samples of a certain name
+SampleSet SampleSet::filterName(const string& name) {
+    SampleSet result_vector;
+    for (int i=0; i<sampleSize(); i++) {
+        if(sampleAt(i).getDeterminand() == name) {
+            result_vector.addSample(sampleAt(i));
+        }
+    }
+    return result_vector;
+}
+
+//return all samples at a certain location
+SampleSet SampleSet::filterLocation(const string& location) {
+    SampleSet result_vector;
+    for (int i=0; i<sampleSize(); i++) {
+        if(sampleAt(i).getLocation() == location) {
+            result_vector.addSample(sampleAt(i));
+        }
+    }
+    return result_vector;
+}
+
+//return all samples at a certain time
+SampleSet SampleSet::filterTime(const string& time) {
+    SampleSet result_vector;
+    for (int i=0; i<sampleSize(); i++) {
+        if(sampleAt(i).getTime() == time) {
+            result_vector.addSample(sampleAt(i));
+        }
+    }
+    return result_vector;
+}
+
+//finds the average of a vector
+double SampleSet::getAvg() {
+    double result;
+    for (int i=0; i<sampleSize(); i++) {
+        result = result + sampleAt(i).getLevel();
+    }
+    result = result/sampleSize();
+    return result;
 }

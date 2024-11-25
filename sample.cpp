@@ -5,8 +5,8 @@
 
 using namespace std;
 
-Sample::Sample(const string& loc, double lev, const string& det, const string& qual):
-    location(loc), level(lev), determinand_name(det), qualifier(qual)
+Sample::Sample(const string& loc, double lev, const string& det, const string& qual, const string& time):
+    location(loc), level(lev), determinand_name(det), qualifier(qual), time(time)
 {
     //makes sure level is above 0 (correct value)
     ostringstream error;

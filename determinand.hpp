@@ -12,6 +12,7 @@ class Determinand
         int getID() { return group_id; }
         double getSafeLevel() { return safe_level; }
         std::string getUnits() const { return units; }
+        int getNumberEntries() { return number_entries; }
         //setter methods
         void setSafeLevel(int level) { safe_level = level; }
         void setGroup(int group) { group_id = group; }

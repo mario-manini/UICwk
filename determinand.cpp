@@ -4,10 +4,10 @@
 using namespace std;
 
 Determinand::Determinand(const string& name, const string& units):
-    name(name), units(units), number_entries(0)
+    name(name), units(units), number_entries(1)
 {}
 
-//finds out which of the group we want to travk each element is 
+//finds out which of the groups we want to track each element is 
 int Determinand::calcGroup(const string& name) {
     //fluorates group id 1
     //pbas group id 2
