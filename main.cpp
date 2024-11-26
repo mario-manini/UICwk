@@ -14,6 +14,18 @@ int main(int argc, char *argv[])
     QPushButton* FC_Button = new QPushButton("Flourinated Compounds");
     QPushButton* CD_Button = new QPushButton("Compliance Dashboards");
 
+    // Create descriptions of all buttons.
+    QLabel* PO_Label = new QLabel("Show statistics of the 25 most common pollutants");
+    QLabel* POP_Label = new QLabel("Show statistics for Persistent Organic Pollutants");
+    QLabel* FC_Label = new QLabel("Show statistics Flourinated compunds Pollutants");
+    QLabel* CD_Label = new QLabel("See if levels are safe");
+
+    // Center labels
+    PO_Label->setAlignment(Qt::AlignCenter);
+    POP_Label->setAlignment(Qt::AlignCenter);
+    FC_Label->setAlignment(Qt::AlignCenter);
+    CD_Label->setAlignment(Qt::AlignCenter);
+
     // Create size, font etc for every buttons
     PO_Button->setFont(QFont("Helvetica", 32, QFont::Bold));
     PO_Button->setFixedSize(900, 100);
@@ -41,9 +53,13 @@ int main(int argc, char *argv[])
     // Create a layout and add buttons to the layout
     QVBoxLayout* layout = new QVBoxLayout;
     layout->addWidget(PO_Button);
+    layout->addWidget(PO_Label);
     layout->addWidget(POP_Button);
+    layout->addWidget(POP_Label);
     layout->addWidget(FC_Button);
+    layout->addWidget(FC_Label);
     layout->addWidget(CD_Button);
+    layout->addWidget(CD_Label);
 
     //Create window
     QWidget window;
