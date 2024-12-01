@@ -156,7 +156,10 @@ main: CMakeFiles/main.dir/dashboard.cpp.o
 main: CMakeFiles/main.dir/pop.cpp.o
 main: CMakeFiles/main.dir/eli.cpp.o
 main: CMakeFiles/main.dir/build.make
+main: /usr/lib64/libQt6Charts.so.6.6.2
+main: /usr/lib64/libQt6OpenGLWidgets.so.6.6.2
 main: /usr/lib64/libQt6Widgets.so.6.6.2
+main: /usr/lib64/libQt6OpenGL.so.6.6.2
 main: /usr/lib64/libQt6Gui.so.6.6.2
 main: /usr/lib64/libQt6Core.so.6.6.2
 main: /usr/lib64/libGLX.so
