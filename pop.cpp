@@ -7,36 +7,50 @@
 #include <QPushButton>
 #include <QSpacerItem>
 #include <QSizePolicy>
+#include <QtCharts>
 
 POPWindow::POPWindow(QWidget* parent) : QWidget(parent)
 {
+    // Create a simple line series chart
+    QLineSeries* series = new QLineSeries();
+    series->append(0, 3);
+    series->append(1, 5);
+
+    QChart* chart = new QChart();
+    chart->legend()->hide();
+    chart->addSeries(series);
+    chart->createDefaultAxes();
+    chart->setTitle("POP Levels Over Time");
+
+    QChartView* chartview = new QChartView(chart);
+    chartview->setRenderHint(QPainter::Antialiasing);
+    chartview->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+
+    // Main layout
     QVBoxLayout* mainLayout = new QVBoxLayout(this);
 
+    // Header label
     QLabel* headerLabel = new QLabel("Persistent Organic Pollutants", this);
     headerLabel->setStyleSheet("font-size: 24px; font-weight: bold; text-align: center;");
     mainLayout->addWidget(headerLabel);
 
-    QGroupBox* trendsGroupBox = new QGroupBox("Data Trends: POP Levels Over Time", this);
-    QVBoxLayout* trendsLayout = new QVBoxLayout();
-    QLabel* trendsLabel = new QLabel("This section will display the trends of POP levels at various sampling points.", this);
-    trendsLabel->setAlignment(Qt::AlignCenter);
-    trendsLayout->addWidget(trendsLabel);
-    trendsGroupBox->setLayout(trendsLayout);
-    trendsGroupBox->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
-    mainLayout->addWidget(trendsGroupBox);
+    // Replace the first "POP Levels Over Time" box with the chart
+    mainLayout->addWidget(chartview);
 
+    // Rollover pop-ups section
     QGroupBox* rolloverGroupBox = new QGroupBox("Rollover Pop-ups: Health Risks & Safety Information", this);
     QVBoxLayout* rolloverLayout = new QVBoxLayout();
     QLabel* rolloverLabel = new QLabel("Hover over the chart to see detailed information on health risks, monitoring importance, and safety levels.", this);
     rolloverLabel->setAlignment(Qt::AlignCenter);
     rolloverLayout->addWidget(rolloverLabel);
     rolloverGroupBox->setLayout(rolloverLayout);
-    rolloverGroupBox->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding); 
+    rolloverGroupBox->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
     mainLayout->addWidget(rolloverGroupBox);
 
+    // Pollutant compliance checker section
     QGroupBox* complianceGroup = new QGroupBox("Pollutant Compliance Checker", this);
     QVBoxLayout* complianceLayout = new QVBoxLayout();
-    
+
     QComboBox* pollutantSelector = new QComboBox(this);
     pollutantSelector->addItems({"Pollutant Example 1", "Pollutant Example 2", "Pollutant Example 3", "Pollutant Example 4"});
     pollutantSelector->setCurrentIndex(0);
@@ -59,9 +73,11 @@ POPWindow::POPWindow(QWidget* parent) : QWidget(parent)
     complianceGroup->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
     mainLayout->addWidget(complianceGroup);
 
+    // Spacer to adjust layout
     QSpacerItem* spacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
     mainLayout->addItem(spacer);
 
+    // Finalize layout and window settings
     setLayout(mainLayout);
     setMinimumSize(800, 600);
     setWindowTitle("Persistent Organic Pollutants (POP)");
