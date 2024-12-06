@@ -17,7 +17,6 @@ public:
 public slots:
     void onPOPButtonClicked();
     void onELIButtonClicked();
-    void onFCButtonClicked();
 };
 
 #endif 
