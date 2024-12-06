@@ -53,4 +53,6 @@ ELIWindow::ELIWindow(QWidget* parent) : QWidget(parent)
     mainLayout->addWidget(footerLabel);
 
     setLayout(mainLayout);
+    showMaximized();
+
 }

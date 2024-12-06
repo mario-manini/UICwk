@@ -5,13 +5,21 @@
 #include <QVBoxLayout>
 #include <QGroupBox>
 #include <QPushButton>
+#include <QLineEdit>
+#include <QListWidget> 
 #include <QSpacerItem>
 #include <QSizePolicy>
 #include <QtCharts>
+#include "getLakes.hpp"
+#include <iostream>
+
 
 POPWindow::POPWindow(QWidget* parent) : QWidget(parent)
 {
-    // Create a simple line series chart
+    QString filePath = "../data/testData.csv";  
+    int columnIndex = 3;  
+
+    QStringList lakes = ExtractUniqueColumns::extractUniqueColumnItems(filePath, columnIndex);
     QLineSeries* series = new QLineSeries();
     series->append(0, 3);
     series->append(1, 5);
@@ -26,18 +34,26 @@ POPWindow::POPWindow(QWidget* parent) : QWidget(parent)
     chartview->setRenderHint(QPainter::Antialiasing);
     chartview->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
 
-    // Main layout
     QVBoxLayout* mainLayout = new QVBoxLayout(this);
 
-    // Header label
     QLabel* headerLabel = new QLabel("Persistent Organic Pollutants", this);
     headerLabel->setStyleSheet("font-size: 24px; font-weight: bold; text-align: center;");
     mainLayout->addWidget(headerLabel);
 
-    // Replace the first "POP Levels Over Time" box with the chart
     mainLayout->addWidget(chartview);
 
-    // Rollover pop-ups section
+    searchBar = new QLineEdit(this);
+    searchBar->setPlaceholderText("Search lakes...");
+    searchBar->setFixedWidth(400);
+    QHBoxLayout* searchLayout = new QHBoxLayout();
+    searchLayout->addStretch();  
+    searchLayout->addWidget(searchBar);
+    searchLayout->addStretch(); 
+    mainLayout->addLayout(searchLayout);
+
+    searchResultsList = new QListWidget(this);
+    mainLayout->addWidget(searchResultsList);
+
     QGroupBox* rolloverGroupBox = new QGroupBox("Rollover Pop-ups: Health Risks & Safety Information", this);
     QVBoxLayout* rolloverLayout = new QVBoxLayout();
     QLabel* rolloverLabel = new QLabel("Hover over the chart to see detailed information on health risks, monitoring importance, and safety levels.", this);
@@ -47,7 +63,6 @@ POPWindow::POPWindow(QWidget* parent) : QWidget(parent)
     rolloverGroupBox->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
     mainLayout->addWidget(rolloverGroupBox);
 
-    // Pollutant compliance checker section
     QGroupBox* complianceGroup = new QGroupBox("Pollutant Compliance Checker", this);
     QVBoxLayout* complianceLayout = new QVBoxLayout();
 
@@ -73,14 +88,16 @@ POPWindow::POPWindow(QWidget* parent) : QWidget(parent)
     complianceGroup->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
     mainLayout->addWidget(complianceGroup);
 
-    // Spacer to adjust layout
     QSpacerItem* spacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
     mainLayout->addItem(spacer);
 
-    // Finalize layout and window settings
     setLayout(mainLayout);
     setMinimumSize(800, 600);
     setWindowTitle("Persistent Organic Pollutants (POP)");
+    showMaximized();
+
+    connect(searchBar, &QLineEdit::textChanged, this, &POPWindow::handleSearch);
+    
 }
 
 void POPWindow::updateCompliance(const QString& pollutant)
@@ -99,3 +116,24 @@ void POPWindow::updateCompliance(const QString& pollutant)
         complianceLabel->setStyleSheet("QLabel { color : gray; }");
     }
 }
+
+void POPWindow::handleSearch(const QString& searchText)
+{
+    searchResultsList->clear();
+    QString filePath = "../data/testData.csv";  
+    int columnIndex = 3;  
+
+    QStringList allLakes = ExtractUniqueColumns::extractUniqueColumnItems(filePath, columnIndex);
+
+    QStringList filteredLakes;
+    for (const QString& lake : allLakes) {
+        if (lake.contains(searchText, Qt::CaseInsensitive)) {
+            filteredLakes.append(lake);
+        }
+    }
+    searchResultsList->addItems(filteredLakes);
+}
+
+
+
+

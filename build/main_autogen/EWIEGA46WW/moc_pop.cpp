@@ -42,15 +42,19 @@ constexpr auto qt_meta_stringdata_CLASSPOPWindowENDCLASS = QtMocHelpers::stringD
     "POPWindow",
     "updateCompliance",
     "",
-    "pollutant"
+    "pollutant",
+    "handleSearch",
+    "searchText"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSPOPWindowENDCLASS_t {
-    uint offsetsAndSizes[8];
+    uint offsetsAndSizes[12];
     char stringdata0[10];
     char stringdata1[17];
     char stringdata2[1];
     char stringdata3[10];
+    char stringdata4[13];
+    char stringdata5[11];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSPOPWindowENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -59,12 +63,16 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSPOPWindowENDCLASS_t qt_meta_str
         QT_MOC_LITERAL(0, 9),  // "POPWindow"
         QT_MOC_LITERAL(10, 16),  // "updateCompliance"
         QT_MOC_LITERAL(27, 0),  // ""
-        QT_MOC_LITERAL(28, 9)   // "pollutant"
+        QT_MOC_LITERAL(28, 9),  // "pollutant"
+        QT_MOC_LITERAL(38, 12),  // "handleSearch"
+        QT_MOC_LITERAL(51, 10)   // "searchText"
     },
     "POPWindow",
     "updateCompliance",
     "",
-    "pollutant"
+    "pollutant",
+    "handleSearch",
+    "searchText"
 };
 #undef QT_MOC_LITERAL
 #endif // !QT_MOC_HAS_STRING_DATA
@@ -76,7 +84,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSPOPWindowENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       1,   14, // methods
+       2,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -84,10 +92,12 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSPOPWindowENDCLASS[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    1,   20,    2, 0x08,    1 /* Private */,
+       1,    1,   26,    2, 0x08,    1 /* Private */,
+       4,    1,   29,    2, 0x08,    3 /* Private */,
 
  // slots: parameters
     QMetaType::Void, QMetaType::QString,    3,
+    QMetaType::Void, QMetaType::QString,    5,
 
        0        // eod
 };
@@ -103,6 +113,9 @@ Q_CONSTINIT const QMetaObject POPWindow::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<POPWindow, std::true_type>,
         // method 'updateCompliance'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        // method 'handleSearch'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<const QString &, std::false_type>
     >,
     nullptr
@@ -115,6 +128,7 @@ void POPWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
         (void)_t;
         switch (_id) {
         case 0: _t->updateCompliance((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 1: _t->handleSearch((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         default: ;
         }
     }
@@ -139,13 +153,13 @@ int POPWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 1)
+        if (_id < 2)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 1;
+        _id -= 2;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 1)
+        if (_id < 2)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 1;
+        _id -= 2;
     }
     return _id;
 }

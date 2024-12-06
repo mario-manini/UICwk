@@ -240,6 +240,30 @@ eli.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/eli.cpp.s
 .PHONY : eli.cpp.s
 
+getLakes.o: getLakes.cpp.o
+.PHONY : getLakes.o
+
+# target to build an object file
+getLakes.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/getLakes.cpp.o
+.PHONY : getLakes.cpp.o
+
+getLakes.i: getLakes.cpp.i
+.PHONY : getLakes.i
+
+# target to preprocess a source file
+getLakes.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/getLakes.cpp.i
+.PHONY : getLakes.cpp.i
+
+getLakes.s: getLakes.cpp.s
+.PHONY : getLakes.s
+
+# target to generate assembly for a file
+getLakes.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/getLakes.cpp.s
+.PHONY : getLakes.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -429,6 +453,9 @@ help:
 	@echo "... eli.o"
 	@echo "... eli.i"
 	@echo "... eli.s"
+	@echo "... getLakes.o"
+	@echo "... getLakes.i"
+	@echo "... getLakes.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

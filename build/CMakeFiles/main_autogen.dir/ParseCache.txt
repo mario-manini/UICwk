@@ -2,6 +2,7 @@
 /uolstore/home/users/sc23mm2/Documents/UI/UICwk/pop.cpp
 /uolstore/home/users/sc23mm2/Documents/UI/UICwk/main.cpp
 /uolstore/home/users/sc23mm2/Documents/UI/UICwk/dashboard.cpp
+/uolstore/home/users/sc23mm2/Documents/UI/UICwk/getLakes.cpp
 /uolstore/home/users/sc23mm2/Documents/UI/UICwk/pop.hpp
  mmc:Q_OBJECT
  mdp:/uolstore/home/users/sc23mm2/Documents/UI/UICwk/pop.hpp
@@ -289,6 +290,7 @@
  mdp:/usr/include/qt6/QtCore/qhashfunctions.h
  mdp:/usr/include/qt6/QtCore/qiodevice.h
  mdp:/usr/include/qt6/QtCore/qiodevicebase.h
+ mdp:/usr/include/qt6/QtCore/qitemselectionmodel.h
  mdp:/usr/include/qt6/QtCore/qiterable.h
  mdp:/usr/include/qt6/QtCore/qiterator.h
  mdp:/usr/include/qt6/QtCore/qlatin1stringview.h
@@ -375,6 +377,7 @@
  mdp:/usr/include/qt6/QtGui/qkeysequence.h
  mdp:/usr/include/qt6/QtGui/qpaintdevice.h
  mdp:/usr/include/qt6/QtGui/qpalette.h
+ mdp:/usr/include/qt6/QtGui/qpen.h
  mdp:/usr/include/qt6/QtGui/qpicture.h
  mdp:/usr/include/qt6/QtGui/qpixelformat.h
  mdp:/usr/include/qt6/QtGui/qpixmap.h
@@ -382,7 +385,10 @@
  mdp:/usr/include/qt6/QtGui/qregion.h
  mdp:/usr/include/qt6/QtGui/qrgb.h
  mdp:/usr/include/qt6/QtGui/qrgba64.h
+ mdp:/usr/include/qt6/QtGui/qtextcursor.h
  mdp:/usr/include/qt6/QtGui/qtextdocument.h
+ mdp:/usr/include/qt6/QtGui/qtextformat.h
+ mdp:/usr/include/qt6/QtGui/qtextoption.h
  mdp:/usr/include/qt6/QtGui/qtgui-config.h
  mdp:/usr/include/qt6/QtGui/qtguiexports.h
  mdp:/usr/include/qt6/QtGui/qtguiglobal.h
@@ -391,13 +397,20 @@
  mdp:/usr/include/qt6/QtGui/qwindowdefs.h
  mdp:/usr/include/qt6/QtWidgets/QComboBox
  mdp:/usr/include/qt6/QtWidgets/QLabel
+ mdp:/usr/include/qt6/QtWidgets/QLineEdit
+ mdp:/usr/include/qt6/QtWidgets/QListWidget
  mdp:/usr/include/qt6/QtWidgets/QWidget
  mdp:/usr/include/qt6/QtWidgets/qabstractitemdelegate.h
+ mdp:/usr/include/qt6/QtWidgets/qabstractitemview.h
+ mdp:/usr/include/qt6/QtWidgets/qabstractscrollarea.h
  mdp:/usr/include/qt6/QtWidgets/qabstractslider.h
  mdp:/usr/include/qt6/QtWidgets/qabstractspinbox.h
  mdp:/usr/include/qt6/QtWidgets/qcombobox.h
  mdp:/usr/include/qt6/QtWidgets/qframe.h
  mdp:/usr/include/qt6/QtWidgets/qlabel.h
+ mdp:/usr/include/qt6/QtWidgets/qlineedit.h
+ mdp:/usr/include/qt6/QtWidgets/qlistview.h
+ mdp:/usr/include/qt6/QtWidgets/qlistwidget.h
  mdp:/usr/include/qt6/QtWidgets/qrubberband.h
  mdp:/usr/include/qt6/QtWidgets/qsizepolicy.h
  mdp:/usr/include/qt6/QtWidgets/qslider.h

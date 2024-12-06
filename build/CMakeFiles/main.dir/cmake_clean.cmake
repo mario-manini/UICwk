@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/dashboard.cpp.o.d"
   "CMakeFiles/main.dir/eli.cpp.o"
   "CMakeFiles/main.dir/eli.cpp.o.d"
+  "CMakeFiles/main.dir/getLakes.cpp.o"
+  "CMakeFiles/main.dir/getLakes.cpp.o.d"
   "CMakeFiles/main.dir/main.cpp.o"
   "CMakeFiles/main.dir/main.cpp.o.d"
   "CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.o"

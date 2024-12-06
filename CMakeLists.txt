@@ -16,6 +16,7 @@ qt_add_executable(main
     dashboard.cpp
     pop.cpp
     eli.cpp
+    getLakes.cpp
 )
 
 # Link Widgets and Charts to the main executable
