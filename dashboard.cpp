@@ -1,6 +1,7 @@
 #include "dashboard.hpp"
 #include "pop.hpp"
 #include "eli.hpp"
+#include "fluorinated.hpp"
 
 Dashboard::Dashboard(QWidget* parent)
     : QWidget(parent)
@@ -22,6 +23,7 @@ Dashboard::Dashboard(QWidget* parent)
     // Connect buttons to actions
     QObject::connect(POP_Button, &QPushButton::clicked, this, &Dashboard::onPOPButtonClicked);
     QObject::connect(ELI_Button, &QPushButton::clicked, this, &Dashboard::onELIButtonClicked);
+    QObject::connect(FC_Button, &QPushButton::clicked, this, &Dashboard::onFCButtonClicked);
 
     // Set button styles
     auto setButtonStyle = [](QPushButton* button) {
@@ -99,5 +101,11 @@ void Dashboard::onPOPButtonClicked()
 void Dashboard::onELIButtonClicked()
 {
     ELIWindow* newWindow = new ELIWindow();
+    newWindow->show();
+}
+
+void Dashboard::onFCButtonClicked()
+{
+    FCWindow* newWindow = new FCWindow();
     newWindow->show();
 }

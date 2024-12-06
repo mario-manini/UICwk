@@ -240,6 +240,30 @@ eli.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/eli.cpp.s
 .PHONY : eli.cpp.s
 
+fluorinated.o: fluorinated.cpp.o
+.PHONY : fluorinated.o
+
+# target to build an object file
+fluorinated.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/fluorinated.cpp.o
+.PHONY : fluorinated.cpp.o
+
+fluorinated.i: fluorinated.cpp.i
+.PHONY : fluorinated.i
+
+# target to preprocess a source file
+fluorinated.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/fluorinated.cpp.i
+.PHONY : fluorinated.cpp.i
+
+fluorinated.s: fluorinated.cpp.s
+.PHONY : fluorinated.s
+
+# target to generate assembly for a file
+fluorinated.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/fluorinated.cpp.s
+.PHONY : fluorinated.cpp.s
+
 getLakes.o: getLakes.cpp.o
 .PHONY : getLakes.o
 
@@ -453,6 +477,9 @@ help:
 	@echo "... eli.o"
 	@echo "... eli.i"
 	@echo "... eli.s"
+	@echo "... fluorinated.o"
+	@echo "... fluorinated.i"
+	@echo "... fluorinated.s"
 	@echo "... getLakes.o"
 	@echo "... getLakes.i"
 	@echo "... getLakes.s"

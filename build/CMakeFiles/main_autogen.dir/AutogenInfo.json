@@ -366,6 +366,18 @@
 			null
 		],
 		[
+			"/uolstore/home/users/sc23mm2/Documents/UI/UICwk/fluorinated.hpp",
+			"MU",
+			"EWIEGA46WW/moc_fluorinated.cpp",
+			null
+		],
+		[
+			"/uolstore/home/users/sc23mm2/Documents/UI/UICwk/getLakes.hpp",
+			"MU",
+			"EWIEGA46WW/moc_getLakes.cpp",
+			null
+		],
+		[
 			"/uolstore/home/users/sc23mm2/Documents/UI/UICwk/pop.hpp",
 			"MU",
 			"EWIEGA46WW/moc_pop.cpp",
@@ -446,6 +458,11 @@
 			null
 		],
 		[ "/uolstore/home/users/sc23mm2/Documents/UI/UICwk/eli.cpp", "MU", null ],
+		[
+			"/uolstore/home/users/sc23mm2/Documents/UI/UICwk/fluorinated.cpp",
+			"MU",
+			null
+		],
 		[
 			"/uolstore/home/users/sc23mm2/Documents/UI/UICwk/getLakes.cpp",
 			"MU",

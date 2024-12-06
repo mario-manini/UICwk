@@ -337,4 +337,5 @@ CMakeFiles/main.dir/dashboard.cpp.o: \
  /usr/include/qt6/QtWidgets/QSlider /usr/include/qt6/QtWidgets/qslider.h \
  /usr/include/qt6/QtWidgets/QGroupBox \
  /usr/include/qt6/QtWidgets/qgroupbox.h \
- /usr/include/qt6/QtWidgets/QHBoxLayout
+ /usr/include/qt6/QtWidgets/QHBoxLayout \
+ /uolstore/home/users/sc23mm2/Documents/UI/UICwk/fluorinated.hpp
