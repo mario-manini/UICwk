@@ -14,6 +14,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/main.cpp.o.d"
   "CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.o.d"
+  "CMakeFiles/main.dir/pollutants_overview.cpp.o"
+  "CMakeFiles/main.dir/pollutants_overview.cpp.o.d"
   "CMakeFiles/main.dir/pop.cpp.o"
   "CMakeFiles/main.dir/pop.cpp.o.d"
   "main"

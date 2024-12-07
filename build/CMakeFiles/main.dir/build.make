@@ -111,10 +111,24 @@ CMakeFiles/main.dir/dashboard.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/dashboard.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/users/sc23mm2/Documents/UI/UICwk/dashboard.cpp -o CMakeFiles/main.dir/dashboard.cpp.s
 
+CMakeFiles/main.dir/pollutants_overview.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/pollutants_overview.cpp.o: /uolstore/home/users/sc23mm2/Documents/UI/UICwk/pollutants_overview.cpp
+CMakeFiles/main.dir/pollutants_overview.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/pollutants_overview.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/pollutants_overview.cpp.o -MF CMakeFiles/main.dir/pollutants_overview.cpp.o.d -o CMakeFiles/main.dir/pollutants_overview.cpp.o -c /uolstore/home/users/sc23mm2/Documents/UI/UICwk/pollutants_overview.cpp
+
+CMakeFiles/main.dir/pollutants_overview.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/pollutants_overview.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/users/sc23mm2/Documents/UI/UICwk/pollutants_overview.cpp > CMakeFiles/main.dir/pollutants_overview.cpp.i
+
+CMakeFiles/main.dir/pollutants_overview.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/pollutants_overview.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/users/sc23mm2/Documents/UI/UICwk/pollutants_overview.cpp -o CMakeFiles/main.dir/pollutants_overview.cpp.s
+
 CMakeFiles/main.dir/pop.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/pop.cpp.o: /uolstore/home/users/sc23mm2/Documents/UI/UICwk/pop.cpp
 CMakeFiles/main.dir/pop.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/pop.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/main.dir/pop.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/pop.cpp.o -MF CMakeFiles/main.dir/pop.cpp.o.d -o CMakeFiles/main.dir/pop.cpp.o -c /uolstore/home/users/sc23mm2/Documents/UI/UICwk/pop.cpp
 
 CMakeFiles/main.dir/pop.cpp.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/main.dir/pop.cpp.s: cmake_force
 CMakeFiles/main.dir/eli.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/eli.cpp.o: /uolstore/home/users/sc23mm2/Documents/UI/UICwk/eli.cpp
 CMakeFiles/main.dir/eli.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/main.dir/eli.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/eli.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/eli.cpp.o -MF CMakeFiles/main.dir/eli.cpp.o.d -o CMakeFiles/main.dir/eli.cpp.o -c /uolstore/home/users/sc23mm2/Documents/UI/UICwk/eli.cpp
 
 CMakeFiles/main.dir/eli.cpp.i: cmake_force
@@ -142,7 +156,7 @@ CMakeFiles/main.dir/eli.cpp.s: cmake_force
 CMakeFiles/main.dir/getLakes.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/getLakes.cpp.o: /uolstore/home/users/sc23mm2/Documents/UI/UICwk/getLakes.cpp
 CMakeFiles/main.dir/getLakes.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/getLakes.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/main.dir/getLakes.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/getLakes.cpp.o -MF CMakeFiles/main.dir/getLakes.cpp.o.d -o CMakeFiles/main.dir/getLakes.cpp.o -c /uolstore/home/users/sc23mm2/Documents/UI/UICwk/getLakes.cpp
 
 CMakeFiles/main.dir/getLakes.cpp.i: cmake_force
@@ -156,7 +170,7 @@ CMakeFiles/main.dir/getLakes.cpp.s: cmake_force
 CMakeFiles/main.dir/fluorinated.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/fluorinated.cpp.o: /uolstore/home/users/sc23mm2/Documents/UI/UICwk/fluorinated.cpp
 CMakeFiles/main.dir/fluorinated.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/main.dir/fluorinated.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/main.dir/fluorinated.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/fluorinated.cpp.o -MF CMakeFiles/main.dir/fluorinated.cpp.o.d -o CMakeFiles/main.dir/fluorinated.cpp.o -c /uolstore/home/users/sc23mm2/Documents/UI/UICwk/fluorinated.cpp
 
 CMakeFiles/main.dir/fluorinated.cpp.i: cmake_force
@@ -172,6 +186,7 @@ main_OBJECTS = \
 "CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/main.dir/main.cpp.o" \
 "CMakeFiles/main.dir/dashboard.cpp.o" \
+"CMakeFiles/main.dir/pollutants_overview.cpp.o" \
 "CMakeFiles/main.dir/pop.cpp.o" \
 "CMakeFiles/main.dir/eli.cpp.o" \
 "CMakeFiles/main.dir/getLakes.cpp.o" \
@@ -183,6 +198,7 @@ main_EXTERNAL_OBJECTS =
 main: CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.o
 main: CMakeFiles/main.dir/main.cpp.o
 main: CMakeFiles/main.dir/dashboard.cpp.o
+main: CMakeFiles/main.dir/pollutants_overview.cpp.o
 main: CMakeFiles/main.dir/pop.cpp.o
 main: CMakeFiles/main.dir/eli.cpp.o
 main: CMakeFiles/main.dir/getLakes.cpp.o
@@ -197,7 +213,7 @@ main: /usr/lib64/libQt6Core.so.6.6.2
 main: /usr/lib64/libGLX.so
 main: /usr/lib64/libOpenGL.so
 main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

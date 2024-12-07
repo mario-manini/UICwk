@@ -422,7 +422,7 @@
 		"/uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/main_autogen/mocs_compilation.cpp"
 	],
 	"MULTI_CONFIG" : false,
-	"PARALLEL" : 12,
+	"PARALLEL" : 24,
 	"PARSE_CACHE_FILE" : "/uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/CMakeFiles/testRead_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/usr/lib64/qt6/libexec/moc",
 	"QT_UIC_EXECUTABLE" : "/usr/lib64/qt6/libexec/uic",

@@ -1,16 +1,9 @@
-#include <iostream>
-#include <vector>
-#include <string>
-#include <fstream>
-#include <QtWidgets>
+#include "pollutants_overview.hpp"
 
-int main(int argc, char *argv[])
+PollutantOverviewWindow::PollutantOverviewWindow(QWidget* parent) : QWidget(parent)
 {
-    QApplication app(argc, argv);
-
-    QWidget* window = new QWidget();
-    window->setMinimumSize(1000, 550);
-    window->setWindowTitle("Pollutants Overview");
+    setMinimumSize(1000, 550);
+    setWindowTitle("Pollutants Overview");
 
     // body of water search box layout
     QLineEdit* water = new QLineEdit();
@@ -22,7 +15,7 @@ int main(int argc, char *argv[])
     form1Layout->addWidget(water);
 
     // table
-    QTableWidget* table = new QTableWidget(window);
+    QTableWidget* table = new QTableWidget(this);
     table->setRowCount(14);
     table->setColumnCount(5);
     QStringList ColumnHeaders;
@@ -53,8 +46,6 @@ int main(int argc, char *argv[])
     pageLayout->addLayout(form2Layout);
     pageLayout->setAlignment(Qt::AlignCenter);
 
-    window->setLayout(pageLayout);
-    window->show();
+    setLayout(pageLayout);
 
-    return app.exec();
 }

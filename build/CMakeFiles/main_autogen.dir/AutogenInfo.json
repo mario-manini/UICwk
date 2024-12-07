@@ -378,6 +378,12 @@
 			null
 		],
 		[
+			"/uolstore/home/users/sc23mm2/Documents/UI/UICwk/pollutants_overview.hpp",
+			"MU",
+			"EWIEGA46WW/moc_pollutants_overview.cpp",
+			null
+		],
+		[
 			"/uolstore/home/users/sc23mm2/Documents/UI/UICwk/pop.hpp",
 			"MU",
 			"EWIEGA46WW/moc_pop.cpp",
@@ -443,7 +449,7 @@
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
-	"PARALLEL" : 12,
+	"PARALLEL" : 24,
 	"PARSE_CACHE_FILE" : "/uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/CMakeFiles/main_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/usr/lib64/qt6/libexec/moc",
 	"QT_UIC_EXECUTABLE" : "/usr/lib64/qt6/libexec/uic",
@@ -470,6 +476,11 @@
 		],
 		[
 			"/uolstore/home/users/sc23mm2/Documents/UI/UICwk/main.cpp",
+			"MU",
+			null
+		],
+		[
+			"/uolstore/home/users/sc23mm2/Documents/UI/UICwk/pollutants_overview.cpp",
 			"MU",
 			null
 		],

@@ -336,6 +336,30 @@ main_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.s
 .PHONY : main_autogen/mocs_compilation.cpp.s
 
+pollutants_overview.o: pollutants_overview.cpp.o
+.PHONY : pollutants_overview.o
+
+# target to build an object file
+pollutants_overview.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/pollutants_overview.cpp.o
+.PHONY : pollutants_overview.cpp.o
+
+pollutants_overview.i: pollutants_overview.cpp.i
+.PHONY : pollutants_overview.i
+
+# target to preprocess a source file
+pollutants_overview.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/pollutants_overview.cpp.i
+.PHONY : pollutants_overview.cpp.i
+
+pollutants_overview.s: pollutants_overview.cpp.s
+.PHONY : pollutants_overview.s
+
+# target to generate assembly for a file
+pollutants_overview.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/pollutants_overview.cpp.s
+.PHONY : pollutants_overview.cpp.s
+
 pop.o: pop.cpp.o
 .PHONY : pop.o
 
@@ -489,6 +513,9 @@ help:
 	@echo "... main_autogen/mocs_compilation.o"
 	@echo "... main_autogen/mocs_compilation.i"
 	@echo "... main_autogen/mocs_compilation.s"
+	@echo "... pollutants_overview.o"
+	@echo "... pollutants_overview.i"
+	@echo "... pollutants_overview.s"
 	@echo "... pop.o"
 	@echo "... pop.i"
 	@echo "... pop.s"

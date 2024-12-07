@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/uolstore/home/users/sc23mm2/Documents/UI/UICwk/getLakes.cpp" "CMakeFiles/main.dir/getLakes.cpp.o" "gcc" "CMakeFiles/main.dir/getLakes.cpp.o.d"
   "/uolstore/home/users/sc23mm2/Documents/UI/UICwk/main.cpp" "CMakeFiles/main.dir/main.cpp.o" "gcc" "CMakeFiles/main.dir/main.cpp.o.d"
   "/uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/main_autogen/mocs_compilation.cpp" "CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.o.d"
+  "/uolstore/home/users/sc23mm2/Documents/UI/UICwk/pollutants_overview.cpp" "CMakeFiles/main.dir/pollutants_overview.cpp.o" "gcc" "CMakeFiles/main.dir/pollutants_overview.cpp.o.d"
   "/uolstore/home/users/sc23mm2/Documents/UI/UICwk/pop.cpp" "CMakeFiles/main.dir/pop.cpp.o" "gcc" "CMakeFiles/main.dir/pop.cpp.o.d"
   )
 

@@ -54,7 +54,7 @@ POPWindow::POPWindow(QWidget* parent) : QWidget(parent)
     searchResultsList = new QListWidget(this);
     mainLayout->addWidget(searchResultsList);
 
-    QGroupBox* rolloverGroupBox = new QGroupBox("Rollover Pop-ups: Health Risks & Safety Information", this);
+    QGroupBox* rolloverGroupBox = new QGroupBox("Rollover Pop-ups: Health Risks, Safety Information", this);
     QVBoxLayout* rolloverLayout = new QVBoxLayout();
     QLabel* rolloverLabel = new QLabel("Hover over the chart to see detailed information on health risks, monitoring importance, and safety levels.", this);
     rolloverLabel->setAlignment(Qt::AlignCenter);
