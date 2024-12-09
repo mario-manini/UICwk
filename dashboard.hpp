@@ -15,11 +15,8 @@ public:
     Dashboard(QWidget* parent = nullptr);
 
 public slots:
-    void onOVButtonClicked();
     void onPOPButtonClicked();
     void onELIButtonClicked();
-    void onFCButtonClicked();
-    
 };
 
 #endif 

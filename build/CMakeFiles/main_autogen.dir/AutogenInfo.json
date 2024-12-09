@@ -1,15 +1,15 @@
 {
-	"BUILD_DIR" : "/uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/main_autogen",
-	"CMAKE_BINARY_DIR" : "/uolstore/home/users/sc23mm2/Documents/UI/UICwk/build",
-	"CMAKE_CURRENT_BINARY_DIR" : "/uolstore/home/users/sc23mm2/Documents/UI/UICwk/build",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/uolstore/home/users/sc23mm2/Documents/UI/UICwk",
+	"BUILD_DIR" : "/uolstore/home/users/ml21s2x/Documents/xscwk/UICwk/build/main_autogen",
+	"CMAKE_BINARY_DIR" : "/uolstore/home/users/ml21s2x/Documents/xscwk/UICwk/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/uolstore/home/users/ml21s2x/Documents/xscwk/UICwk/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/uolstore/home/users/ml21s2x/Documents/xscwk/UICwk",
 	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
 	"CMAKE_LIST_FILES" : 
 	[
-		"/uolstore/home/users/sc23mm2/Documents/UI/UICwk/CMakeLists.txt",
-		"/uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/CMakeFiles/3.26.5/CMakeSystem.cmake",
+		"/uolstore/home/users/ml21s2x/Documents/xscwk/UICwk/CMakeLists.txt",
+		"/uolstore/home/users/ml21s2x/Documents/xscwk/UICwk/build/CMakeFiles/3.26.5/CMakeSystem.cmake",
 		"/usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake",
-		"/uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/CMakeFiles/3.26.5/CMakeCXXCompiler.cmake",
+		"/uolstore/home/users/ml21s2x/Documents/xscwk/UICwk/build/CMakeFiles/3.26.5/CMakeCXXCompiler.cmake",
 		"/usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake",
 		"/usr/share/cmake/Modules/CMakeGenericSystem.cmake",
 		"/usr/share/cmake/Modules/CMakeInitializeConfigs.cmake",
@@ -348,51 +348,33 @@
 		"/usr/lib64/cmake/Qt6Charts/Qt6ChartsVersionlessTargets.cmake",
 		"/usr/share/cmake/Modules/GNUInstallDirs.cmake"
 	],
-	"CMAKE_SOURCE_DIR" : "/uolstore/home/users/sc23mm2/Documents/UI/UICwk",
+	"CMAKE_SOURCE_DIR" : "/uolstore/home/users/ml21s2x/Documents/xscwk/UICwk",
 	"DEP_FILE" : "",
 	"DEP_FILE_RULE_NAME" : "",
 	"HEADERS" : 
 	[
 		[
-			"/uolstore/home/users/sc23mm2/Documents/UI/UICwk/dashboard.hpp",
+			"/uolstore/home/users/ml21s2x/Documents/xscwk/UICwk/dashboard.hpp",
 			"MU",
 			"EWIEGA46WW/moc_dashboard.cpp",
 			null
 		],
 		[
-			"/uolstore/home/users/sc23mm2/Documents/UI/UICwk/eli.hpp",
+			"/uolstore/home/users/ml21s2x/Documents/xscwk/UICwk/eli.hpp",
 			"MU",
 			"EWIEGA46WW/moc_eli.cpp",
 			null
 		],
 		[
-			"/uolstore/home/users/sc23mm2/Documents/UI/UICwk/fluorinated.hpp",
-			"MU",
-			"EWIEGA46WW/moc_fluorinated.cpp",
-			null
-		],
-		[
-			"/uolstore/home/users/sc23mm2/Documents/UI/UICwk/getLakes.hpp",
-			"MU",
-			"EWIEGA46WW/moc_getLakes.cpp",
-			null
-		],
-		[
-			"/uolstore/home/users/sc23mm2/Documents/UI/UICwk/pollutants_overview.hpp",
-			"MU",
-			"EWIEGA46WW/moc_pollutants_overview.cpp",
-			null
-		],
-		[
-			"/uolstore/home/users/sc23mm2/Documents/UI/UICwk/pop.hpp",
+			"/uolstore/home/users/ml21s2x/Documents/xscwk/UICwk/pop.hpp",
 			"MU",
 			"EWIEGA46WW/moc_pop.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/main_autogen/include",
-	"MOC_COMPILATION_FILE" : "/uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/main_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "/uolstore/home/users/ml21s2x/Documents/xscwk/UICwk/build/main_autogen/include",
+	"MOC_COMPILATION_FILE" : "/uolstore/home/users/ml21s2x/Documents/xscwk/UICwk/build/main_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
 		"QT_CHARTS_LIB",
@@ -445,46 +427,39 @@
 		"-c",
 		"/usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/main_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/uolstore/home/users/ml21s2x/Documents/xscwk/UICwk/build/main_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 24,
-	"PARSE_CACHE_FILE" : "/uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/CMakeFiles/main_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "/uolstore/home/users/ml21s2x/Documents/xscwk/UICwk/build/CMakeFiles/main_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/usr/lib64/qt6/libexec/moc",
 	"QT_UIC_EXECUTABLE" : "/usr/lib64/qt6/libexec/uic",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 6,
-	"SETTINGS_FILE" : "/uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/CMakeFiles/main_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/uolstore/home/users/ml21s2x/Documents/xscwk/UICwk/build/CMakeFiles/main_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[
-			"/uolstore/home/users/sc23mm2/Documents/UI/UICwk/dashboard.cpp",
-			"MU",
-			null
-		],
-		[ "/uolstore/home/users/sc23mm2/Documents/UI/UICwk/eli.cpp", "MU", null ],
-		[
-			"/uolstore/home/users/sc23mm2/Documents/UI/UICwk/fluorinated.cpp",
+			"/uolstore/home/users/ml21s2x/Documents/xscwk/UICwk/dashboard.cpp",
 			"MU",
 			null
 		],
 		[
-			"/uolstore/home/users/sc23mm2/Documents/UI/UICwk/getLakes.cpp",
+			"/uolstore/home/users/ml21s2x/Documents/xscwk/UICwk/eli.cpp",
 			"MU",
 			null
 		],
 		[
-			"/uolstore/home/users/sc23mm2/Documents/UI/UICwk/main.cpp",
+			"/uolstore/home/users/ml21s2x/Documents/xscwk/UICwk/main.cpp",
 			"MU",
 			null
 		],
 		[
-			"/uolstore/home/users/sc23mm2/Documents/UI/UICwk/pollutants_overview.cpp",
+			"/uolstore/home/users/ml21s2x/Documents/xscwk/UICwk/pop.cpp",
 			"MU",
 			null
-		],
-		[ "/uolstore/home/users/sc23mm2/Documents/UI/UICwk/pop.cpp", "MU", null ]
+		]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

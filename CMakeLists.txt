@@ -14,11 +14,8 @@ qt_standard_project_setup()
 qt_add_executable(main
     main.cpp
     dashboard.cpp
-    pollutants_overview.cpp
     pop.cpp
     eli.cpp
-    getLakes.cpp
-    fluorinated.cpp
 )
 
 # Link Widgets and Charts to the main executable

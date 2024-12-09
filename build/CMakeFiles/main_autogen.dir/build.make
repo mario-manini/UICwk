@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /uolstore/home/users/sc23mm2/Documents/UI/UICwk
+CMAKE_SOURCE_DIR = /uolstore/home/users/ml21s2x/Documents/xscwk/UICwk
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build
+CMAKE_BINARY_DIR = /uolstore/home/users/ml21s2x/Documents/xscwk/UICwk/build
 
 # Utility rule file for main_autogen.
 
@@ -67,8 +67,8 @@ include CMakeFiles/main_autogen.dir/compiler_depend.make
 include CMakeFiles/main_autogen.dir/progress.make
 
 CMakeFiles/main_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target main"
-	/usr/bin/cmake -E cmake_autogen /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/CMakeFiles/main_autogen.dir/AutogenInfo.json ""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/uolstore/home/users/ml21s2x/Documents/xscwk/UICwk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target main"
+	/usr/bin/cmake -E cmake_autogen /uolstore/home/users/ml21s2x/Documents/xscwk/UICwk/build/CMakeFiles/main_autogen.dir/AutogenInfo.json ""
 
 main_autogen: CMakeFiles/main_autogen
 main_autogen: CMakeFiles/main_autogen.dir/build.make
@@ -83,6 +83,6 @@ CMakeFiles/main_autogen.dir/clean:
 .PHONY : CMakeFiles/main_autogen.dir/clean
 
 CMakeFiles/main_autogen.dir/depend:
-	cd /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /uolstore/home/users/sc23mm2/Documents/UI/UICwk /uolstore/home/users/sc23mm2/Documents/UI/UICwk /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/CMakeFiles/main_autogen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /uolstore/home/users/ml21s2x/Documents/xscwk/UICwk/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /uolstore/home/users/ml21s2x/Documents/xscwk/UICwk /uolstore/home/users/ml21s2x/Documents/xscwk/UICwk /uolstore/home/users/ml21s2x/Documents/xscwk/UICwk/build /uolstore/home/users/ml21s2x/Documents/xscwk/UICwk/build /uolstore/home/users/ml21s2x/Documents/xscwk/UICwk/build/CMakeFiles/main_autogen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/main_autogen.dir/depend
 

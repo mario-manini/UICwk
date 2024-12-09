@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /uolstore/home/users/sc23mm2/Documents/UI/UICwk
+CMAKE_SOURCE_DIR = /uolstore/home/users/ml21s2x/Documents/xscwk/UICwk
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build
+CMAKE_BINARY_DIR = /uolstore/home/users/ml21s2x/Documents/xscwk/UICwk/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/CMakeFiles /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /uolstore/home/users/ml21s2x/Documents/xscwk/UICwk/build/CMakeFiles /uolstore/home/users/ml21s2x/Documents/xscwk/UICwk/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /uolstore/home/users/ml21s2x/Documents/xscwk/UICwk/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -240,54 +240,6 @@ eli.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/eli.cpp.s
 .PHONY : eli.cpp.s
 
-fluorinated.o: fluorinated.cpp.o
-.PHONY : fluorinated.o
-
-# target to build an object file
-fluorinated.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/fluorinated.cpp.o
-.PHONY : fluorinated.cpp.o
-
-fluorinated.i: fluorinated.cpp.i
-.PHONY : fluorinated.i
-
-# target to preprocess a source file
-fluorinated.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/fluorinated.cpp.i
-.PHONY : fluorinated.cpp.i
-
-fluorinated.s: fluorinated.cpp.s
-.PHONY : fluorinated.s
-
-# target to generate assembly for a file
-fluorinated.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/fluorinated.cpp.s
-.PHONY : fluorinated.cpp.s
-
-getLakes.o: getLakes.cpp.o
-.PHONY : getLakes.o
-
-# target to build an object file
-getLakes.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/getLakes.cpp.o
-.PHONY : getLakes.cpp.o
-
-getLakes.i: getLakes.cpp.i
-.PHONY : getLakes.i
-
-# target to preprocess a source file
-getLakes.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/getLakes.cpp.i
-.PHONY : getLakes.cpp.i
-
-getLakes.s: getLakes.cpp.s
-.PHONY : getLakes.s
-
-# target to generate assembly for a file
-getLakes.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/getLakes.cpp.s
-.PHONY : getLakes.cpp.s
-
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -335,30 +287,6 @@ main_autogen/mocs_compilation.s: main_autogen/mocs_compilation.cpp.s
 main_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.s
 .PHONY : main_autogen/mocs_compilation.cpp.s
-
-pollutants_overview.o: pollutants_overview.cpp.o
-.PHONY : pollutants_overview.o
-
-# target to build an object file
-pollutants_overview.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/pollutants_overview.cpp.o
-.PHONY : pollutants_overview.cpp.o
-
-pollutants_overview.i: pollutants_overview.cpp.i
-.PHONY : pollutants_overview.i
-
-# target to preprocess a source file
-pollutants_overview.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/pollutants_overview.cpp.i
-.PHONY : pollutants_overview.cpp.i
-
-pollutants_overview.s: pollutants_overview.cpp.s
-.PHONY : pollutants_overview.s
-
-# target to generate assembly for a file
-pollutants_overview.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/pollutants_overview.cpp.s
-.PHONY : pollutants_overview.cpp.s
 
 pop.o: pop.cpp.o
 .PHONY : pop.o
@@ -501,21 +429,12 @@ help:
 	@echo "... eli.o"
 	@echo "... eli.i"
 	@echo "... eli.s"
-	@echo "... fluorinated.o"
-	@echo "... fluorinated.i"
-	@echo "... fluorinated.s"
-	@echo "... getLakes.o"
-	@echo "... getLakes.i"
-	@echo "... getLakes.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
 	@echo "... main_autogen/mocs_compilation.o"
 	@echo "... main_autogen/mocs_compilation.i"
 	@echo "... main_autogen/mocs_compilation.s"
-	@echo "... pollutants_overview.o"
-	@echo "... pollutants_overview.i"
-	@echo "... pollutants_overview.s"
 	@echo "... pop.o"
 	@echo "... pop.i"
 	@echo "... pop.s"
