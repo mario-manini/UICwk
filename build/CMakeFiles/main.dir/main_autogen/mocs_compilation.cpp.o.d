@@ -328,10 +328,52 @@ CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.o: \
  /usr/include/qt6/QtWidgets/qtabwidget.h \
  /usr/include/qt6/QtWidgets/qrubberband.h \
  /usr/include/qt6/QtCore/qabstractitemmodel.h \
- /usr/include/qt6/QtWidgets/QSlider /usr/include/qt6/QtWidgets/qslider.h \
- /usr/include/qt6/QtWidgets/QGroupBox \
- /usr/include/qt6/QtWidgets/qgroupbox.h \
- /usr/include/qt6/QtWidgets/QHBoxLayout \
+ /usr/include/qt6/QtCharts/QChartView \
+ /usr/include/qt6/QtCharts/qchartview.h \
+ /usr/include/qt6/QtCharts/QAbstractAxis \
+ /usr/include/qt6/QtCharts/qabstractaxis.h \
+ /usr/include/qt6/QtCharts/QChartGlobal \
+ /usr/include/qt6/QtCharts/qchartglobal.h \
+ /usr/include/qt6/QtCharts/qtcharts-config.h \
+ /usr/include/qt6/QtCharts/qtchartsexports.h /usr/include/qt6/QtGui/QPen \
+ /usr/include/qt6/QtGui/qpen.h /usr/include/qt6/QtGui/QFont \
+ /usr/include/qt6/QtGui/qfont.h /usr/include/qt6/QtCore/QVariant \
+ /usr/include/qt6/QtCore/qvariant.h /usr/include/qt6/QtCore/QObject \
+ /usr/include/qt6/QtCore/qobject.h \
+ /usr/include/qt6/QtCharts/QAbstractSeries \
+ /usr/include/qt6/QtCharts/qabstractseries.h \
+ /usr/include/qt6/QtCharts/QChart /usr/include/qt6/QtCharts/qchart.h \
+ /usr/include/qt6/QtCharts/QLegend /usr/include/qt6/QtCharts/qlegend.h \
+ /usr/include/qt6/QtWidgets/QGraphicsWidget \
+ /usr/include/qt6/QtWidgets/qgraphicswidget.h \
+ /usr/include/qt6/QtWidgets/qgraphicslayoutitem.h \
+ /usr/include/qt6/QtGui/qevent.h /usr/include/qt6/QtCore/qcoreevent.h \
+ /usr/include/qt6/QtCore/qpointer.h /usr/include/qt6/QtGui/qeventpoint.h \
+ /usr/include/qt6/QtGui/qvector2d.h /usr/include/qt6/QtGui/qvectornd.h \
+ /usr/include/qt6/QtGui/qpointingdevice.h \
+ /usr/include/qt6/QtGui/qinputdevice.h /usr/include/qt6/QtGui/qscreen.h \
+ /usr/include/qt6/QtCore/QList /usr/include/qt6/QtCore/qlist.h \
+ /usr/include/qt6/QtCore/QRect /usr/include/qt6/QtCore/qrect.h \
+ /usr/include/qt6/QtCore/QSize /usr/include/qt6/QtCore/qsize.h \
+ /usr/include/qt6/QtCore/QSizeF /usr/include/qt6/QtGui/QTransform \
+ /usr/include/qt6/QtGui/qtransform.h \
+ /usr/include/qt6/QtCore/qnativeinterface.h \
+ /usr/include/qt6/QtWidgets/qgraphicsitem.h \
+ /usr/include/qt6/QtGui/qpainterpath.h /usr/include/qt6/QtGui/QBrush \
+ /usr/include/qt6/QtGui/qbrush.h /usr/include/qt6/QtCore/QMargins \
+ /usr/include/qt6/QtCore/qmargins.h \
+ /usr/include/qt6/QtWidgets/QGraphicsView \
+ /usr/include/qt6/QtWidgets/qgraphicsview.h \
+ /usr/include/qt6/QtGui/qpainter.h \
+ /usr/include/qt6/QtWidgets/qscrollarea.h \
+ /usr/include/qt6/QtWidgets/qabstractscrollarea.h \
+ /usr/include/qt6/QtWidgets/qgraphicsscene.h \
+ /usr/include/qt6/QtCharts/QLineSeries \
+ /usr/include/qt6/QtCharts/qlineseries.h \
+ /usr/include/qt6/QtCharts/QXYSeries \
+ /usr/include/qt6/QtCharts/qxyseries.h /usr/include/qt6/QtGui/QImage \
+ /usr/include/qt6/QtGui/qimage.h /usr/include/qt6/QtWidgets/QScrollArea \
+ /usr/include/qt6/QtWidgets/qscrollarea.h \
  /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/main_autogen/EWIEGA46WW/moc_fluorinated.cpp \
  /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/main_autogen/EWIEGA46WW/../../../fluorinated.hpp \
  /usr/include/qt6/QtWidgets/QLineEdit \
@@ -340,10 +382,10 @@ CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.o: \
  /usr/include/qt6/QtWidgets/qlistwidget.h \
  /usr/include/qt6/QtWidgets/qlistview.h \
  /usr/include/qt6/QtWidgets/qabstractitemview.h \
- /usr/include/qt6/QtWidgets/qabstractscrollarea.h \
  /usr/include/qt6/QtCore/qitemselectionmodel.h \
  /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/main_autogen/EWIEGA46WW/moc_pollutants_overview.cpp \
  /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/main_autogen/EWIEGA46WW/../../../pollutants_overview.hpp \
+ /usr/include/qt6/QtWidgets/QHBoxLayout \
  /usr/include/qt6/QtWidgets/QTableWidget \
  /usr/include/qt6/QtWidgets/qtablewidget.h \
  /usr/include/qt6/QtWidgets/qtableview.h \
