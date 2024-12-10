@@ -1,5 +1,5 @@
 CMakeFiles/main.dir/main.cpp.o: \
- /uolstore/home/users/sc23mm2/Documents/UI/UICwk/main.cpp \
+ /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/main.cpp \
  /usr/include/stdc-predef.h /usr/include/qt6/QtWidgets/QApplication \
  /usr/include/qt6/QtWidgets/qapplication.h \
  /usr/include/qt6/QtWidgets/qtwidgetsglobal.h \
@@ -297,7 +297,7 @@ CMakeFiles/main.dir/main.cpp.o: \
  /usr/include/qt6/QtGui/qinputmethod.h /usr/include/qt6/QtCore/qlocale.h \
  /usr/include/qt6/QtCore/qvariant.h \
  /usr/include/qt6/QtGui/qguiapplication_platform.h \
- /uolstore/home/users/sc23mm2/Documents/UI/UICwk/dashboard.hpp \
+ /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/dashboard.hpp \
  /usr/include/qt6/QtWidgets/QWidget /usr/include/qt6/QtWidgets/qwidget.h \
  /usr/include/qt6/QtGui/qaction.h /usr/include/qt6/QtGui/qkeysequence.h \
  /usr/include/qt6/QtGui/qicon.h /usr/include/qt6/QtGui/qpalette.h \

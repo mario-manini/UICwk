@@ -1,8 +1,7 @@
-CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.o: \
- /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build/main_autogen/mocs_compilation.cpp \
+CMakeFiles/main.dir/physicalPage.cpp.o: \
+ /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/physicalPage.cpp \
  /usr/include/stdc-predef.h \
- /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build/main_autogen/EWIEGA46WW/moc_dashboard.cpp \
- /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build/main_autogen/EWIEGA46WW/../../../dashboard.hpp \
+ /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/physicalPage.hpp \
  /usr/include/qt6/QtWidgets/QWidget /usr/include/qt6/QtWidgets/qwidget.h \
  /usr/include/qt6/QtWidgets/qtwidgetsglobal.h \
  /usr/include/qt6/QtGui/qtguiglobal.h /usr/include/qt6/QtCore/qglobal.h \
@@ -295,6 +294,20 @@ CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.o: \
  /usr/include/qt6/QtGui/qfontinfo.h \
  /usr/include/qt6/QtWidgets/qsizepolicy.h \
  /usr/include/qt6/QtGui/qcursor.h /usr/include/qt6/QtGui/qbitmap.h \
+ /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/sampleset.hpp \
+ /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/sample.hpp \
+ /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
+ /usr/include/c++/11/ios /usr/include/c++/11/bits/basic_ios.h \
+ /usr/include/c++/11/bits/locale_facets.h /usr/include/c++/11/cwctype \
+ /usr/include/wctype.h /usr/include/bits/wctype-wchar.h \
+ /usr/include/c++/11/x86_64-redhat-linux/bits/ctype_base.h \
+ /usr/include/c++/11/x86_64-redhat-linux/bits/ctype_inline.h \
+ /usr/include/c++/11/bits/locale_facets.tcc \
+ /usr/include/c++/11/bits/basic_ios.tcc \
+ /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
+ /usr/include/c++/11/bits/istream.tcc \
+ /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/determinand.hpp \
+ /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/dashboard.hpp \
  /usr/include/qt6/QtWidgets/QPushButton \
  /usr/include/qt6/QtWidgets/qpushbutton.h \
  /usr/include/qt6/QtWidgets/qabstractbutton.h \
@@ -308,14 +321,19 @@ CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.o: \
  /usr/include/qt6/QtWidgets/qlayoutitem.h \
  /usr/include/qt6/QtWidgets/qboxlayout.h \
  /usr/include/qt6/QtWidgets/qgridlayout.h \
+ /usr/include/qt6/QtWidgets/QHBoxLayout \
+ /usr/include/qt6/QtWidgets/QLineEdit \
+ /usr/include/qt6/QtWidgets/qlineedit.h \
  /usr/include/qt6/QtGui/qtextcursor.h \
  /usr/include/qt6/QtGui/qtextformat.h /usr/include/qt6/QtGui/qpen.h \
- /usr/include/qt6/QtGui/qtextoption.h \
- /usr/include/qt6/QtCore/qtmochelpers.h \
- /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build/main_autogen/EWIEGA46WW/moc_eli.cpp \
- /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build/main_autogen/EWIEGA46WW/../../../eli.hpp \
- /usr/include/qt6/QtWidgets/QComboBox \
- /usr/include/qt6/QtWidgets/qcombobox.h \
+ /usr/include/qt6/QtGui/qtextoption.h /usr/include/qt6/QtGui/QFont \
+ /usr/include/qt6/QtGui/qfont.h /usr/include/qt6/QtWidgets/QTableWidget \
+ /usr/include/qt6/QtWidgets/qtablewidget.h \
+ /usr/include/qt6/QtWidgets/qtableview.h \
+ /usr/include/qt6/QtWidgets/qabstractitemview.h \
+ /usr/include/qt6/QtWidgets/qabstractscrollarea.h \
+ /usr/include/qt6/QtCore/qabstractitemmodel.h \
+ /usr/include/qt6/QtCore/qitemselectionmodel.h \
  /usr/include/qt6/QtWidgets/qabstractitemdelegate.h \
  /usr/include/qt6/QtWidgets/qstyleoption.h \
  /usr/include/qt6/QtCore/qlocale.h \
@@ -327,84 +345,6 @@ CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.o: \
  /usr/include/qt6/QtWidgets/qstyle.h /usr/include/qt6/QtWidgets/qtabbar.h \
  /usr/include/qt6/QtWidgets/qtabwidget.h \
  /usr/include/qt6/QtWidgets/qrubberband.h \
- /usr/include/qt6/QtCore/qabstractitemmodel.h \
- /usr/include/qt6/QtCharts/QChartView \
- /usr/include/qt6/QtCharts/qchartview.h \
- /usr/include/qt6/QtCharts/QAbstractAxis \
- /usr/include/qt6/QtCharts/qabstractaxis.h \
- /usr/include/qt6/QtCharts/QChartGlobal \
- /usr/include/qt6/QtCharts/qchartglobal.h \
- /usr/include/qt6/QtCharts/qtcharts-config.h \
- /usr/include/qt6/QtCharts/qtchartsexports.h /usr/include/qt6/QtGui/QPen \
- /usr/include/qt6/QtGui/qpen.h /usr/include/qt6/QtGui/QFont \
- /usr/include/qt6/QtGui/qfont.h /usr/include/qt6/QtCore/QVariant \
- /usr/include/qt6/QtCore/qvariant.h /usr/include/qt6/QtCore/QObject \
- /usr/include/qt6/QtCore/qobject.h \
- /usr/include/qt6/QtCharts/QAbstractSeries \
- /usr/include/qt6/QtCharts/qabstractseries.h \
- /usr/include/qt6/QtCharts/QChart /usr/include/qt6/QtCharts/qchart.h \
- /usr/include/qt6/QtCharts/QLegend /usr/include/qt6/QtCharts/qlegend.h \
- /usr/include/qt6/QtWidgets/QGraphicsWidget \
- /usr/include/qt6/QtWidgets/qgraphicswidget.h \
- /usr/include/qt6/QtWidgets/qgraphicslayoutitem.h \
- /usr/include/qt6/QtGui/qevent.h /usr/include/qt6/QtCore/qcoreevent.h \
- /usr/include/qt6/QtCore/qpointer.h /usr/include/qt6/QtGui/qeventpoint.h \
- /usr/include/qt6/QtGui/qvector2d.h /usr/include/qt6/QtGui/qvectornd.h \
- /usr/include/qt6/QtGui/qpointingdevice.h \
- /usr/include/qt6/QtGui/qinputdevice.h /usr/include/qt6/QtGui/qscreen.h \
- /usr/include/qt6/QtCore/QList /usr/include/qt6/QtCore/qlist.h \
- /usr/include/qt6/QtCore/QRect /usr/include/qt6/QtCore/qrect.h \
- /usr/include/qt6/QtCore/QSize /usr/include/qt6/QtCore/qsize.h \
- /usr/include/qt6/QtCore/QSizeF /usr/include/qt6/QtGui/QTransform \
- /usr/include/qt6/QtGui/qtransform.h \
- /usr/include/qt6/QtCore/qnativeinterface.h \
- /usr/include/qt6/QtWidgets/qgraphicsitem.h \
- /usr/include/qt6/QtGui/qpainterpath.h /usr/include/qt6/QtGui/QBrush \
- /usr/include/qt6/QtGui/qbrush.h /usr/include/qt6/QtCore/QMargins \
- /usr/include/qt6/QtCore/qmargins.h \
- /usr/include/qt6/QtWidgets/QGraphicsView \
- /usr/include/qt6/QtWidgets/qgraphicsview.h \
- /usr/include/qt6/QtGui/qpainter.h \
- /usr/include/qt6/QtWidgets/qscrollarea.h \
- /usr/include/qt6/QtWidgets/qabstractscrollarea.h \
- /usr/include/qt6/QtWidgets/qgraphicsscene.h \
- /usr/include/qt6/QtCharts/QLineSeries \
- /usr/include/qt6/QtCharts/qlineseries.h \
- /usr/include/qt6/QtCharts/QXYSeries \
- /usr/include/qt6/QtCharts/qxyseries.h /usr/include/qt6/QtGui/QImage \
- /usr/include/qt6/QtGui/qimage.h /usr/include/qt6/QtWidgets/QScrollArea \
- /usr/include/qt6/QtWidgets/qscrollarea.h \
- /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build/main_autogen/EWIEGA46WW/moc_fluorinated.cpp \
- /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build/main_autogen/EWIEGA46WW/../../../fluorinated.hpp \
- /usr/include/qt6/QtWidgets/QLineEdit \
- /usr/include/qt6/QtWidgets/qlineedit.h \
- /usr/include/qt6/QtWidgets/QListWidget \
- /usr/include/qt6/QtWidgets/qlistwidget.h \
- /usr/include/qt6/QtWidgets/qlistview.h \
- /usr/include/qt6/QtWidgets/qabstractitemview.h \
- /usr/include/qt6/QtCore/qitemselectionmodel.h \
- /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build/main_autogen/EWIEGA46WW/moc_physicalPage.cpp \
- /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build/main_autogen/EWIEGA46WW/../../../physicalPage.hpp \
- /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build/main_autogen/EWIEGA46WW/../../../sampleset.hpp \
- /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build/main_autogen/EWIEGA46WW/../../../sample.hpp \
- /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
- /usr/include/c++/11/ios /usr/include/c++/11/bits/basic_ios.h \
- /usr/include/c++/11/bits/locale_facets.h /usr/include/c++/11/cwctype \
- /usr/include/wctype.h /usr/include/bits/wctype-wchar.h \
- /usr/include/c++/11/x86_64-redhat-linux/bits/ctype_base.h \
- /usr/include/c++/11/x86_64-redhat-linux/bits/ctype_inline.h \
- /usr/include/c++/11/bits/locale_facets.tcc \
- /usr/include/c++/11/bits/basic_ios.tcc \
- /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
- /usr/include/c++/11/bits/istream.tcc \
- /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build/main_autogen/EWIEGA46WW/../../../determinand.hpp \
- /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build/main_autogen/EWIEGA46WW/moc_pollutants_overview.cpp \
- /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build/main_autogen/EWIEGA46WW/../../../pollutants_overview.hpp \
- /usr/include/qt6/QtWidgets/QHBoxLayout \
- /usr/include/qt6/QtWidgets/QTableWidget \
- /usr/include/qt6/QtWidgets/qtablewidget.h \
- /usr/include/qt6/QtWidgets/qtableview.h \
- /usr/include/qt6/QtWidgets/QHeaderView \
- /usr/include/qt6/QtWidgets/qheaderview.h \
- /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build/main_autogen/EWIEGA46WW/moc_pop.cpp \
- /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build/main_autogen/EWIEGA46WW/../../../pop.hpp
+ /usr/include/qt6/QtWidgets/QTableWidgetItem \
+ /usr/include/qt6/QtGui/QBrush /usr/include/qt6/QtGui/qbrush.h \
+ /usr/include/qt6/QtGui/QColor /usr/include/qt6/QtGui/qcolor.h

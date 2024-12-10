@@ -1,7 +1,7 @@
 CMakeFiles/main.dir/fluorinated.cpp.o: \
- /uolstore/home/users/sc23mm2/Documents/UI/UICwk/fluorinated.cpp \
+ /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/fluorinated.cpp \
  /usr/include/stdc-predef.h \
- /uolstore/home/users/sc23mm2/Documents/UI/UICwk/fluorinated.hpp \
+ /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/fluorinated.hpp \
  /usr/include/qt6/QtWidgets/QWidget /usr/include/qt6/QtWidgets/qwidget.h \
  /usr/include/qt6/QtWidgets/qtwidgetsglobal.h \
  /usr/include/qt6/QtGui/qtguiglobal.h /usr/include/qt6/QtCore/qglobal.h \
@@ -1054,5 +1054,5 @@ CMakeFiles/main.dir/fluorinated.cpp.o: \
  /usr/include/qt6/QtCharts/qvpiemodelmapper.h \
  /usr/include/qt6/QtCharts/qvxymodelmapper.h \
  /usr/include/qt6/QtCharts/qxylegendmarker.h \
- /uolstore/home/users/sc23mm2/Documents/UI/UICwk/getLakes.hpp \
+ /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/getLakes.hpp \
  /usr/include/qt6/QtCore/QStringList /usr/include/c++/11/iostream

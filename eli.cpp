@@ -62,7 +62,7 @@ ELIWindow::ELIWindow(QWidget* parent) : QWidget(parent) {
 }
 
 void ELIWindow::loadPollutants() {
-    QString filePath = QDir(QCoreApplication::applicationDirPath()).filePath("../data/testData.csv");
+    QString filePath = QDir(QCoreApplication::applicationDirPath()).filePath("../data/Y-2024-M.csv");
     QFile file(filePath);
     if (file.open(QIODevice::ReadOnly)) {
         QTextStream in(&file);
@@ -80,7 +80,7 @@ void ELIWindow::loadPollutants() {
 }
 
 void ELIWindow::loadFilters() {
-    QString filePath = QDir(QCoreApplication::applicationDirPath()).filePath("../data/testData.csv");
+    QString filePath = QDir(QCoreApplication::applicationDirPath()).filePath("../data/Y-2024-M.csv");
     QFile file(filePath);
     if (file.open(QIODevice::ReadOnly)) {
         QTextStream in(&file);
@@ -104,7 +104,7 @@ void ELIWindow::loadFilters() {
 }
 
 void ELIWindow::updateCompliance(const QString& pollutant) {
-    QString filePath = QDir(QCoreApplication::applicationDirPath()).filePath("../data/testData.csv");
+    QString filePath = QDir(QCoreApplication::applicationDirPath()).filePath("../data/Y-2024-M.csv");
     QFile file(filePath);
     if (file.open(QIODevice::ReadOnly)) {
         QTextStream in(&file);

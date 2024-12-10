@@ -3,6 +3,7 @@
 #include "pop.hpp"
 #include "eli.hpp"
 #include "fluorinated.hpp"
+#include "physicalPage.hpp" 
 
 Dashboard::Dashboard(QWidget* parent)
     : QWidget(parent)
@@ -26,6 +27,8 @@ Dashboard::Dashboard(QWidget* parent)
     QObject::connect(POP_Button, &QPushButton::clicked, this, &Dashboard::onPOPButtonClicked);
     QObject::connect(ELI_Button, &QPushButton::clicked, this, &Dashboard::onELIButtonClicked);
     QObject::connect(FC_Button, &QPushButton::clicked, this, &Dashboard::onFCButtonClicked);
+    QObject::connect(CD_Button, &QPushButton::clicked, this, &Dashboard::onCDButtonClicked);
+
 
     // Set button styles
     auto setButtonStyle = [](QPushButton* button) {
@@ -115,5 +118,11 @@ void Dashboard::onELIButtonClicked()
 void Dashboard::onFCButtonClicked()
 {
     FCWindow* newWindow = new FCWindow();
+    newWindow->show();
+}
+
+void Dashboard::onCDButtonClicked()
+{
+    PhysicalPage* newWindow = new PhysicalPage();
     newWindow->show();
 }

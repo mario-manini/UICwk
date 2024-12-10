@@ -1,7 +1,7 @@
 CMakeFiles/main.dir/dashboard.cpp.o: \
- /uolstore/home/users/sc23mm2/Documents/UI/UICwk/dashboard.cpp \
+ /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/dashboard.cpp \
  /usr/include/stdc-predef.h \
- /uolstore/home/users/sc23mm2/Documents/UI/UICwk/dashboard.hpp \
+ /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/dashboard.hpp \
  /usr/include/qt6/QtWidgets/QWidget /usr/include/qt6/QtWidgets/qwidget.h \
  /usr/include/qt6/QtWidgets/qtwidgetsglobal.h \
  /usr/include/qt6/QtGui/qtguiglobal.h /usr/include/qt6/QtCore/qglobal.h \
@@ -307,7 +307,7 @@ CMakeFiles/main.dir/dashboard.cpp.o: \
  /usr/include/qt6/QtWidgets/qlayoutitem.h \
  /usr/include/qt6/QtWidgets/qboxlayout.h \
  /usr/include/qt6/QtWidgets/qgridlayout.h \
- /uolstore/home/users/sc23mm2/Documents/UI/UICwk/pollutants_overview.hpp \
+ /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/pollutants_overview.hpp \
  /usr/include/qt6/QtWidgets/QLineEdit \
  /usr/include/qt6/QtWidgets/qlineedit.h \
  /usr/include/qt6/QtGui/qtextcursor.h \
@@ -336,11 +336,11 @@ CMakeFiles/main.dir/dashboard.cpp.o: \
  /usr/include/qt6/QtWidgets/qcombobox.h \
  /usr/include/qt6/QtWidgets/QHeaderView \
  /usr/include/qt6/QtWidgets/qheaderview.h \
- /uolstore/home/users/sc23mm2/Documents/UI/UICwk/pop.hpp \
+ /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/pop.hpp \
  /usr/include/qt6/QtWidgets/QListWidget \
  /usr/include/qt6/QtWidgets/qlistwidget.h \
  /usr/include/qt6/QtWidgets/qlistview.h \
- /uolstore/home/users/sc23mm2/Documents/UI/UICwk/eli.hpp \
+ /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/eli.hpp \
  /usr/include/qt6/QtCharts/QChartView \
  /usr/include/qt6/QtCharts/qchartview.h \
  /usr/include/qt6/QtCharts/QAbstractAxis \
@@ -386,4 +386,18 @@ CMakeFiles/main.dir/dashboard.cpp.o: \
  /usr/include/qt6/QtCharts/qxyseries.h /usr/include/qt6/QtGui/QImage \
  /usr/include/qt6/QtGui/qimage.h /usr/include/qt6/QtWidgets/QScrollArea \
  /usr/include/qt6/QtWidgets/qscrollarea.h \
- /uolstore/home/users/sc23mm2/Documents/UI/UICwk/fluorinated.hpp
+ /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/fluorinated.hpp \
+ /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/physicalPage.hpp \
+ /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/sampleset.hpp \
+ /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/sample.hpp \
+ /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
+ /usr/include/c++/11/ios /usr/include/c++/11/bits/basic_ios.h \
+ /usr/include/c++/11/bits/locale_facets.h /usr/include/c++/11/cwctype \
+ /usr/include/wctype.h /usr/include/bits/wctype-wchar.h \
+ /usr/include/c++/11/x86_64-redhat-linux/bits/ctype_base.h \
+ /usr/include/c++/11/x86_64-redhat-linux/bits/ctype_inline.h \
+ /usr/include/c++/11/bits/locale_facets.tcc \
+ /usr/include/c++/11/bits/basic_ios.tcc \
+ /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
+ /usr/include/c++/11/bits/istream.tcc \
+ /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/determinand.hpp

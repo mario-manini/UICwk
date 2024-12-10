@@ -12,7 +12,7 @@ class FCWindow : public QWidget
 {
     Q_OBJECT
 
-public:
+public:gith
     explicit FCWindow(QWidget* parent = nullptr);
 
 private slots:

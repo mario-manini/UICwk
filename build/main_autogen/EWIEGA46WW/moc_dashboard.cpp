@@ -44,17 +44,19 @@ constexpr auto qt_meta_stringdata_CLASSDashboardENDCLASS = QtMocHelpers::stringD
     "",
     "onPOPButtonClicked",
     "onELIButtonClicked",
-    "onFCButtonClicked"
+    "onFCButtonClicked",
+    "onCDButtonClicked"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSDashboardENDCLASS_t {
-    uint offsetsAndSizes[12];
+    uint offsetsAndSizes[14];
     char stringdata0[10];
     char stringdata1[18];
     char stringdata2[1];
     char stringdata3[19];
     char stringdata4[19];
     char stringdata5[18];
+    char stringdata6[18];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSDashboardENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -65,14 +67,16 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSDashboardENDCLASS_t qt_meta_str
         QT_MOC_LITERAL(28, 0),  // ""
         QT_MOC_LITERAL(29, 18),  // "onPOPButtonClicked"
         QT_MOC_LITERAL(48, 18),  // "onELIButtonClicked"
-        QT_MOC_LITERAL(67, 17)   // "onFCButtonClicked"
+        QT_MOC_LITERAL(67, 17),  // "onFCButtonClicked"
+        QT_MOC_LITERAL(85, 17)   // "onCDButtonClicked"
     },
     "Dashboard",
     "onOVButtonClicked",
     "",
     "onPOPButtonClicked",
     "onELIButtonClicked",
-    "onFCButtonClicked"
+    "onFCButtonClicked",
+    "onCDButtonClicked"
 };
 #undef QT_MOC_LITERAL
 #endif // !QT_MOC_HAS_STRING_DATA
@@ -84,7 +88,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSDashboardENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       4,   14, // methods
+       5,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -92,12 +96,14 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSDashboardENDCLASS[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   38,    2, 0x0a,    1 /* Public */,
-       3,    0,   39,    2, 0x0a,    2 /* Public */,
-       4,    0,   40,    2, 0x0a,    3 /* Public */,
-       5,    0,   41,    2, 0x0a,    4 /* Public */,
+       1,    0,   44,    2, 0x0a,    1 /* Public */,
+       3,    0,   45,    2, 0x0a,    2 /* Public */,
+       4,    0,   46,    2, 0x0a,    3 /* Public */,
+       5,    0,   47,    2, 0x0a,    4 /* Public */,
+       6,    0,   48,    2, 0x0a,    5 /* Public */,
 
  // slots: parameters
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -122,6 +128,8 @@ Q_CONSTINIT const QMetaObject Dashboard::staticMetaObject = { {
         // method 'onELIButtonClicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'onFCButtonClicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'onCDButtonClicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -137,6 +145,7 @@ void Dashboard::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
         case 1: _t->onPOPButtonClicked(); break;
         case 2: _t->onELIButtonClicked(); break;
         case 3: _t->onFCButtonClicked(); break;
+        case 4: _t->onCDButtonClicked(); break;
         default: ;
         }
     }
@@ -162,13 +171,13 @@ int Dashboard::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 4)
+        if (_id < 5)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 4;
+        _id -= 5;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 4)
+        if (_id < 5)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 4;
+        _id -= 5;
     }
     return _id;
 }

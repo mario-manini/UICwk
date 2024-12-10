@@ -1,7 +1,7 @@
 CMakeFiles/main.dir/pollutants_overview.cpp.o: \
- /uolstore/home/users/sc23mm2/Documents/UI/UICwk/pollutants_overview.cpp \
+ /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/pollutants_overview.cpp \
  /usr/include/stdc-predef.h \
- /uolstore/home/users/sc23mm2/Documents/UI/UICwk/pollutants_overview.hpp \
+ /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/pollutants_overview.hpp \
  /usr/include/qt6/QtWidgets/QWidget /usr/include/qt6/QtWidgets/qwidget.h \
  /usr/include/qt6/QtWidgets/qtwidgetsglobal.h \
  /usr/include/qt6/QtGui/qtguiglobal.h /usr/include/qt6/QtCore/qglobal.h \

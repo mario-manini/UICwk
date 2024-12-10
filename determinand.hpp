@@ -14,11 +14,11 @@ class Determinand
         std::string getUnits() const { return units; }
         int getNumberEntries() { return number_entries; }
         //setter methods
-        void setSafeLevel(int level) { safe_level = level; }
+        void setSafeLevel(double level) { safe_level = level; }
         void setGroup(int group) { group_id = group; }
         void incrementCount() { number_entries++; }
         //general calculation for additional values
-        int calcGroup(const std::string&);
+        int calcGroup(const std::string&, const std::string&);
         double calcSafe(int);
 
     private:

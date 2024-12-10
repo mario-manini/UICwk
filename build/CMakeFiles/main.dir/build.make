@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /uolstore/home/users/sc23mm2/Documents/UI/UICwk
+CMAKE_SOURCE_DIR = /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build
+CMAKE_BINARY_DIR = /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/main.dir/depend.make
@@ -72,114 +72,170 @@ include CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.o: main_autogen/mocs_compilation.cpp
 CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.o -MF CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.o -c /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/main_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.o -MF CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.o -c /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build/main_autogen/mocs_compilation.cpp
 
 CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/main_autogen/mocs_compilation.cpp > CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build/main_autogen/mocs_compilation.cpp > CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/main_autogen/mocs_compilation.cpp -o CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build/main_autogen/mocs_compilation.cpp -o CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/main.dir/main.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/main.cpp.o: /uolstore/home/users/sc23mm2/Documents/UI/UICwk/main.cpp
+CMakeFiles/main.dir/main.cpp.o: /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/main.cpp
 CMakeFiles/main.dir/main.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/main.cpp.o -MF CMakeFiles/main.dir/main.cpp.o.d -o CMakeFiles/main.dir/main.cpp.o -c /uolstore/home/users/sc23mm2/Documents/UI/UICwk/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/main.cpp.o -MF CMakeFiles/main.dir/main.cpp.o.d -o CMakeFiles/main.dir/main.cpp.o -c /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/main.cpp
 
 CMakeFiles/main.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/users/sc23mm2/Documents/UI/UICwk/main.cpp > CMakeFiles/main.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/main.cpp > CMakeFiles/main.dir/main.cpp.i
 
 CMakeFiles/main.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/users/sc23mm2/Documents/UI/UICwk/main.cpp -o CMakeFiles/main.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/main.cpp -o CMakeFiles/main.dir/main.cpp.s
 
 CMakeFiles/main.dir/dashboard.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/dashboard.cpp.o: /uolstore/home/users/sc23mm2/Documents/UI/UICwk/dashboard.cpp
+CMakeFiles/main.dir/dashboard.cpp.o: /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/dashboard.cpp
 CMakeFiles/main.dir/dashboard.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/dashboard.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/dashboard.cpp.o -MF CMakeFiles/main.dir/dashboard.cpp.o.d -o CMakeFiles/main.dir/dashboard.cpp.o -c /uolstore/home/users/sc23mm2/Documents/UI/UICwk/dashboard.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/dashboard.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/dashboard.cpp.o -MF CMakeFiles/main.dir/dashboard.cpp.o.d -o CMakeFiles/main.dir/dashboard.cpp.o -c /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/dashboard.cpp
 
 CMakeFiles/main.dir/dashboard.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/dashboard.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/users/sc23mm2/Documents/UI/UICwk/dashboard.cpp > CMakeFiles/main.dir/dashboard.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/dashboard.cpp > CMakeFiles/main.dir/dashboard.cpp.i
 
 CMakeFiles/main.dir/dashboard.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/dashboard.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/users/sc23mm2/Documents/UI/UICwk/dashboard.cpp -o CMakeFiles/main.dir/dashboard.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/dashboard.cpp -o CMakeFiles/main.dir/dashboard.cpp.s
 
 CMakeFiles/main.dir/pollutants_overview.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/pollutants_overview.cpp.o: /uolstore/home/users/sc23mm2/Documents/UI/UICwk/pollutants_overview.cpp
+CMakeFiles/main.dir/pollutants_overview.cpp.o: /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/pollutants_overview.cpp
 CMakeFiles/main.dir/pollutants_overview.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/pollutants_overview.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/pollutants_overview.cpp.o -MF CMakeFiles/main.dir/pollutants_overview.cpp.o.d -o CMakeFiles/main.dir/pollutants_overview.cpp.o -c /uolstore/home/users/sc23mm2/Documents/UI/UICwk/pollutants_overview.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/pollutants_overview.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/pollutants_overview.cpp.o -MF CMakeFiles/main.dir/pollutants_overview.cpp.o.d -o CMakeFiles/main.dir/pollutants_overview.cpp.o -c /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/pollutants_overview.cpp
 
 CMakeFiles/main.dir/pollutants_overview.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/pollutants_overview.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/users/sc23mm2/Documents/UI/UICwk/pollutants_overview.cpp > CMakeFiles/main.dir/pollutants_overview.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/pollutants_overview.cpp > CMakeFiles/main.dir/pollutants_overview.cpp.i
 
 CMakeFiles/main.dir/pollutants_overview.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/pollutants_overview.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/users/sc23mm2/Documents/UI/UICwk/pollutants_overview.cpp -o CMakeFiles/main.dir/pollutants_overview.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/pollutants_overview.cpp -o CMakeFiles/main.dir/pollutants_overview.cpp.s
 
 CMakeFiles/main.dir/pop.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/pop.cpp.o: /uolstore/home/users/sc23mm2/Documents/UI/UICwk/pop.cpp
+CMakeFiles/main.dir/pop.cpp.o: /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/pop.cpp
 CMakeFiles/main.dir/pop.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/main.dir/pop.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/pop.cpp.o -MF CMakeFiles/main.dir/pop.cpp.o.d -o CMakeFiles/main.dir/pop.cpp.o -c /uolstore/home/users/sc23mm2/Documents/UI/UICwk/pop.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/main.dir/pop.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/pop.cpp.o -MF CMakeFiles/main.dir/pop.cpp.o.d -o CMakeFiles/main.dir/pop.cpp.o -c /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/pop.cpp
 
 CMakeFiles/main.dir/pop.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/pop.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/users/sc23mm2/Documents/UI/UICwk/pop.cpp > CMakeFiles/main.dir/pop.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/pop.cpp > CMakeFiles/main.dir/pop.cpp.i
 
 CMakeFiles/main.dir/pop.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/pop.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/users/sc23mm2/Documents/UI/UICwk/pop.cpp -o CMakeFiles/main.dir/pop.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/pop.cpp -o CMakeFiles/main.dir/pop.cpp.s
 
 CMakeFiles/main.dir/eli.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/eli.cpp.o: /uolstore/home/users/sc23mm2/Documents/UI/UICwk/eli.cpp
+CMakeFiles/main.dir/eli.cpp.o: /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/eli.cpp
 CMakeFiles/main.dir/eli.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/eli.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/eli.cpp.o -MF CMakeFiles/main.dir/eli.cpp.o.d -o CMakeFiles/main.dir/eli.cpp.o -c /uolstore/home/users/sc23mm2/Documents/UI/UICwk/eli.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/eli.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/eli.cpp.o -MF CMakeFiles/main.dir/eli.cpp.o.d -o CMakeFiles/main.dir/eli.cpp.o -c /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/eli.cpp
 
 CMakeFiles/main.dir/eli.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/eli.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/users/sc23mm2/Documents/UI/UICwk/eli.cpp > CMakeFiles/main.dir/eli.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/eli.cpp > CMakeFiles/main.dir/eli.cpp.i
 
 CMakeFiles/main.dir/eli.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/eli.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/users/sc23mm2/Documents/UI/UICwk/eli.cpp -o CMakeFiles/main.dir/eli.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/eli.cpp -o CMakeFiles/main.dir/eli.cpp.s
 
 CMakeFiles/main.dir/getLakes.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/getLakes.cpp.o: /uolstore/home/users/sc23mm2/Documents/UI/UICwk/getLakes.cpp
+CMakeFiles/main.dir/getLakes.cpp.o: /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/getLakes.cpp
 CMakeFiles/main.dir/getLakes.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/main.dir/getLakes.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/getLakes.cpp.o -MF CMakeFiles/main.dir/getLakes.cpp.o.d -o CMakeFiles/main.dir/getLakes.cpp.o -c /uolstore/home/users/sc23mm2/Documents/UI/UICwk/getLakes.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/main.dir/getLakes.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/getLakes.cpp.o -MF CMakeFiles/main.dir/getLakes.cpp.o.d -o CMakeFiles/main.dir/getLakes.cpp.o -c /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/getLakes.cpp
 
 CMakeFiles/main.dir/getLakes.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/getLakes.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/users/sc23mm2/Documents/UI/UICwk/getLakes.cpp > CMakeFiles/main.dir/getLakes.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/getLakes.cpp > CMakeFiles/main.dir/getLakes.cpp.i
 
 CMakeFiles/main.dir/getLakes.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/getLakes.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/users/sc23mm2/Documents/UI/UICwk/getLakes.cpp -o CMakeFiles/main.dir/getLakes.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/getLakes.cpp -o CMakeFiles/main.dir/getLakes.cpp.s
 
 CMakeFiles/main.dir/fluorinated.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/fluorinated.cpp.o: /uolstore/home/users/sc23mm2/Documents/UI/UICwk/fluorinated.cpp
+CMakeFiles/main.dir/fluorinated.cpp.o: /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/fluorinated.cpp
 CMakeFiles/main.dir/fluorinated.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/main.dir/fluorinated.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/fluorinated.cpp.o -MF CMakeFiles/main.dir/fluorinated.cpp.o.d -o CMakeFiles/main.dir/fluorinated.cpp.o -c /uolstore/home/users/sc23mm2/Documents/UI/UICwk/fluorinated.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/main.dir/fluorinated.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/fluorinated.cpp.o -MF CMakeFiles/main.dir/fluorinated.cpp.o.d -o CMakeFiles/main.dir/fluorinated.cpp.o -c /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/fluorinated.cpp
 
 CMakeFiles/main.dir/fluorinated.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/fluorinated.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/users/sc23mm2/Documents/UI/UICwk/fluorinated.cpp > CMakeFiles/main.dir/fluorinated.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/fluorinated.cpp > CMakeFiles/main.dir/fluorinated.cpp.i
 
 CMakeFiles/main.dir/fluorinated.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/fluorinated.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/users/sc23mm2/Documents/UI/UICwk/fluorinated.cpp -o CMakeFiles/main.dir/fluorinated.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/fluorinated.cpp -o CMakeFiles/main.dir/fluorinated.cpp.s
+
+CMakeFiles/main.dir/physicalPage.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/physicalPage.cpp.o: /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/physicalPage.cpp
+CMakeFiles/main.dir/physicalPage.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/main.dir/physicalPage.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/physicalPage.cpp.o -MF CMakeFiles/main.dir/physicalPage.cpp.o.d -o CMakeFiles/main.dir/physicalPage.cpp.o -c /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/physicalPage.cpp
+
+CMakeFiles/main.dir/physicalPage.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/physicalPage.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/physicalPage.cpp > CMakeFiles/main.dir/physicalPage.cpp.i
+
+CMakeFiles/main.dir/physicalPage.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/physicalPage.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/physicalPage.cpp -o CMakeFiles/main.dir/physicalPage.cpp.s
+
+CMakeFiles/main.dir/sampleset.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/sampleset.cpp.o: /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/sampleset.cpp
+CMakeFiles/main.dir/sampleset.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/main.dir/sampleset.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/sampleset.cpp.o -MF CMakeFiles/main.dir/sampleset.cpp.o.d -o CMakeFiles/main.dir/sampleset.cpp.o -c /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/sampleset.cpp
+
+CMakeFiles/main.dir/sampleset.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/sampleset.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/sampleset.cpp > CMakeFiles/main.dir/sampleset.cpp.i
+
+CMakeFiles/main.dir/sampleset.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/sampleset.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/sampleset.cpp -o CMakeFiles/main.dir/sampleset.cpp.s
+
+CMakeFiles/main.dir/determinand.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/determinand.cpp.o: /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/determinand.cpp
+CMakeFiles/main.dir/determinand.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/main.dir/determinand.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/determinand.cpp.o -MF CMakeFiles/main.dir/determinand.cpp.o.d -o CMakeFiles/main.dir/determinand.cpp.o -c /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/determinand.cpp
+
+CMakeFiles/main.dir/determinand.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/determinand.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/determinand.cpp > CMakeFiles/main.dir/determinand.cpp.i
+
+CMakeFiles/main.dir/determinand.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/determinand.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/determinand.cpp -o CMakeFiles/main.dir/determinand.cpp.s
+
+CMakeFiles/main.dir/sample.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/sample.cpp.o: /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/sample.cpp
+CMakeFiles/main.dir/sample.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/main.dir/sample.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/sample.cpp.o -MF CMakeFiles/main.dir/sample.cpp.o.d -o CMakeFiles/main.dir/sample.cpp.o -c /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/sample.cpp
+
+CMakeFiles/main.dir/sample.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/sample.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/sample.cpp > CMakeFiles/main.dir/sample.cpp.i
+
+CMakeFiles/main.dir/sample.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/sample.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/sample.cpp -o CMakeFiles/main.dir/sample.cpp.s
 
 # Object files for target main
 main_OBJECTS = \
@@ -190,7 +246,11 @@ main_OBJECTS = \
 "CMakeFiles/main.dir/pop.cpp.o" \
 "CMakeFiles/main.dir/eli.cpp.o" \
 "CMakeFiles/main.dir/getLakes.cpp.o" \
-"CMakeFiles/main.dir/fluorinated.cpp.o"
+"CMakeFiles/main.dir/fluorinated.cpp.o" \
+"CMakeFiles/main.dir/physicalPage.cpp.o" \
+"CMakeFiles/main.dir/sampleset.cpp.o" \
+"CMakeFiles/main.dir/determinand.cpp.o" \
+"CMakeFiles/main.dir/sample.cpp.o"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
@@ -203,6 +263,10 @@ main: CMakeFiles/main.dir/pop.cpp.o
 main: CMakeFiles/main.dir/eli.cpp.o
 main: CMakeFiles/main.dir/getLakes.cpp.o
 main: CMakeFiles/main.dir/fluorinated.cpp.o
+main: CMakeFiles/main.dir/physicalPage.cpp.o
+main: CMakeFiles/main.dir/sampleset.cpp.o
+main: CMakeFiles/main.dir/determinand.cpp.o
+main: CMakeFiles/main.dir/sample.cpp.o
 main: CMakeFiles/main.dir/build.make
 main: /usr/lib64/libQt6Charts.so.6.6.2
 main: /usr/lib64/libQt6OpenGLWidgets.so.6.6.2
@@ -213,7 +277,7 @@ main: /usr/lib64/libQt6Core.so.6.6.2
 main: /usr/lib64/libGLX.so
 main: /usr/lib64/libOpenGL.so
 main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -225,6 +289,6 @@ CMakeFiles/main.dir/clean:
 .PHONY : CMakeFiles/main.dir/clean
 
 CMakeFiles/main.dir/depend:
-	cd /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /uolstore/home/users/sc23mm2/Documents/UI/UICwk /uolstore/home/users/sc23mm2/Documents/UI/UICwk /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/CMakeFiles/main.dir/DependInfo.cmake --color=$(COLOR)
+	cd /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build/CMakeFiles/main.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/main.dir/depend
 

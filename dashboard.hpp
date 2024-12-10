@@ -19,7 +19,7 @@ public slots:
     void onPOPButtonClicked();
     void onELIButtonClicked();
     void onFCButtonClicked();
-    
+    void onCDButtonClicked();
 };
 
 #endif 

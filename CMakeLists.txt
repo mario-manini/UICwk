@@ -19,6 +19,10 @@ qt_add_executable(main
     eli.cpp
     getLakes.cpp
     fluorinated.cpp
+    physicalPage.cpp
+    sampleset.cpp
+    determinand.cpp
+    sample.cpp
 )
 
 # Link Widgets and Charts to the main executable

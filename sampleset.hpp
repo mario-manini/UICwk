@@ -28,6 +28,8 @@ class SampleSet
         SampleSet filterName(const std::string&);
         SampleSet filterLocation(const std::string&);
         SampleSet filterTime(const std::string&);
+        SampleSet filterGroup(int);
+        SampleSet filterDate(const std::string&);
 
     
     private:

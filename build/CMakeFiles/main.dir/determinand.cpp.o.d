@@ -1,4 +1,4 @@
-CMakeFiles/testRead.dir/determinand.cpp.o: \
+CMakeFiles/main.dir/determinand.cpp.o: \
  /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/determinand.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/stdexcept \
  /usr/include/c++/11/exception \
