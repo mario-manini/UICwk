@@ -59,6 +59,8 @@ ELIWindow::ELIWindow(QWidget* parent) : QWidget(parent) {
     connect(pollutantComboBox, &QComboBox::currentIndexChanged, this, &ELIWindow::updateChart);
     connect(locationComboBox, &QComboBox::currentIndexChanged, this, &ELIWindow::updateChart);
     connect(typeComboBox, &QComboBox::currentIndexChanged, this, &ELIWindow::updateChart);
+    showMaximized();
+
 }
 
 void ELIWindow::loadPollutants() {

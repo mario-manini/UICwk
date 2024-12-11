@@ -1,5 +1,5 @@
-/uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build/main_autogen/EWIEGA46WW/moc_physicalPage.cpp: /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/physicalPage.hpp \
-  /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build/main_autogen/moc_predefs.h \
+/uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/main_autogen/EWIEGA46WW/moc_physicalPage.cpp: /uolstore/home/users/sc23mm2/Documents/UI/UICwk/physicalPage.hpp \
+  /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/main_autogen/moc_predefs.h \
   /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/determinand.hpp \
   /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/sample.hpp \
   /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/sampleset.hpp \

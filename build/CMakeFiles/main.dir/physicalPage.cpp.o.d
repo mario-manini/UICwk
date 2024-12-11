@@ -1,7 +1,7 @@
 CMakeFiles/main.dir/physicalPage.cpp.o: \
- /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/physicalPage.cpp \
+ /uolstore/home/users/sc23mm2/Documents/UI/UICwk/physicalPage.cpp \
  /usr/include/stdc-predef.h \
- /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/physicalPage.hpp \
+ /uolstore/home/users/sc23mm2/Documents/UI/UICwk/physicalPage.hpp \
  /usr/include/qt6/QtWidgets/QWidget /usr/include/qt6/QtWidgets/qwidget.h \
  /usr/include/qt6/QtWidgets/qtwidgetsglobal.h \
  /usr/include/qt6/QtGui/qtguiglobal.h /usr/include/qt6/QtCore/qglobal.h \
@@ -294,8 +294,8 @@ CMakeFiles/main.dir/physicalPage.cpp.o: \
  /usr/include/qt6/QtGui/qfontinfo.h \
  /usr/include/qt6/QtWidgets/qsizepolicy.h \
  /usr/include/qt6/QtGui/qcursor.h /usr/include/qt6/QtGui/qbitmap.h \
- /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/sampleset.hpp \
- /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/sample.hpp \
+ /uolstore/home/users/sc23mm2/Documents/UI/UICwk/sampleset.hpp \
+ /uolstore/home/users/sc23mm2/Documents/UI/UICwk/sample.hpp \
  /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
  /usr/include/c++/11/ios /usr/include/c++/11/bits/basic_ios.h \
  /usr/include/c++/11/bits/locale_facets.h /usr/include/c++/11/cwctype \
@@ -306,8 +306,8 @@ CMakeFiles/main.dir/physicalPage.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/determinand.hpp \
- /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/dashboard.hpp \
+ /uolstore/home/users/sc23mm2/Documents/UI/UICwk/determinand.hpp \
+ /uolstore/home/users/sc23mm2/Documents/UI/UICwk/dashboard.hpp \
  /usr/include/qt6/QtWidgets/QPushButton \
  /usr/include/qt6/QtWidgets/qpushbutton.h \
  /usr/include/qt6/QtWidgets/qabstractbutton.h \

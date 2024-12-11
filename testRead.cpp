@@ -28,4 +28,8 @@ int main (int argc, char* argv[]) {
   " avg " << groups[2].getAvg() << endl;
   cout << "Common deter count " << groups[3].deterSize() << " sample count " << groups[3].sampleSize() << 
   " avg " << groups[3].getAvg() << endl;
+
+
+  
+
 }

@@ -17,7 +17,7 @@ qt_add_executable(main
     pollutants_overview.cpp
     pop.cpp
     eli.cpp
-    getLakes.cpp
+    getUniqueItems.cpp
     fluorinated.cpp
     physicalPage.cpp
     sampleset.cpp
@@ -35,14 +35,14 @@ set_target_properties(main PROPERTIES
 
 # Test executable
 qt_add_executable(testRead
-    testRead.cpp
     sampleset.cpp
-    sample.cpp
     determinand.cpp
+    sample.cpp
+    testRead.cpp
 )
 
 # Link only Qt Widgets for the test executable
-target_link_libraries(testRead PRIVATE Qt6::Widgets)
+target_link_libraries(testRead PRIVATE Qt6::Widgets Qt6::Charts)
 
 set_target_properties(testRead PROPERTIES
     WIN32_EXECUTABLE ON

@@ -20,6 +20,7 @@ class Determinand
         //general calculation for additional values
         int calcGroup(const std::string&, const std::string&);
         double calcSafe(int);
+        
 
     private:
         std::string name;

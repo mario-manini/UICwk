@@ -1,5 +1,5 @@
 CMakeFiles/main.dir/determinand.cpp.o: \
- /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/determinand.cpp \
+ /uolstore/home/users/sc23mm2/Documents/UI/UICwk/determinand.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/stdexcept \
  /usr/include/c++/11/exception \
  /usr/include/c++/11/x86_64-redhat-linux/bits/c++config.h \
@@ -108,7 +108,7 @@ CMakeFiles/main.dir/determinand.cpp.o: \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/bits/types/error_t.h /usr/include/c++/11/bits/charconv.h \
  /usr/include/c++/11/bits/basic_string.tcc \
- /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/determinand.hpp \
+ /uolstore/home/users/sc23mm2/Documents/UI/UICwk/determinand.hpp \
  /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
  /usr/include/c++/11/ios /usr/include/c++/11/bits/ios_base.h \
  /usr/include/c++/11/bits/locale_classes.h \

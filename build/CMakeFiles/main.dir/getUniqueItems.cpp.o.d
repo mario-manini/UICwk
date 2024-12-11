@@ -1,7 +1,7 @@
-CMakeFiles/main.dir/getLakes.cpp.o: \
- /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/getLakes.cpp \
+CMakeFiles/main.dir/getUniqueItems.cpp.o: \
+ /uolstore/home/users/sc23mm2/Documents/UI/UICwk/getUniqueItems.cpp \
  /usr/include/stdc-predef.h \
- /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/getLakes.hpp \
+ /uolstore/home/users/sc23mm2/Documents/UI/UICwk/getUniqueItems.hpp \
  /usr/include/qt6/QtCore/QStringList \
  /usr/include/qt6/QtCore/qstringlist.h /usr/include/qt6/QtCore/qlist.h \
  /usr/include/qt6/QtCore/qarraydatapointer.h \

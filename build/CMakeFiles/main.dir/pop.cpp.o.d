@@ -1,7 +1,7 @@
 CMakeFiles/main.dir/pop.cpp.o: \
- /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/pop.cpp \
+ /uolstore/home/users/sc23mm2/Documents/UI/UICwk/pop.cpp \
  /usr/include/stdc-predef.h \
- /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/pop.hpp \
+ /uolstore/home/users/sc23mm2/Documents/UI/UICwk/pop.hpp \
  /usr/include/qt6/QtWidgets/QWidget /usr/include/qt6/QtWidgets/qwidget.h \
  /usr/include/qt6/QtWidgets/qtwidgetsglobal.h \
  /usr/include/qt6/QtGui/qtguiglobal.h /usr/include/qt6/QtCore/qglobal.h \
@@ -294,11 +294,16 @@ CMakeFiles/main.dir/pop.cpp.o: \
  /usr/include/qt6/QtGui/qfontinfo.h \
  /usr/include/qt6/QtWidgets/qsizepolicy.h \
  /usr/include/qt6/QtGui/qcursor.h /usr/include/qt6/QtGui/qbitmap.h \
- /usr/include/qt6/QtWidgets/QLabel /usr/include/qt6/QtWidgets/qlabel.h \
+ /usr/include/qt6/QtWidgets/QLineEdit \
+ /usr/include/qt6/QtWidgets/qlineedit.h \
  /usr/include/qt6/QtWidgets/qframe.h /usr/include/qt6/QtWidgets/qwidget.h \
- /usr/include/qt6/QtGui/qpicture.h /usr/include/qt6/QtCore/qiodevice.h \
+ /usr/include/qt6/QtGui/qtextcursor.h \
  /usr/include/qt6/QtGui/qtextdocument.h /usr/include/qt6/QtCore/qurl.h \
- /usr/include/qt6/QtWidgets/QComboBox \
+ /usr/include/qt6/QtGui/qtextformat.h /usr/include/qt6/QtGui/qpen.h \
+ /usr/include/qt6/QtGui/qtextoption.h /usr/include/qt6/QtWidgets/QLabel \
+ /usr/include/qt6/QtWidgets/qlabel.h /usr/include/qt6/QtGui/qpicture.h \
+ /usr/include/qt6/QtCore/qiodevice.h /usr/include/qt6/QtGui/QFont \
+ /usr/include/qt6/QtGui/qfont.h /usr/include/qt6/QtWidgets/QComboBox \
  /usr/include/qt6/QtWidgets/qcombobox.h \
  /usr/include/qt6/QtWidgets/qabstractitemdelegate.h \
  /usr/include/qt6/QtWidgets/qstyleoption.h \
@@ -312,29 +317,24 @@ CMakeFiles/main.dir/pop.cpp.o: \
  /usr/include/qt6/QtWidgets/qtabwidget.h \
  /usr/include/qt6/QtWidgets/qrubberband.h \
  /usr/include/qt6/QtCore/qabstractitemmodel.h \
- /usr/include/qt6/QtWidgets/QLineEdit \
- /usr/include/qt6/QtWidgets/qlineedit.h \
- /usr/include/qt6/QtGui/qtextcursor.h \
- /usr/include/qt6/QtGui/qtextformat.h /usr/include/qt6/QtGui/qpen.h \
- /usr/include/qt6/QtGui/qtextoption.h \
- /usr/include/qt6/QtWidgets/QListWidget \
- /usr/include/qt6/QtWidgets/qlistwidget.h \
- /usr/include/qt6/QtWidgets/qlistview.h \
- /usr/include/qt6/QtWidgets/qabstractitemview.h \
- /usr/include/qt6/QtWidgets/qabstractscrollarea.h \
- /usr/include/qt6/QtCore/qitemselectionmodel.h \
- /usr/include/qt6/QtGui/QFont /usr/include/qt6/QtGui/qfont.h \
  /usr/include/qt6/QtWidgets/QVBoxLayout \
  /usr/include/qt6/QtWidgets/qboxlayout.h \
  /usr/include/qt6/QtWidgets/qlayout.h \
  /usr/include/qt6/QtWidgets/qlayoutitem.h \
  /usr/include/qt6/QtWidgets/qboxlayout.h \
  /usr/include/qt6/QtWidgets/qgridlayout.h \
+ /usr/include/qt6/QtWidgets/QHBoxLayout \
  /usr/include/qt6/QtWidgets/QGroupBox \
  /usr/include/qt6/QtWidgets/qgroupbox.h \
  /usr/include/qt6/QtWidgets/QPushButton \
  /usr/include/qt6/QtWidgets/qpushbutton.h \
  /usr/include/qt6/QtWidgets/qabstractbutton.h \
+ /usr/include/qt6/QtWidgets/QListWidget \
+ /usr/include/qt6/QtWidgets/qlistwidget.h \
+ /usr/include/qt6/QtWidgets/qlistview.h \
+ /usr/include/qt6/QtWidgets/qabstractitemview.h \
+ /usr/include/qt6/QtWidgets/qabstractscrollarea.h \
+ /usr/include/qt6/QtCore/qitemselectionmodel.h \
  /usr/include/qt6/QtWidgets/QSpacerItem \
  /usr/include/qt6/QtWidgets/qlayoutitem.h \
  /usr/include/qt6/QtWidgets/QSizePolicy \
@@ -1053,6 +1053,11 @@ CMakeFiles/main.dir/pop.cpp.o: \
  /usr/include/qt6/QtCharts/qvcandlestickmodelmapper.h \
  /usr/include/qt6/QtCharts/qvpiemodelmapper.h \
  /usr/include/qt6/QtCharts/qvxymodelmapper.h \
- /usr/include/qt6/QtCharts/qxylegendmarker.h \
- /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/getLakes.hpp \
- /usr/include/qt6/QtCore/QStringList /usr/include/c++/11/iostream
+ /usr/include/qt6/QtCharts/qxylegendmarker.h /usr/include/c++/11/iostream \
+ /usr/include/qt6/QtCore/QDebug /usr/include/qt6/QtGui/QBrush \
+ /usr/include/qt6/QtGui/QColor /usr/include/qt6/QtGui/QPen \
+ /uolstore/home/users/sc23mm2/Documents/UI/UICwk/sampleset.hpp \
+ /uolstore/home/users/sc23mm2/Documents/UI/UICwk/sample.hpp \
+ /uolstore/home/users/sc23mm2/Documents/UI/UICwk/determinand.hpp \
+ /uolstore/home/users/sc23mm2/Documents/UI/UICwk/getUniqueItems.hpp \
+ /usr/include/qt6/QtCore/QStringList

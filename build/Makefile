@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk
+CMAKE_SOURCE_DIR = /uolstore/home/users/sc23mm2/Documents/UI/UICwk
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build
+CMAKE_BINARY_DIR = /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build/CMakeFiles /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/CMakeFiles /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -267,29 +267,29 @@ fluorinated.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/fluorinated.cpp.s
 .PHONY : fluorinated.cpp.s
 
-getLakes.o: getLakes.cpp.o
-.PHONY : getLakes.o
+getUniqueItems.o: getUniqueItems.cpp.o
+.PHONY : getUniqueItems.o
 
 # target to build an object file
-getLakes.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/getLakes.cpp.o
-.PHONY : getLakes.cpp.o
+getUniqueItems.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/getUniqueItems.cpp.o
+.PHONY : getUniqueItems.cpp.o
 
-getLakes.i: getLakes.cpp.i
-.PHONY : getLakes.i
+getUniqueItems.i: getUniqueItems.cpp.i
+.PHONY : getUniqueItems.i
 
 # target to preprocess a source file
-getLakes.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/getLakes.cpp.i
-.PHONY : getLakes.cpp.i
+getUniqueItems.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/getUniqueItems.cpp.i
+.PHONY : getUniqueItems.cpp.i
 
-getLakes.s: getLakes.cpp.s
-.PHONY : getLakes.s
+getUniqueItems.s: getUniqueItems.cpp.s
+.PHONY : getUniqueItems.s
 
 # target to generate assembly for a file
-getLakes.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/getLakes.cpp.s
-.PHONY : getLakes.cpp.s
+getUniqueItems.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/getUniqueItems.cpp.s
+.PHONY : getUniqueItems.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -537,9 +537,9 @@ help:
 	@echo "... fluorinated.o"
 	@echo "... fluorinated.i"
 	@echo "... fluorinated.s"
-	@echo "... getLakes.o"
-	@echo "... getLakes.i"
-	@echo "... getLakes.s"
+	@echo "... getUniqueItems.o"
+	@echo "... getUniqueItems.i"
+	@echo "... getUniqueItems.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

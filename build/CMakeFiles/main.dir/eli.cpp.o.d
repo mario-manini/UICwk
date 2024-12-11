@@ -1,7 +1,7 @@
 CMakeFiles/main.dir/eli.cpp.o: \
- /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/eli.cpp \
+ /uolstore/home/users/sc23mm2/Documents/UI/UICwk/eli.cpp \
  /usr/include/stdc-predef.h \
- /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/eli.hpp \
+ /uolstore/home/users/sc23mm2/Documents/UI/UICwk/eli.hpp \
  /usr/include/qt6/QtWidgets/QWidget /usr/include/qt6/QtWidgets/qwidget.h \
  /usr/include/qt6/QtWidgets/qtwidgetsglobal.h \
  /usr/include/qt6/QtGui/qtguiglobal.h /usr/include/qt6/QtCore/qglobal.h \

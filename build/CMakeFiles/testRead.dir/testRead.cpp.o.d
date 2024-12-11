@@ -1,7 +1,7 @@
 CMakeFiles/testRead.dir/testRead.cpp.o: \
- /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/testRead.cpp \
+ /uolstore/home/users/sc23mm2/Documents/UI/UICwk/testRead.cpp \
  /usr/include/stdc-predef.h \
- /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/sampleset.hpp \
+ /uolstore/home/users/sc23mm2/Documents/UI/UICwk/sampleset.hpp \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/c++/11/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
@@ -42,7 +42,7 @@ CMakeFiles/testRead.dir/testRead.cpp.o: \
  /usr/include/c++/11/bits/hash_bytes.h \
  /usr/include/c++/11/bits/range_access.h \
  /usr/include/c++/11/bits/vector.tcc \
- /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/sample.hpp \
+ /uolstore/home/users/sc23mm2/Documents/UI/UICwk/sample.hpp \
  /usr/include/c++/11/string /usr/include/c++/11/bits/stringfwd.h \
  /usr/include/c++/11/bits/char_traits.h \
  /usr/include/c++/11/bits/postypes.h /usr/include/c++/11/cwchar \
@@ -130,4 +130,4 @@ CMakeFiles/testRead.dir/testRead.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/determinand.hpp
+ /uolstore/home/users/sc23mm2/Documents/UI/UICwk/determinand.hpp

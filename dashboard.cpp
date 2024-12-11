@@ -22,6 +22,13 @@ Dashboard::Dashboard(QWidget* parent)
     QLabel* FC_Label = new QLabel("Show statistics for Fluorinated Compounds Pollutants:");
     QLabel* CD_Label = new QLabel("See if levels are safe:");
 
+    OV_Label->setStyleSheet("font-size: 18px;");
+    POP_Label->setStyleSheet("font-size: 18px;");
+    ELI_Label->setStyleSheet("font-size: 18px;");
+    FC_Label->setStyleSheet("font-size: 18px;");
+    CD_Label->setStyleSheet("font-size: 18px;");
+
+
     // Connect buttons to actions
     QObject::connect(OV_Button, &QPushButton::clicked, this, &Dashboard::onOVButtonClicked);
     QObject::connect(POP_Button, &QPushButton::clicked, this, &Dashboard::onPOPButtonClicked);

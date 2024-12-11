@@ -1,5 +1,5 @@
-/uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build/main_autogen/EWIEGA46WW/moc_dashboard.cpp: /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/dashboard.hpp \
-  /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/build/main_autogen/moc_predefs.h \
+/uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/main_autogen/EWIEGA46WW/moc_dashboard.cpp: /uolstore/home/users/sc23mm2/Documents/UI/UICwk/dashboard.hpp \
+  /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/main_autogen/moc_predefs.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \

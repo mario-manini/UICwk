@@ -1,5 +1,5 @@
 CMakeFiles/testRead.dir/sample.cpp.o: \
- /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/sample.cpp \
+ /uolstore/home/users/sc23mm2/Documents/UI/UICwk/sample.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/stdexcept \
  /usr/include/c++/11/exception \
  /usr/include/c++/11/x86_64-redhat-linux/bits/c++config.h \
@@ -126,5 +126,5 @@ CMakeFiles/testRead.dir/sample.cpp.o: \
  /usr/include/c++/11/bits/ostream.tcc \
  /usr/include/c++/11/bits/istream.tcc \
  /usr/include/c++/11/bits/sstream.tcc \
- /uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/sample.hpp \
+ /uolstore/home/users/sc23mm2/Documents/UI/UICwk/sample.hpp \
  /usr/include/c++/11/iostream

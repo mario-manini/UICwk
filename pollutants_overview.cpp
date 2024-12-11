@@ -47,5 +47,8 @@ PollutantOverviewWindow::PollutantOverviewWindow(QWidget* parent) : QWidget(pare
     pageLayout->setAlignment(Qt::AlignCenter);
 
     setLayout(pageLayout);
+    showMaximized();
+
+    
 
 }
