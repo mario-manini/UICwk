@@ -106,7 +106,6 @@ POPWindow::POPWindow(QWidget* parent) : QWidget(parent)
     statsLayout->addWidget(avgLabel, 2, 0);
     statsLayout->addWidget(avgValue, 2, 1);
 
-    // Create additional information box for health risks, monitoring, and safety levels
     QGroupBox* infoGroupBox = new QGroupBox("Additional Information", this);
     QVBoxLayout* infoLayout = new QVBoxLayout();
     
@@ -125,7 +124,6 @@ POPWindow::POPWindow(QWidget* parent) : QWidget(parent)
     QLabel* safetyLevelsContent = new QLabel("Safety levels for POPs and PFAS are established to minimize health risks. These levels may vary by country and are subject to change based on new research findings.", this);
     safetyLevelsContent->setWordWrap(true);
 
-    // Add the content to the info box layout
     infoLayout->addWidget(healthRisksLabel);
     infoLayout->addWidget(healthRisksContent);
     infoLayout->addWidget(monitoringImportanceLabel);
@@ -136,7 +134,6 @@ POPWindow::POPWindow(QWidget* parent) : QWidget(parent)
         infoGroupBox->setLayout(infoLayout);
     statsContainerLayout->addWidget(infoGroupBox);
 
-    // Create bottom box with additional content
     QGroupBox* bottomBoxGroup = new QGroupBox("Quick Info", this);
     QVBoxLayout* bottomBoxLayout = new QVBoxLayout();
     
@@ -149,11 +146,10 @@ POPWindow::POPWindow(QWidget* parent) : QWidget(parent)
 
     bottomBoxGroup->setLayout(bottomBoxLayout);
 
-    // Create a horizontal layout to place the bottom box and back button
     QHBoxLayout* bottomLayout = new QHBoxLayout();
     bottomLayout->addWidget(bottomBoxGroup);
 
-    // Back button on the bottom-right corner
+
     QPushButton* backButton = new QPushButton("Back", this);
     backButton->setStyleSheet(
         "background-color: #3C9EFF; "
@@ -163,15 +159,14 @@ POPWindow::POPWindow(QWidget* parent) : QWidget(parent)
         "font-size: 18px;");
     
     bottomLayout->addWidget(backButton);
-    bottomLayout->setStretch(0, 1);  // Ensures the bottom box takes available space
-    bottomLayout->setAlignment(backButton, Qt::AlignRight);  // Align back button to the right
+    bottomLayout->setStretch(0, 1); 
+    bottomLayout->setAlignment(backButton, Qt::AlignRight); 
 
     connect(backButton, &QPushButton::clicked, this, &QWidget::close);
 
-    mainLayout->addLayout(bottomLayout);  // Add bottom layout to main layout
+    mainLayout->addLayout(bottomLayout);  
 
 
-    // Add a spacer item to the layout
     QSpacerItem* spacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
     mainLayout->addItem(spacer);
 
@@ -287,136 +282,88 @@ void POPWindow::UpdateChart() {
     QString pollutantSearchText = searchBarPollutant->text().trimmed();
     QString timePeriodSearchText = searchBarTimePeriod->text().trimmed();
 
-
     if (lakeSearchText.isEmpty() || pollutantSearchText.isEmpty() || timePeriodSearchText.isEmpty()) {
         return;
-    } else {
-        std::cout << "Lake Search: " << lakeSearchText.toStdString() << std::endl;
-        std::cout << "Pollutant Search: " << pollutantSearchText.toStdString() << std::endl;
-        std::cout << "Time Period Search: " << timePeriodSearchText.toStdString() << std::endl;
-
-
-        SampleSet POPs("../data/testData.csv");
-        SampleSet LocationFiltered = POPs.filterLocation(lakeSearchText.toStdString());
-        SampleSet NameFiltered = LocationFiltered.filterName(pollutantSearchText.toStdString());
-
-        if (NameFiltered.sampleSize() == 0) {
-            QMessageBox::warning(this, "No Data Found", "No data found for the selected filters.");
-            return;
-        }
-
-
-        QLineSeries *series = new QLineSeries();
-        series->setPointsVisible(true);  
-        QPen pen = series->pen();
-        pen.setWidth(2);  
-        pen.setColor(QColor("#3C9EFF")); 
-        series->setPen(pen);
-
-
-        MainChart->removeAllSeries();
-        QList<QAbstractAxis*> axes = MainChart->axes();
-        for (QAbstractAxis* axis : axes) {
-            MainChart->removeAxis(axis);
-        }
-
-
-        QDateTime minDate;
-        QDateTime maxDate;
-        bool firstSample = true;
-
-
-        for (int i = 0; i < NameFiltered.sampleSize(); ++i) {
-            const Sample& sample = NameFiltered.sampleAt(i);
-            QDateTime timestamp = QDateTime::fromString(QString::fromStdString(sample.getTime()), "yyyy-MM-ddTHH:mm:ss");
-
-
-            if (firstSample) {
-                minDate = maxDate = timestamp;
-                firstSample = false;
-            } else {
-                if (timestamp < minDate) minDate = timestamp;
-                if (timestamp > maxDate) maxDate = timestamp;
-            }
-
-
-            series->append(timestamp.toMSecsSinceEpoch(), sample.getLevel());
-        }
-
-
-        if (!firstSample) {
-            if (timePeriodSearchText == "Last month" && minDate < QDateTime::currentDateTime().addMonths(-1)) {
-                minDate = QDateTime::currentDateTime().addMonths(-1);
-            } else if (timePeriodSearchText == "Last 3 months" && minDate < QDateTime::currentDateTime().addMonths(-3)) {
-                minDate = QDateTime::currentDateTime().addMonths(-3);
-            } else if (timePeriodSearchText == "Last 6 months" && minDate < QDateTime::currentDateTime().addMonths(-6)) {
-                minDate = QDateTime::currentDateTime().addMonths(-6);
-            } else if (timePeriodSearchText == "Last year" && minDate < QDateTime::currentDateTime().addYears(-1)) {
-                minDate = QDateTime::currentDateTime().addYears(-1);
-            }
-        }
-
-        if (NameFiltered.sampleSize() == 1) {
-            if (timePeriodSearchText == "Last month") {
-                minDate = maxDate.addDays(-30);
-            } else if (timePeriodSearchText == "Last 3 months") {
-                minDate = maxDate.addMonths(-3);
-            } else if (timePeriodSearchText == "Last 6 months") {
-                minDate = maxDate.addMonths(-6);
-            } else if (timePeriodSearchText == "Last year") {
-                minDate = maxDate.addYears(-1);
-            } else {
-                minDate = maxDate.addMonths(-1); 
-            }
-        }
-
-
-        minDate = minDate.addDays(-10);
-        maxDate = maxDate.addDays(10);
-
-
-        MainChart->addSeries(series);
-
-  
-        QDateTimeAxis *xAxis = new QDateTimeAxis();
-        xAxis->setFormat("yyyy-MM-dd");
-        xAxis->setTitleText("Sample Date");
-        xAxis->setRange(minDate, maxDate);
-        xAxis->setGridLineVisible(false);  
-        xAxis->setLineVisible(true);      
-        xAxis->setLinePen(QPen(Qt::black, 2));  
-        MainChart->addAxis(xAxis, Qt::AlignBottom);
-        series->attachAxis(xAxis);
-
-        QValueAxis *yAxis = new QValueAxis();
-        yAxis->setTitleText("Pollutant Level");
-        yAxis->setGridLineVisible(false);  
-        yAxis->setLineVisible(true);      
-        yAxis->setLinePen(QPen(Qt::black, 2));  
-        if (!series->points().isEmpty()) {
-            qreal minPollutant = std::numeric_limits<qreal>::max();
-            qreal maxPollutant = std::numeric_limits<qreal>::min();
-            for (const QPointF& point : series->points()) {
-                minPollutant = qMin(minPollutant, point.y());
-                maxPollutant = qMax(maxPollutant, point.y());
-            }
-            yAxis->setRange(minPollutant * 0.95, maxPollutant * 1.05); 
-            if (minPollutant < 1) {
-                yAxis->setLabelFormat("%.6f");
-            } else {
-                yAxis->setLabelFormat("%.4f"); 
-            }
-        }
-        MainChart->setTitle(pollutantSearchText + " levels in " + lakeSearchText + " for the " + timePeriodSearchText);
-        MainChart->addAxis(yAxis, Qt::AlignLeft);
-        series->attachAxis(yAxis);
-
-        chartview->setChart(MainChart);
-        chartview->update();
     }
+
+    SampleSet POPs("../data/testData.csv");
+    SampleSet LocationFiltered = POPs.filterLocation(lakeSearchText.toStdString());
+    SampleSet NameFiltered = LocationFiltered.filterName(pollutantSearchText.toStdString());
+
+    if (NameFiltered.sampleSize() == 0) {
+        QMessageBox::warning(this, "No Data Found", "No data found for the selected filters.");
+        return;
+    }
+
+    QLineSeries *series = new QLineSeries();
+    series->setPointsVisible(true);  
+    QPen pen = series->pen();
+    pen.setWidth(2);  
+    pen.setColor(QColor("#3C9EFF")); 
+    series->setPen(pen);
+
+    MainChart->removeAllSeries();
+    QList<QAbstractAxis*> axes = MainChart->axes();
+    for (QAbstractAxis* axis : axes) {
+        MainChart->removeAxis(axis);
+    }
+
+    QDateTime maxDate = QDateTime::currentDateTime();
+    QDateTime minDate = maxDate;  
+
+    if (timePeriodSearchText == "Last month") {
+        minDate = maxDate.addMonths(-1);
+    } else if (timePeriodSearchText == "Last 3 months") {
+        minDate = maxDate.addMonths(-3);
+    } else if (timePeriodSearchText == "Last 6 months") {
+        minDate = maxDate.addMonths(-6);
+    } else if (timePeriodSearchText == "Last year") {
+        minDate = maxDate.addYears(-1);
+    }
+
+    for (int i = 0; i < NameFiltered.sampleSize(); ++i) {
+        const Sample& sample = NameFiltered.sampleAt(i);
+        QDateTime timestamp = QDateTime::fromString(QString::fromStdString(sample.getTime()), "yyyy-MM-ddTHH:mm:ss");
+        series->append(timestamp.toMSecsSinceEpoch(), sample.getLevel());
+    }
+
+    MainChart->addSeries(series);
+
+    QDateTimeAxis *xAxis = new QDateTimeAxis();
+    xAxis->setFormat("yyyy-MM-dd");
+    xAxis->setTitleText("Sample Date");
+    xAxis->setRange(minDate, maxDate);  
+    xAxis->setGridLineVisible(false);  
+    xAxis->setLineVisible(true);      
+    xAxis->setLinePen(QPen(Qt::black, 2));  
+    MainChart->addAxis(xAxis, Qt::AlignBottom);
+    series->attachAxis(xAxis);
+
+    QValueAxis *yAxis = new QValueAxis();
+    yAxis->setTitleText("Pollutant Level");
+    yAxis->setGridLineVisible(false);  
+    yAxis->setLineVisible(true);      
+    yAxis->setLinePen(QPen(Qt::black, 2));  
+
+    if (!series->points().isEmpty()) {
+        qreal minPollutant = std::numeric_limits<qreal>::max();
+        qreal maxPollutant = std::numeric_limits<qreal>::min();
+        for (const QPointF& point : series->points()) {
+            minPollutant = qMin(minPollutant, point.y());
+            maxPollutant = qMax(maxPollutant, point.y());
+        }
+        yAxis->setRange(minPollutant * 0.95, maxPollutant * 1.05); 
+        if (minPollutant < 1) {
+            yAxis->setLabelFormat("%.6f");
+        } else {
+            yAxis->setLabelFormat("%.4f"); 
+        }
+    }
+
+    MainChart->setTitle(pollutantSearchText + " levels in " + lakeSearchText + " for the " + timePeriodSearchText);
+    MainChart->addAxis(yAxis, Qt::AlignLeft);
+    series->attachAxis(yAxis);
+
+    chartview->setChart(MainChart);
+    chartview->update();
 }
-
-
-
-
-
