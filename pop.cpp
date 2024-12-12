@@ -98,13 +98,19 @@ POPWindow::POPWindow(QWidget* parent) : QWidget(parent)
     maxValue = new QLabel("N/A", this);
     QLabel* avgLabel = new QLabel("Average:", this);
     avgValue = new QLabel("N/A", this);
+    minIndic = new QLabel("", this);
+    maxIndic = new QLabel("",this);
+    avgIndic = new QLabel("", this);
 
     statsLayout->addWidget(minLabel, 0, 0);
     statsLayout->addWidget(minValue, 0, 1);
+    statsLayout->addWidget(minIndic, 0, 2);
     statsLayout->addWidget(maxLabel, 1, 0);
     statsLayout->addWidget(maxValue, 1, 1);
+    statsLayout->addWidget(maxIndic, 1, 2);
     statsLayout->addWidget(avgLabel, 2, 0);
     statsLayout->addWidget(avgValue, 2, 1);
+    statsLayout->addWidget(avgIndic, 2, 2);
 
     QGroupBox* infoGroupBox = new QGroupBox("Additional Information", this);
     QVBoxLayout* infoLayout = new QVBoxLayout();
@@ -339,6 +345,31 @@ void POPWindow::UpdateChart() {
     minValue->setText(QString::number(min));
     maxValue->setText(QString::number(max));
     avgValue->setText(QString::number(avg));
+
+    if (min > 2) {
+        minIndic->setStyleSheet("background-color: red;");
+    } else if (min < 2) {
+        minIndic->setStyleSheet("background-color: green;");
+    } else {
+        minIndic->setStyleSheet("background-color: orange;");
+    }
+
+    if (max > 2) {
+        maxIndic->setStyleSheet("background-color: red;");
+    } else if (max < 2) {
+        maxIndic->setStyleSheet("background-color: green;");
+    } else {
+        maxIndic->setStyleSheet("background-color: orange;");
+    }
+
+    if (avg > 2) {
+        avgIndic->setStyleSheet("background-color: red;");
+    } else if (avg < 2) {
+        avgIndic->setStyleSheet("background-color: green;");
+    } else {
+        avgIndic->setStyleSheet("background-color: orange;");
+    }
+
 
     if (timePeriodSearchText == "Last month") {
         minDate = maxDate.addMonths(-1);

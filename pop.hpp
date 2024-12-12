@@ -58,7 +58,9 @@ private:
     QLabel* maxValue;
     QLabel* avgValue;
 
-
+    QLabel* minIndic;
+    QLabel* maxIndic;
+    QLabel* avgIndic;
     QLabel* complianceLabel;
 };
 

@@ -71,35 +71,31 @@ Dashboard::Dashboard(QWidget* parent)
     CD_Layout->addWidget(CD_Label, 0, Qt::AlignCenter);
     CD_Layout->addWidget(CD_Button, 0, Qt::AlignCenter);
 
-    // Top row (3 buttons with equal spacing)
     QHBoxLayout* topRow = new QHBoxLayout;
-    topRow->addStretch(); // Spacer before the first button
+    topRow->addStretch(); 
     topRow->addLayout(OV_Layout);
-    topRow->addStretch(); // Spacer between buttons
+    topRow->addStretch(); 
     topRow->addLayout(POP_Layout);
     topRow->addStretch();
     topRow->addLayout(ELI_Layout);
-    topRow->addStretch(); // Spacer after the last button
+    topRow->addStretch(); 
 
-    // Bottom row (2 buttons with equal spacing)
     QHBoxLayout* bottomRow = new QHBoxLayout;
-    bottomRow->addStretch(); // Spacer before the first button
+    bottomRow->addStretch(); 
     bottomRow->addLayout(FC_Layout);
-    bottomRow->addStretch(); // Spacer between buttons
+    bottomRow->addStretch(); 
     bottomRow->addLayout(CD_Layout);
-    bottomRow->addStretch(); // Spacer after the last button
+    bottomRow->addStretch(); 
 
-    // Main layout to center rows vertically
     QVBoxLayout* mainLayout = new QVBoxLayout;
-    mainLayout->addStretch(); // Spacer before top row
+    mainLayout->addStretch(); 
     mainLayout->addLayout(topRow);
-    mainLayout->addStretch(); // Spacer between top and bottom rows
+    mainLayout->addStretch(); 
     mainLayout->addLayout(bottomRow);
-    mainLayout->addStretch(); // Spacer after bottom row
+    mainLayout->addStretch(); 
 
-    // Set layout
     setLayout(mainLayout);
-    setMinimumSize(1000, 700); // Adjusted minimum size
+    setMinimumSize(1000, 700);
     setWindowTitle("Water Quality Program");
     showMaximized();
 }
