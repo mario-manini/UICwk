@@ -12,7 +12,7 @@ POPWindow::POPWindow(QWidget* parent) : QWidget(parent)
     MainChart->addSeries(series);
 
     QDateTimeAxis* MainX = new QDateTimeAxis();
-    MainX->setTitleText("Date");
+    MainX->setTitleText(tr("Date"));
     MainX->setFormat("yyyy-MM-dd");
     MainX->setRange(QDateTime::currentDateTime().addDays(-30), QDateTime::currentDateTime().addDays(30)); 
     MainX->setGridLineVisible(false);  
@@ -20,7 +20,7 @@ POPWindow::POPWindow(QWidget* parent) : QWidget(parent)
     MainX->setLinePen(QPen(Qt::black, 2)); 
 
     QValueAxis* MainY = new QValueAxis();
-    MainY->setTitleText("Pollutant Level");
+    MainY->setTitleText(tr("Pollutant Level"));
     MainY->setRange(0, 30);  
     MainY->setGridLineVisible(false);  
     MainY->setLineVisible(true);      
@@ -39,7 +39,7 @@ POPWindow::POPWindow(QWidget* parent) : QWidget(parent)
 
     QVBoxLayout* mainLayout = new QVBoxLayout(this);
 
-    QLabel* headerLabel = new QLabel("Persistent Organic Pollutants", this);
+    QLabel* headerLabel = new QLabel(tr("Persistent Organic Pollutants"), this);
     headerLabel->setStyleSheet("font-size: 24px; font-weight: bold; text-align: center;");
     mainLayout->addWidget(headerLabel, 0, Qt::AlignCenter);
 
@@ -51,21 +51,21 @@ POPWindow::POPWindow(QWidget* parent) : QWidget(parent)
 
     QVBoxLayout* searchBox1Layout = new QVBoxLayout();
     searchBarLake = new QLineEdit(this);
-    searchBarLake->setPlaceholderText("Search lakes...");
+    searchBarLake->setPlaceholderText(tr("Search lakes..."));
     searchResultsLake = new QListWidget(this);
     searchBox1Layout->addWidget(searchBarLake);
     searchBox1Layout->addWidget(searchResultsLake);
 
     QVBoxLayout* searchBox2Layout = new QVBoxLayout();
     searchBarPollutant = new QLineEdit(this);
-    searchBarPollutant->setPlaceholderText("Search pollutants...");
+    searchBarPollutant->setPlaceholderText(tr("Search pollutants..."));
     searchResultsPollutant = new QListWidget(this);
     searchBox2Layout->addWidget(searchBarPollutant);
     searchBox2Layout->addWidget(searchResultsPollutant);
 
     QVBoxLayout* searchBox3Layout = new QVBoxLayout();
     searchBarTimePeriod = new QLineEdit(this);
-    searchBarTimePeriod->setPlaceholderText("Search time period...");
+    searchBarTimePeriod->setPlaceholderText(tr("Search time period..."));
     searchResultsTimePeriod = new QListWidget(this);
     searchBox3Layout->addWidget(searchBarTimePeriod);
     searchBox3Layout->addWidget(searchResultsTimePeriod);
@@ -80,7 +80,7 @@ POPWindow::POPWindow(QWidget* parent) : QWidget(parent)
 
     QVBoxLayout* statsContainerLayout = new QVBoxLayout();
 
-    QLabel* statsTitle = new QLabel("Data Statistics", this);
+    QLabel* statsTitle = new QLabel(tr("Data Statistics"), this);
     statsTitle->setAlignment(Qt::AlignCenter);
     statsTitle->setStyleSheet("font-size: 18px; font-weight: bold;");
     statsContainerLayout->addWidget(statsTitle);
@@ -92,12 +92,12 @@ POPWindow::POPWindow(QWidget* parent) : QWidget(parent)
     statsContainerLayout->addWidget(statsGroup);
     mainLayout->addLayout(statsContainerLayout);
 
-    QLabel* minLabel = new QLabel("Min Value:", this);
-    minValue = new QLabel("N/A", this);
-    QLabel* maxLabel = new QLabel("Max Value:", this);
+    QLabel* minLabel = new QLabel(tr("Min Value:"), this);
+    minValue = new QLabel(tr("N/A"), this);
+    QLabel* maxLabel = new QLabel(tr("Max Value:"), this);
     maxValue = new QLabel("N/A", this);
-    QLabel* avgLabel = new QLabel("Average:", this);
-    avgValue = new QLabel("N/A", this);
+    QLabel* avgLabel = new QLabel(tr("Average:"), this);
+    avgValue = new QLabel(tr("N/A"), this);
     minIndic = new QLabel("", this);
     maxIndic = new QLabel("",this);
     avgIndic = new QLabel("", this);
@@ -112,22 +112,22 @@ POPWindow::POPWindow(QWidget* parent) : QWidget(parent)
     statsLayout->addWidget(avgValue, 2, 1);
     statsLayout->addWidget(avgIndic, 2, 2);
 
-    QGroupBox* infoGroupBox = new QGroupBox("Additional Information", this);
+    QGroupBox* infoGroupBox = new QGroupBox(tr("Additional Information"), this);
     QVBoxLayout* infoLayout = new QVBoxLayout();
     
-    QLabel* healthRisksLabel = new QLabel("Health Risks of POPs and PFAS:", this);
+    QLabel* healthRisksLabel = new QLabel(tr("Health Risks of POPs and PFAS:"), this);
     healthRisksLabel->setStyleSheet("font-weight: bold;");
-    QLabel* healthRisksContent = new QLabel("Exposure to POPs, such as PFAS, can lead to serious health risks, including cancer, liver damage, and immune suppression. These chemicals accumulate in the body over time and may cause long-term damage to organs and systems.", this);
+    QLabel* healthRisksContent = new QLabel(tr("Exposure to POPs, such as PFAS, can lead to serious health risks, including cancer, liver damage, and immune suppression. These chemicals accumulate in the body over time and may cause long-term damage to organs and systems."), this);
     healthRisksContent->setWordWrap(true);
 
-    QLabel* monitoringImportanceLabel = new QLabel("Importance of Monitoring:", this);
+    QLabel* monitoringImportanceLabel = new QLabel(tr("Importance of Monitoring:"), this);
     monitoringImportanceLabel->setStyleSheet("font-weight: bold;");
-    QLabel* monitoringImportanceContent = new QLabel("Monitoring POPs and PFAS in water sources and the environment is crucial to prevent contamination of drinking water and ecosystems. It helps track contamination levels and ensure regulatory compliance.", this);
+    QLabel* monitoringImportanceContent = new QLabel(tr("Monitoring POPs and PFAS in water sources and the environment is crucial to prevent contamination of drinking water and ecosystems. It helps track contamination levels and ensure regulatory compliance."), this);
     monitoringImportanceContent->setWordWrap(true);
 
-    QLabel* safetyLevelsLabel = new QLabel("Safety Levels:", this);
+    QLabel* safetyLevelsLabel = new QLabel(tr("Safety Levels:"), this);
     safetyLevelsLabel->setStyleSheet("font-weight: bold;");
-    QLabel* safetyLevelsContent = new QLabel("Safety levels for POPs and PFAS are established to minimize health risks. These levels may vary by country and are subject to change based on new research findings.", this);
+    QLabel* safetyLevelsContent = new QLabel(tr("Safety levels for POPs and PFAS are established to minimize health risks. These levels may vary by country and are subject to change based on new research findings."), this);
     safetyLevelsContent->setWordWrap(true);
 
     infoLayout->addWidget(healthRisksLabel);
@@ -140,10 +140,10 @@ POPWindow::POPWindow(QWidget* parent) : QWidget(parent)
         infoGroupBox->setLayout(infoLayout);
     statsContainerLayout->addWidget(infoGroupBox);
 
-    QGroupBox* bottomBoxGroup = new QGroupBox("Quick Info", this);
+    QGroupBox* bottomBoxGroup = new QGroupBox(tr("Quick Info"), this);
     QVBoxLayout* bottomBoxLayout = new QVBoxLayout();
     
-    QLabel* quickInfoLabel = new QLabel("Data Source: ", this);
+    QLabel* quickInfoLabel = new QLabel(tr("Data Source: "), this);
     quickInfoLabel->setWordWrap(true);
     quickInfoLabel->setText("<b></b> <a href=\"https://environment.data.gov.uk/water-quality/view/download\">Data Source</a>"
                                             "<b></b> <a href=\"https://environment.data.gov.uk/water-quality/view/doc/reference\">Documentation</a>");
@@ -156,7 +156,7 @@ POPWindow::POPWindow(QWidget* parent) : QWidget(parent)
     bottomLayout->addWidget(bottomBoxGroup);
 
 
-    QPushButton* backButton = new QPushButton("Back", this);
+    QPushButton* backButton = new QPushButton(tr("Back"), this);
     backButton->setStyleSheet(
         "background-color: #3C9EFF; "
         "color: white; "
@@ -297,7 +297,7 @@ void POPWindow::UpdateChart() {
     SampleSet NameFiltered = LocationFiltered.filterName(pollutantSearchText.toStdString());
 
     if (NameFiltered.sampleSize() == 0) {
-        QMessageBox::warning(this, "No Data Found", "No data found for the selected filters.");
+        QMessageBox::warning(this, tr("No Data Found"), tr("No data found for the selected filters."));
         return;
     }
 
@@ -391,7 +391,7 @@ void POPWindow::UpdateChart() {
 
     QDateTimeAxis *xAxis = new QDateTimeAxis();
     xAxis->setFormat("yyyy-MM-dd");
-    xAxis->setTitleText("Sample Date");
+    xAxis->setTitleText(tr("Sample Date"));
     xAxis->setRange(minDate, maxDate);  
     xAxis->setGridLineVisible(false);  
     xAxis->setLineVisible(true);      
@@ -400,7 +400,7 @@ void POPWindow::UpdateChart() {
     series->attachAxis(xAxis);
 
     QValueAxis *yAxis = new QValueAxis();
-    yAxis->setTitleText("Pollutant Level");
+    yAxis->setTitleText(tr("Pollutant Level"));
     yAxis->setGridLineVisible(false);  
     yAxis->setLineVisible(true);      
     yAxis->setLinePen(QPen(Qt::black, 2));  
@@ -420,7 +420,7 @@ void POPWindow::UpdateChart() {
         }
     }
 
-    MainChart->setTitle(pollutantSearchText + " levels in " + lakeSearchText + " for the " + timePeriodSearchText);
+    MainChart->setTitle(pollutantSearchText + tr(" levels in ") + lakeSearchText + tr(" for the ") + timePeriodSearchText);
     MainChart->addAxis(yAxis, Qt::AlignLeft);
     series->attachAxis(yAxis);
 

@@ -9,18 +9,18 @@ Dashboard::Dashboard(QWidget* parent)
     : QWidget(parent)
 {
     // Create buttons
-    QPushButton* OV_Button = new QPushButton("Pollutant Overview");
-    QPushButton* POP_Button = new QPushButton("Persistent Organic Pollutants");
-    QPushButton* ELI_Button = new QPushButton("Environmental Litter Indicators");
-    QPushButton* FC_Button = new QPushButton("Fluorinated Compounds");
-    QPushButton* CD_Button = new QPushButton("Compliance Dashboards");
+    QPushButton* OV_Button = new QPushButton(tr("Pollutant Overview"));
+    QPushButton* POP_Button = new QPushButton(tr("Persistent Organic Pollutants"));
+    QPushButton* ELI_Button = new QPushButton(tr("Environmental Litter Indicators"));
+    QPushButton* FC_Button = new QPushButton(tr("Fluorinated Compounds"));
+    QPushButton* CD_Button = new QPushButton(tr("Compliance Dashboards"));
 
     // Create labels
-    QLabel* OV_Label = new QLabel("Show statistics of the most common pollutants:");
-    QLabel* POP_Label = new QLabel("Show statistics for Persistent Organic Pollutants:");
-    QLabel* ELI_Label = new QLabel("Summarise Physical Pollutants such as plastic litter:");
-    QLabel* FC_Label = new QLabel("Show statistics for Fluorinated Compounds Pollutants:");
-    QLabel* CD_Label = new QLabel("See if levels are safe:");
+    QLabel* OV_Label = new QLabel(tr("Show statistics of the most common pollutants:"));
+    QLabel* POP_Label = new QLabel(tr("Show statistics for Persistent Organic Pollutants:"));
+    QLabel* ELI_Label = new QLabel(tr("Summarise Physical Pollutants such as plastic litter:"));
+    QLabel* FC_Label = new QLabel(tr("Show statistics for Fluorinated Compounds Pollutants:"));
+    QLabel* CD_Label = new QLabel(tr("See if levels are safe:"));
 
     OV_Label->setStyleSheet("font-size: 18px;");
     POP_Label->setStyleSheet("font-size: 18px;");

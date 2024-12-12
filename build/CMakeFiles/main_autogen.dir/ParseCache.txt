@@ -424,9 +424,9 @@
  mmc:Q_OBJECT
  mdp:/uolstore/home/users/sc23mm2/Documents/UI/UICwk/fluorinated.hpp
  mdp:/uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/main_autogen/moc_predefs.h
- mdp:/uolstore/home/users/sc23mm2/Documents/UI/UICwk/determinand.hpp
- mdp:/uolstore/home/users/sc23mm2/Documents/UI/UICwk/sample.hpp
- mdp:/uolstore/home/users/sc23mm2/Documents/UI/UICwk/sampleset.hpp
+ mdp:/uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/determinand.hpp
+ mdp:/uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/sample.hpp
+ mdp:/uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/sampleset.hpp
  mdp:/usr/include/GL/gl.h
  mdp:/usr/include/alloca.h
  mdp:/usr/include/asm-generic/errno-base.h
@@ -2496,9 +2496,9 @@
  mmc:Q_OBJECT
  mdp:/uolstore/home/users/sc23mm2/Documents/UI/UICwk/eli.hpp
  mdp:/uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/main_autogen/moc_predefs.h
- mdp:/uolstore/home/users/sc23mm2/Documents/UI/UICwk/determinand.hpp
- mdp:/uolstore/home/users/sc23mm2/Documents/UI/UICwk/sample.hpp
- mdp:/uolstore/home/users/sc23mm2/Documents/UI/UICwk/sampleset.hpp
+ mdp:/uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/determinand.hpp
+ mdp:/uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/sample.hpp
+ mdp:/uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/sampleset.hpp
  mdp:/usr/include/alloca.h
  mdp:/usr/include/asm-generic/errno-base.h
  mdp:/usr/include/asm-generic/errno.h
@@ -4087,9 +4087,9 @@
  mmc:Q_OBJECT
  mdp:/uolstore/home/users/sc23mm2/Documents/UI/UICwk/physicalPage.hpp
  mdp:/uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/main_autogen/moc_predefs.h
- mdp:/uolstore/home/users/sc23mm2/Documents/UI/UICwk/determinand.hpp
- mdp:/uolstore/home/users/sc23mm2/Documents/UI/UICwk/sample.hpp
- mdp:/uolstore/home/users/sc23mm2/Documents/UI/UICwk/sampleset.hpp
+ mdp:/uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/determinand.hpp
+ mdp:/uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/sample.hpp
+ mdp:/uolstore/home/student_lnxhome01/sc23mm2/Documents/UI/UICwk/sampleset.hpp
  mdp:/usr/include/alloca.h
  mdp:/usr/include/asm-generic/errno-base.h
  mdp:/usr/include/asm-generic/errno.h

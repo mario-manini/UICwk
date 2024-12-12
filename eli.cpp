@@ -7,7 +7,7 @@ ELIWindow::ELIWindow(QWidget* parent) : QWidget(parent) {
 
     QVBoxLayout* mainLayout = new QVBoxLayout(this);
 
-    QLabel* headerLabel = new QLabel("Environmental Litter Indicators", this);
+    QLabel* headerLabel = new QLabel(tr("Environmental Litter Indicators"), this);
     headerLabel->setStyleSheet("font-size: 20px; font-weight: bold;");
     mainLayout->addWidget(headerLabel);
 
@@ -16,9 +16,9 @@ ELIWindow::ELIWindow(QWidget* parent) : QWidget(parent) {
     pollutantComboBox = new QComboBox(this);
     locationComboBox = new QComboBox(this);
     loadFilters();
-    filterLayout->addWidget(new QLabel("Pollutant:"));
+    filterLayout->addWidget(new QLabel(tr("Pollutant:")));
     filterLayout->addWidget(pollutantComboBox);
-    filterLayout->addWidget(new QLabel("Location:"));
+    filterLayout->addWidget(new QLabel(tr("Location:")));
     filterLayout->addWidget(locationComboBox);
     filterGroup->setLayout(filterLayout);
     mainLayout->addWidget(filterGroup);
@@ -31,7 +31,7 @@ ELIWindow::ELIWindow(QWidget* parent) : QWidget(parent) {
     scrollArea->setWidgetResizable(true);
     mainLayout->addWidget(scrollArea);
 
-    QLabel* footerLabel = new QLabel("Help | About | Contact", this);
+    QLabel* footerLabel = new QLabel(tr("Help | About | Contact"), this);
     footerLabel->setStyleSheet("font-size: 12px; text-align: center;");
     mainLayout->addWidget(footerLabel);
 
@@ -112,14 +112,14 @@ void ELIWindow::updateChart() {
 
 
     if (dataMap.isEmpty()) {
-        QLabel *noDataLabel = new QLabel("No data available for the selected filters.");
+        QLabel *noDataLabel = new QLabel(tr("No data available for the selected filters."));
         noDataLabel->setAlignment(Qt::AlignCenter);
         noDataLabel->setStyleSheet("font-size: 16px; color: red;");
         chartLayout->addWidget(noDataLabel);
     } else {
         QChart *chart = new QChart();
         QBarSeries *series = new QBarSeries();
-        QBarSet *avgset = new QBarSet("Avg set");
+        QBarSet *avgset = new QBarSet(tr("Avg set"));
     
         QStringList cats;
         for (auto it = dataMap.begin(); it != dataMap.end(); ++it) { 
@@ -134,11 +134,11 @@ void ELIWindow::updateChart() {
         series->attachAxis(axisX); 
 
         QValueAxis *axisY = new QValueAxis(); 
-        axisY->setTitleText("Average Level"); 
+        axisY->setTitleText(tr("Average Level")); 
         chart->addAxis(axisY, Qt::AlignLeft); 
         series->attachAxis(axisY);
 
-        chart->setTitle("Average Levels over Time");
+        chart->setTitle(tr("Average Levels over Time"));
 
         QChartView *chartView = new QChartView(chart);
         chartLayout->addWidget(chartView);

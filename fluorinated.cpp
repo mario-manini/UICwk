@@ -156,7 +156,7 @@ FCWindow::FCWindow(QWidget* parent) : QWidget(parent)
     bottomLayout->addWidget(bottomBoxGroup);
 
     // Back button on the bottom-right corner
-    QPushButton* backButton = new QPushButton("Back", this);
+    QPushButton* backButton = new QPushButton(tr("Back"), this);
     backButton->setStyleSheet(
         "background-color: #3C9EFF; "
         "color: white; "
@@ -270,7 +270,7 @@ void FCWindow::UpdateChart() {
     }
 
     if (filtered.sampleSize() == 0) {
-        QMessageBox::warning(this, "No Data Found", "No data found for the selected filters.");
+        QMessageBox::warning(this, tr("No Data Found"), tr("No data found for the selected filters."));
         return;
     }
 
@@ -364,7 +364,7 @@ void FCWindow::UpdateChart() {
 
     QDateTimeAxis *xAxis = new QDateTimeAxis();
     xAxis->setFormat("yyyy-MM-dd");
-    xAxis->setTitleText("Sample Date");
+    xAxis->setTitleText(tr("Sample Date"));
     xAxis->setRange(minDate, maxDate);
     xAxis->setGridLineVisible(false);  
     xAxis->setLineVisible(true);      
@@ -373,7 +373,7 @@ void FCWindow::UpdateChart() {
     series->attachAxis(xAxis);
 
     QValueAxis *yAxis = new QValueAxis();
-    yAxis->setTitleText("Pollutant Level");
+    yAxis->setTitleText(tr("Pollutant Level"));
     yAxis->setGridLineVisible(false);  
     yAxis->setLineVisible(true);      
     yAxis->setLinePen(QPen(Qt::black, 2));  
@@ -391,7 +391,7 @@ void FCWindow::UpdateChart() {
             yAxis->setLabelFormat("%.4f"); 
         }
     }
-    MainChart->setTitle(pollutantSearchText + " levels in " + lakeSearchText);
+    MainChart->setTitle(pollutantSearchText + tr(" levels in ") + lakeSearchText);
     MainChart->addAxis(yAxis, Qt::AlignLeft);
     series->attachAxis(yAxis);
 

@@ -15,21 +15,21 @@ PhysicalPage::PhysicalPage(QWidget* parent) : QWidget(parent)
 void PhysicalPage::createWidgets()
 {
     //set/style title widget
-    title_label = new QLabel("Compliance Dashboard",this);
+    title_label = new QLabel(tr("Compliance Dashboard"),this);
     title_label->setStyleSheet("font-size: 24px; font-weight: bold; text-align: center;");
 
     //set up search bars for pollutant/lake
     locationSearch = new QLineEdit(this);
-    locationSearch->setPlaceholderText("Search locations...");
+    locationSearch->setPlaceholderText(tr("Search locations..."));
     locResults = new QListWidget(this);
     locResults->setFixedHeight(200);
     pollSearch = new QLineEdit(this);
-    pollSearch->setPlaceholderText("Search pollutants...");
+    pollSearch->setPlaceholderText(tr("Search pollutants..."));
     pollResults = new QListWidget(this);
     pollResults->setFixedHeight(200);
 
-    filter_button = new QPushButton("Filter",this);
-    back_button = new QPushButton("Back",this);
+    filter_button = new QPushButton(tr("Filter"),this);
+    back_button = new QPushButton(tr("Back"),this);
 
     //controls search bars/buttons
     connect(filter_button, SIGNAL(clicked()), this, SLOT(addFilters())); 
@@ -43,7 +43,7 @@ void PhysicalPage::createWidgets()
 
     //set up table columns
     table->setColumnCount(5);
-    table->setHorizontalHeaderLabels({"Name", "Compliancy", "Location", "date", "Safe Level"});
+    table->setHorizontalHeaderLabels({tr("Name"), tr("Compliancy"), tr("Location"), tr("date"), tr("Safe Level")});
     table->setRowCount(4);
 }
 
@@ -143,7 +143,7 @@ void PhysicalPage::addFilters()
 
 
     if (filtered.sampleSize() == 0) {
-        QMessageBox::warning(this, "No Data Found", "No data found for the selected filters.");
+        QMessageBox::warning(this, tr("No Data Found"), tr("No data found for the selected filters."));
         return;
     }
 
