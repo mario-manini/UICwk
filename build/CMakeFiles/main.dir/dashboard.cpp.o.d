@@ -308,49 +308,10 @@ CMakeFiles/main.dir/dashboard.cpp.o: \
  /usr/include/qt6/QtWidgets/qboxlayout.h \
  /usr/include/qt6/QtWidgets/qgridlayout.h \
  /uolstore/home/users/sc23mm2/Documents/UI/UICwk/pollutants_overview.hpp \
- /usr/include/qt6/QtWidgets/QLineEdit \
- /usr/include/qt6/QtWidgets/qlineedit.h \
- /usr/include/qt6/QtGui/qtextcursor.h \
- /usr/include/qt6/QtGui/qtextformat.h /usr/include/qt6/QtGui/qpen.h \
- /usr/include/qt6/QtGui/qtextoption.h \
- /usr/include/qt6/QtWidgets/QHBoxLayout \
- /usr/include/qt6/QtWidgets/QTableWidget \
- /usr/include/qt6/QtWidgets/qtablewidget.h \
- /usr/include/qt6/QtWidgets/qtableview.h \
- /usr/include/qt6/QtWidgets/qabstractitemview.h \
- /usr/include/qt6/QtWidgets/qabstractscrollarea.h \
- /usr/include/qt6/QtCore/qabstractitemmodel.h \
- /usr/include/qt6/QtCore/qitemselectionmodel.h \
- /usr/include/qt6/QtWidgets/qabstractitemdelegate.h \
- /usr/include/qt6/QtWidgets/qstyleoption.h \
- /usr/include/qt6/QtCore/qlocale.h \
- /usr/include/qt6/QtWidgets/qabstractspinbox.h \
- /usr/include/qt6/QtGui/qvalidator.h \
- /usr/include/qt6/QtCore/qregularexpression.h \
- /usr/include/qt6/QtWidgets/qslider.h \
- /usr/include/qt6/QtWidgets/qabstractslider.h \
- /usr/include/qt6/QtWidgets/qstyle.h /usr/include/qt6/QtWidgets/qtabbar.h \
- /usr/include/qt6/QtWidgets/qtabwidget.h \
- /usr/include/qt6/QtWidgets/qrubberband.h \
- /usr/include/qt6/QtWidgets/QComboBox \
- /usr/include/qt6/QtWidgets/qcombobox.h \
- /usr/include/qt6/QtWidgets/QHeaderView \
- /usr/include/qt6/QtWidgets/qheaderview.h \
- /uolstore/home/users/sc23mm2/Documents/UI/UICwk/pop.hpp \
- /usr/include/qt6/QtGui/QFont /usr/include/qt6/QtGui/qfont.h \
- /usr/include/qt6/QtWidgets/QGroupBox \
- /usr/include/qt6/QtWidgets/qgroupbox.h \
- /usr/include/qt6/QtWidgets/QListWidget \
- /usr/include/qt6/QtWidgets/qlistwidget.h \
- /usr/include/qt6/QtWidgets/qlistview.h \
- /usr/include/qt6/QtWidgets/QSpacerItem \
- /usr/include/qt6/QtWidgets/qlayoutitem.h \
- /usr/include/qt6/QtWidgets/QSizePolicy \
- /usr/include/qt6/QtWidgets/qsizepolicy.h \
- /usr/include/qt6/QtCharts/QtCharts \
- /usr/include/qt6/QtCharts/QtChartsDepends /usr/include/qt6/QtCore/QtCore \
- /usr/include/qt6/QtCore/QtCoreDepends /usr/include/qt6/QtCore/qglobal.h \
- /usr/include/qt6/QtCore/q20algorithm.h \
+ /usr/include/qt6/QtWidgets/QtWidgets \
+ /usr/include/qt6/QtWidgets/QtWidgetsDepends \
+ /usr/include/qt6/QtCore/QtCore /usr/include/qt6/QtCore/QtCoreDepends \
+ /usr/include/qt6/QtCore/qglobal.h /usr/include/qt6/QtCore/q20algorithm.h \
  /usr/include/qt6/QtCore/q20chrono.h \
  /usr/include/qt6/QtCore/q20functional.h \
  /usr/include/qt6/QtCore/q20iterator.h \
@@ -363,6 +324,7 @@ CMakeFiles/main.dir/dashboard.cpp.o: \
  /usr/include/qt6/QtCore/qabstractitemmodel.h \
  /usr/include/qt6/QtCore/qabstractnativeeventfilter.h \
  /usr/include/qt6/QtCore/qabstractproxymodel.h \
+ /usr/include/qt6/QtCore/qabstractitemmodel.h \
  /usr/include/qt6/QtCore/qalgorithms.h \
  /usr/include/qt6/QtCore/qanimationgroup.h \
  /usr/include/qt6/QtCore/qabstractanimation.h \
@@ -391,12 +353,14 @@ CMakeFiles/main.dir/dashboard.cpp.o: \
  /usr/include/qt6/QtCore/q20algorithm.h \
  /usr/include/qt6/QtCore/qbytearrayview.h \
  /usr/include/qt6/QtCore/qcache.h /usr/include/qt6/QtCore/qcalendar.h \
- /usr/include/qt6/QtCore/qcborarray.h \
+ /usr/include/qt6/QtCore/qlocale.h /usr/include/qt6/QtCore/qcborarray.h \
  /usr/include/qt6/QtCore/qcborvalue.h /usr/include/qt6/QtCore/qdatetime.h \
  /usr/include/qt6/QtCore/qcalendar.h \
- /usr/include/qt6/QtCore/qcborcommon.h /usr/include/qt6/QtCore/quuid.h \
- /usr/include/qt6/QtCore/qendian.h /usr/include/qt6/QtCore/qcborcommon.h \
- /usr/include/qt6/QtCore/qcbormap.h /usr/include/qt6/QtCore/qcborstream.h \
+ /usr/include/qt6/QtCore/qcborcommon.h \
+ /usr/include/qt6/QtCore/qregularexpression.h \
+ /usr/include/qt6/QtCore/quuid.h /usr/include/qt6/QtCore/qendian.h \
+ /usr/include/qt6/QtCore/qcborcommon.h /usr/include/qt6/QtCore/qcbormap.h \
+ /usr/include/qt6/QtCore/qcborstream.h \
  /usr/include/qt6/QtCore/qcborstreamreader.h \
  /usr/include/qt6/QtCore/qcborstreamwriter.h \
  /usr/include/qt6/QtCore/qcborstreamreader.h \
@@ -712,6 +676,9 @@ CMakeFiles/main.dir/dashboard.cpp.o: \
  /usr/include/qt6/QtCore/QSizeF /usr/include/qt6/QtGui/QTransform \
  /usr/include/qt6/QtGui/qtransform.h /usr/include/qt6/QtGui/qglyphrun.h \
  /usr/include/qt6/QtGui/qrawfont.h /usr/include/qt6/QtGui/qfontdatabase.h \
+ /usr/include/qt6/QtGui/qtextcursor.h \
+ /usr/include/qt6/QtGui/qtextformat.h /usr/include/qt6/QtGui/qpen.h \
+ /usr/include/qt6/QtGui/qtextoption.h \
  /usr/include/qt6/QtGui/qaccessible.h \
  /usr/include/qt6/QtGui/qaccessible_base.h \
  /usr/include/qt6/QtGui/qaccessiblebridge.h \
@@ -732,7 +699,7 @@ CMakeFiles/main.dir/dashboard.cpp.o: \
  /usr/include/qt6/QtGui/qdesktopservices.h /usr/include/qt6/QtGui/qdrag.h \
  /usr/include/qt6/QtGui/qevent.h /usr/include/qt6/QtGui/qeventpoint.h \
  /usr/include/qt6/QtGui/qfilesystemmodel.h \
- /usr/include/qt6/QtCore/qdiriterator.h \
+ /usr/include/qt6/QtCore/qdiriterator.h /usr/include/qt6/QtGui/qfont.h \
  /usr/include/qt6/QtGui/qfontdatabase.h \
  /usr/include/qt6/QtGui/qfontinfo.h /usr/include/qt6/QtGui/qfontmetrics.h \
  /usr/include/qt6/QtGui/qgenericmatrix.h \
@@ -811,12 +778,20 @@ CMakeFiles/main.dir/dashboard.cpp.o: \
  /usr/include/qt6/QtGui/qvalidator.h /usr/include/qt6/QtGui/qvector2d.h \
  /usr/include/qt6/QtGui/qvector3d.h /usr/include/qt6/QtGui/qvector4d.h \
  /usr/include/qt6/QtGui/qvectornd.h /usr/include/qt6/QtGui/qwindowdefs.h \
- /usr/include/qt6/QtWidgets/QtWidgets \
- /usr/include/qt6/QtWidgets/QtWidgetsDepends \
  /usr/include/qt6/QtWidgets/qtwidgetsglobal.h \
  /usr/include/qt6/QtWidgets/qabstractbutton.h \
  /usr/include/qt6/QtWidgets/qabstractitemdelegate.h \
+ /usr/include/qt6/QtWidgets/qstyleoption.h \
+ /usr/include/qt6/QtWidgets/qabstractspinbox.h \
+ /usr/include/qt6/QtGui/qvalidator.h /usr/include/qt6/QtWidgets/qslider.h \
+ /usr/include/qt6/QtWidgets/qabstractslider.h \
+ /usr/include/qt6/QtWidgets/qstyle.h /usr/include/qt6/QtWidgets/qtabbar.h \
+ /usr/include/qt6/QtWidgets/qtabwidget.h \
+ /usr/include/qt6/QtWidgets/qrubberband.h \
  /usr/include/qt6/QtWidgets/qabstractitemview.h \
+ /usr/include/qt6/QtWidgets/qabstractscrollarea.h \
+ /usr/include/qt6/QtCore/qitemselectionmodel.h \
+ /usr/include/qt6/QtWidgets/qabstractitemdelegate.h \
  /usr/include/qt6/QtWidgets/qabstractscrollarea.h \
  /usr/include/qt6/QtWidgets/qabstractslider.h \
  /usr/include/qt6/QtWidgets/qabstractspinbox.h \
@@ -833,6 +808,8 @@ CMakeFiles/main.dir/dashboard.cpp.o: \
  /usr/include/qt6/QtWidgets/qdialog.h \
  /usr/include/qt6/QtWidgets/qcolormap.h \
  /usr/include/qt6/QtWidgets/qcolumnview.h \
+ /usr/include/qt6/QtWidgets/qabstractitemview.h \
+ /usr/include/qt6/QtWidgets/qcombobox.h \
  /usr/include/qt6/QtWidgets/qcommandlinkbutton.h \
  /usr/include/qt6/QtWidgets/qpushbutton.h \
  /usr/include/qt6/QtWidgets/qcommonstyle.h \
@@ -881,13 +858,19 @@ CMakeFiles/main.dir/dashboard.cpp.o: \
  /usr/include/qt6/QtWidgets/qgraphicsscene.h \
  /usr/include/qt6/QtWidgets/qgraphicswidget.h \
  /usr/include/qt6/QtWidgets/qgridlayout.h \
+ /usr/include/qt6/QtWidgets/qgroupbox.h \
+ /usr/include/qt6/QtWidgets/qheaderview.h \
  /usr/include/qt6/QtWidgets/qinputdialog.h \
  /usr/include/qt6/QtWidgets/qlineedit.h \
  /usr/include/qt6/QtWidgets/qitemdelegate.h \
  /usr/include/qt6/QtWidgets/qitemeditorfactory.h \
  /usr/include/qt6/QtCore/qmetaobject.h \
  /usr/include/qt6/QtWidgets/qkeysequenceedit.h \
+ /usr/include/qt6/QtWidgets/qlayoutitem.h \
  /usr/include/qt6/QtWidgets/qlcdnumber.h \
+ /usr/include/qt6/QtWidgets/qlineedit.h \
+ /usr/include/qt6/QtWidgets/qlistview.h \
+ /usr/include/qt6/QtWidgets/qlistwidget.h \
  /usr/include/qt6/QtWidgets/qlistview.h \
  /usr/include/qt6/QtWidgets/qmainwindow.h \
  /usr/include/qt6/QtWidgets/qmdiarea.h \
@@ -913,6 +896,7 @@ CMakeFiles/main.dir/dashboard.cpp.o: \
  /usr/include/qt6/QtCore/QScopedPointer /usr/include/qt6/QtCore/QMetaType \
  /usr/include/qt6/QtWidgets/qshortcut.h /usr/include/qt6/QtGui/QShortcut \
  /usr/include/qt6/QtWidgets/qsizegrip.h \
+ /usr/include/qt6/QtWidgets/qsizepolicy.h \
  /usr/include/qt6/QtWidgets/qslider.h \
  /usr/include/qt6/QtWidgets/qspinbox.h \
  /usr/include/qt6/QtWidgets/qsplashscreen.h \
@@ -928,6 +912,8 @@ CMakeFiles/main.dir/dashboard.cpp.o: \
  /usr/include/qt6/QtWidgets/qstyleplugin.h \
  /usr/include/qt6/QtWidgets/qsystemtrayicon.h \
  /usr/include/qt6/QtWidgets/qtabbar.h \
+ /usr/include/qt6/QtWidgets/qtableview.h \
+ /usr/include/qt6/QtWidgets/qtablewidget.h \
  /usr/include/qt6/QtWidgets/qtableview.h \
  /usr/include/qt6/QtWidgets/qtabwidget.h \
  /usr/include/qt6/QtWidgets/qtextbrowser.h \
@@ -945,7 +931,15 @@ CMakeFiles/main.dir/dashboard.cpp.o: \
  /usr/include/qt6/QtWidgets/qundoview.h \
  /usr/include/qt6/QtWidgets/qwhatsthis.h \
  /usr/include/qt6/QtWidgets/qwidgetaction.h \
- /usr/include/qt6/QtWidgets/qwizard.h /usr/include/qt6/QtOpenGL/QtOpenGL \
+ /usr/include/qt6/QtWidgets/qwizard.h \
+ /usr/include/qt6/QtWidgets/QLineEdit \
+ /usr/include/qt6/QtWidgets/QHBoxLayout \
+ /usr/include/qt6/QtWidgets/QTableWidget \
+ /usr/include/qt6/QtWidgets/QComboBox \
+ /usr/include/qt6/QtWidgets/QHeaderView \
+ /usr/include/qt6/QtCharts/QtCharts \
+ /usr/include/qt6/QtCharts/QtChartsDepends \
+ /usr/include/qt6/QtWidgets/QtWidgets /usr/include/qt6/QtOpenGL/QtOpenGL \
  /usr/include/qt6/QtOpenGL/QtOpenGLDepends \
  /usr/include/qt6/QtOpenGL/qtopenglglobal.h \
  /usr/include/qt6/QtOpenGL/qtopenglexports.h \
@@ -1058,7 +1052,12 @@ CMakeFiles/main.dir/dashboard.cpp.o: \
  /usr/include/qt6/QtCharts/qvcandlestickmodelmapper.h \
  /usr/include/qt6/QtCharts/qvpiemodelmapper.h \
  /usr/include/qt6/QtCharts/qvxymodelmapper.h \
- /usr/include/qt6/QtCharts/qxylegendmarker.h /usr/include/c++/11/iostream \
+ /usr/include/qt6/QtCharts/qxylegendmarker.h \
+ /uolstore/home/users/sc23mm2/Documents/UI/UICwk/pop.hpp \
+ /usr/include/qt6/QtGui/QFont /usr/include/qt6/QtWidgets/QGroupBox \
+ /usr/include/qt6/QtWidgets/QListWidget \
+ /usr/include/qt6/QtWidgets/QSpacerItem \
+ /usr/include/qt6/QtWidgets/QSizePolicy /usr/include/c++/11/iostream \
  /usr/include/qt6/QtCore/QDebug /usr/include/qt6/QtGui/QBrush \
  /usr/include/qt6/QtGui/QColor /usr/include/qt6/QtGui/QPen \
  /uolstore/home/users/sc23mm2/Documents/UI/UICwk/eli.hpp \

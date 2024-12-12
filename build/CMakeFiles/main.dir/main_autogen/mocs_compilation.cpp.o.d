@@ -1081,6 +1081,7 @@ CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.o: \
  /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/main_autogen/EWIEGA46WW/../../../determinand.hpp \
  /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/main_autogen/EWIEGA46WW/moc_pollutants_overview.cpp \
  /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/main_autogen/EWIEGA46WW/../../../pollutants_overview.hpp \
+ /usr/include/qt6/QtWidgets/QtWidgets \
  /usr/include/qt6/QtWidgets/QTableWidget \
  /usr/include/qt6/QtWidgets/QHeaderView \
  /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/main_autogen/EWIEGA46WW/moc_pop.cpp \
