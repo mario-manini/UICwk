@@ -48,7 +48,7 @@ private:
     QLineEdit* searchBarLake;
     QLineEdit* searchBarPollutant;
     QLineEdit* searchBarTimePeriod;
-
+    QGridLayout* statsLayout;
     QListWidget* searchResultsLake;
     QListWidget* searchResultsPollutant;
     QListWidget* searchResultsTimePeriod;

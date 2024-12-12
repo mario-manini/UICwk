@@ -86,7 +86,7 @@ POPWindow::POPWindow(QWidget* parent) : QWidget(parent)
     statsContainerLayout->addWidget(statsTitle);
 
     QGroupBox* statsGroup = new QGroupBox(this);
-    QGridLayout* statsLayout = new QGridLayout();
+    statsLayout = new QGridLayout();
     statsGroup->setLayout(statsLayout);
 
     statsContainerLayout->addWidget(statsGroup);
@@ -366,4 +366,26 @@ void POPWindow::UpdateChart() {
 
     chartview->setChart(MainChart);
     chartview->update();
-}
+
+    
+
+    QLabel* minValue = statsLayout->itemAtPosition(0, 1)->widget()->findChild<QLabel*>();
+    QLabel* maxValue = statsLayout->itemAtPosition(1, 1)->widget()->findChild<QLabel*>();
+    QLabel* avgValue = statsLayout->itemAtPosition(2, 1)->widget()->findChild<QLabel*>();
+
+
+
+// Loop through the filter data and print debug information
+    for (int i = 0; i < NameFiltered.deterSize(); ++i) {
+        std::cout << "hello!" << std::endl;
+        std::cout << i << std::endl;
+    }
+
+
+
+
+
+    }
+
+
+
