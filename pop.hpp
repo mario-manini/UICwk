@@ -20,6 +20,7 @@
 #include <QBrush>
 #include <QColor>
 #include <QPen>
+#include <set>
 
 class POPWindow : public QWidget {
     Q_OBJECT
@@ -52,6 +53,11 @@ private:
     QListWidget* searchResultsLake;
     QListWidget* searchResultsPollutant;
     QListWidget* searchResultsTimePeriod;
+
+    QLabel* minValue;
+    QLabel* maxValue;
+    QLabel* avgValue;
+
 
     QLabel* complianceLabel;
 };

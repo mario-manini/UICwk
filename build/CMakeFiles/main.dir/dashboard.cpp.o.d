@@ -1060,12 +1060,22 @@ CMakeFiles/main.dir/dashboard.cpp.o: \
  /usr/include/qt6/QtWidgets/QSizePolicy /usr/include/c++/11/iostream \
  /usr/include/qt6/QtCore/QDebug /usr/include/qt6/QtGui/QBrush \
  /usr/include/qt6/QtGui/QColor /usr/include/qt6/QtGui/QPen \
+ /usr/include/c++/11/set /usr/include/c++/11/bits/stl_set.h \
+ /usr/include/c++/11/bits/stl_multiset.h \
  /uolstore/home/users/sc23mm2/Documents/UI/UICwk/eli.hpp \
  /usr/include/qt6/QtCharts/QChartView \
  /usr/include/qt6/QtCharts/QLineSeries \
  /usr/include/qt6/QtWidgets/QScrollArea \
- /uolstore/home/users/sc23mm2/Documents/UI/UICwk/fluorinated.hpp \
- /uolstore/home/users/sc23mm2/Documents/UI/UICwk/physicalPage.hpp \
  /uolstore/home/users/sc23mm2/Documents/UI/UICwk/sampleset.hpp \
  /uolstore/home/users/sc23mm2/Documents/UI/UICwk/sample.hpp \
- /uolstore/home/users/sc23mm2/Documents/UI/UICwk/determinand.hpp
+ /uolstore/home/users/sc23mm2/Documents/UI/UICwk/determinand.hpp \
+ /usr/include/qt6/QtCore/QFile /usr/include/qt6/QtCore/QTextStream \
+ /usr/include/qt6/QtCore/QDir /usr/include/qt6/QtCore/QCoreApplication \
+ /usr/include/qt6/QtCharts/QDateTimeAxis \
+ /usr/include/qt6/QtCharts/QBarCategoryAxis \
+ /usr/include/qt6/QtCharts/QBarSeries \
+ /uolstore/home/users/sc23mm2/Documents/UI/UICwk/fluorinated.hpp \
+ /uolstore/home/users/sc23mm2/Documents/UI/UICwk/physicalPage.hpp \
+ /usr/include/qt6/QtWidgets/QTableWidgetItem \
+ /usr/include/qt6/QtWidgets/QListWidgetItem \
+ /usr/include/qt6/QtWidgets/QMessageBox

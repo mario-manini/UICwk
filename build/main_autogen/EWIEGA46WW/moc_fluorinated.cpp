@@ -64,59 +64,55 @@ namespace {
 struct qt_meta_stringdata_CLASSFCWindowENDCLASS_t {};
 constexpr auto qt_meta_stringdata_CLASSFCWindowENDCLASS = QtMocHelpers::stringData(
     "FCWindow",
-    "handleSearchBarLake",
+    "UpdateChart",
     "",
+    "handleSearchBarLake",
     "searchText",
     "handleSearchBarPollutant",
-    "handleSearchBarTimePeriod",
     "updateSearchBarLake",
     "QListWidgetItem*",
     "item",
-    "updateSearchBarPollutant",
-    "updateSearchBarTimePeriod"
+    "updateSearchBarPollutant"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSFCWindowENDCLASS_t {
-    uint offsetsAndSizes[22];
+    uint offsetsAndSizes[20];
     char stringdata0[9];
-    char stringdata1[20];
+    char stringdata1[12];
     char stringdata2[1];
-    char stringdata3[11];
-    char stringdata4[25];
-    char stringdata5[26];
+    char stringdata3[20];
+    char stringdata4[11];
+    char stringdata5[25];
     char stringdata6[20];
     char stringdata7[17];
     char stringdata8[5];
     char stringdata9[25];
-    char stringdata10[26];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSFCWindowENDCLASS_t::offsetsAndSizes) + ofs), len 
 Q_CONSTINIT static const qt_meta_stringdata_CLASSFCWindowENDCLASS_t qt_meta_stringdata_CLASSFCWindowENDCLASS = {
     {
         QT_MOC_LITERAL(0, 8),  // "FCWindow"
-        QT_MOC_LITERAL(9, 19),  // "handleSearchBarLake"
-        QT_MOC_LITERAL(29, 0),  // ""
-        QT_MOC_LITERAL(30, 10),  // "searchText"
-        QT_MOC_LITERAL(41, 24),  // "handleSearchBarPollutant"
-        QT_MOC_LITERAL(66, 25),  // "handleSearchBarTimePeriod"
-        QT_MOC_LITERAL(92, 19),  // "updateSearchBarLake"
-        QT_MOC_LITERAL(112, 16),  // "QListWidgetItem*"
-        QT_MOC_LITERAL(129, 4),  // "item"
-        QT_MOC_LITERAL(134, 24),  // "updateSearchBarPollutant"
-        QT_MOC_LITERAL(159, 25)   // "updateSearchBarTimePeriod"
+        QT_MOC_LITERAL(9, 11),  // "UpdateChart"
+        QT_MOC_LITERAL(21, 0),  // ""
+        QT_MOC_LITERAL(22, 19),  // "handleSearchBarLake"
+        QT_MOC_LITERAL(42, 10),  // "searchText"
+        QT_MOC_LITERAL(53, 24),  // "handleSearchBarPollutant"
+        QT_MOC_LITERAL(78, 19),  // "updateSearchBarLake"
+        QT_MOC_LITERAL(98, 16),  // "QListWidgetItem*"
+        QT_MOC_LITERAL(115, 4),  // "item"
+        QT_MOC_LITERAL(120, 24)   // "updateSearchBarPollutant"
     },
     "FCWindow",
-    "handleSearchBarLake",
+    "UpdateChart",
     "",
+    "handleSearchBarLake",
     "searchText",
     "handleSearchBarPollutant",
-    "handleSearchBarTimePeriod",
     "updateSearchBarLake",
     "QListWidgetItem*",
     "item",
-    "updateSearchBarPollutant",
-    "updateSearchBarTimePeriod"
+    "updateSearchBarPollutant"
 };
 #undef QT_MOC_LITERAL
 #endif // !QT_MOC_HAS_STRING_DATA
@@ -128,7 +124,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSFCWindowENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       6,   14, // methods
+       5,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -136,18 +132,16 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSFCWindowENDCLASS[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    1,   50,    2, 0x08,    1 /* Private */,
-       4,    1,   53,    2, 0x08,    3 /* Private */,
-       5,    1,   56,    2, 0x08,    5 /* Private */,
-       6,    1,   59,    2, 0x08,    7 /* Private */,
-       9,    1,   62,    2, 0x08,    9 /* Private */,
-      10,    1,   65,    2, 0x08,   11 /* Private */,
+       1,    0,   44,    2, 0x0a,    1 /* Public */,
+       3,    1,   45,    2, 0x08,    2 /* Private */,
+       5,    1,   48,    2, 0x08,    4 /* Private */,
+       6,    1,   51,    2, 0x08,    6 /* Private */,
+       9,    1,   54,    2, 0x08,    8 /* Private */,
 
  // slots: parameters
-    QMetaType::Void, QMetaType::QString,    3,
-    QMetaType::Void, QMetaType::QString,    3,
-    QMetaType::Void, QMetaType::QString,    3,
-    QMetaType::Void, 0x80000000 | 7,    8,
+    QMetaType::Void,
+    QMetaType::Void, QMetaType::QString,    4,
+    QMetaType::Void, QMetaType::QString,    4,
     QMetaType::Void, 0x80000000 | 7,    8,
     QMetaType::Void, 0x80000000 | 7,    8,
 
@@ -163,22 +157,18 @@ Q_CONSTINIT const QMetaObject FCWindow::staticMetaObject = { {
     qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSFCWindowENDCLASS_t,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<FCWindow, std::true_type>,
+        // method 'UpdateChart'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'handleSearchBarLake'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
         // method 'handleSearchBarPollutant'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
-        // method 'handleSearchBarTimePeriod'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
         // method 'updateSearchBarLake'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<QListWidgetItem *, std::false_type>,
         // method 'updateSearchBarPollutant'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<QListWidgetItem *, std::false_type>,
-        // method 'updateSearchBarTimePeriod'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<QListWidgetItem *, std::false_type>
     >,
@@ -191,12 +181,11 @@ void FCWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
         auto *_t = static_cast<FCWindow *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->handleSearchBarLake((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 1: _t->handleSearchBarPollutant((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 2: _t->handleSearchBarTimePeriod((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 0: _t->UpdateChart(); break;
+        case 1: _t->handleSearchBarLake((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 2: _t->handleSearchBarPollutant((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         case 3: _t->updateSearchBarLake((*reinterpret_cast< std::add_pointer_t<QListWidgetItem*>>(_a[1]))); break;
         case 4: _t->updateSearchBarPollutant((*reinterpret_cast< std::add_pointer_t<QListWidgetItem*>>(_a[1]))); break;
-        case 5: _t->updateSearchBarTimePeriod((*reinterpret_cast< std::add_pointer_t<QListWidgetItem*>>(_a[1]))); break;
         default: ;
         }
     }
@@ -221,13 +210,13 @@ int FCWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 6)
+        if (_id < 5)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 6;
+        _id -= 5;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 6)
+        if (_id < 5)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 6;
+        _id -= 5;
     }
     return _id;
 }

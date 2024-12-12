@@ -1,17 +1,10 @@
 #include "eli.hpp"
-#include <QVBoxLayout>
-#include <QGroupBox>
-#include <QFile>
-#include <QTextStream>
-#include <QDir>
-#include <QCoreApplication>
-#include <QDebug>
-#include <QtCharts/QChart>
-#include <QtCharts/QLineSeries>
-#include <QtCharts/QDateTimeAxis>
-#include <QtCharts/QValueAxis>
+#include "getUniqueItems.hpp"
 
 ELIWindow::ELIWindow(QWidget* parent) : QWidget(parent) {
+    loadData();
+    filterData();
+
     QVBoxLayout* mainLayout = new QVBoxLayout(this);
 
     QLabel* headerLabel = new QLabel("Environmental Litter Indicators", this);
@@ -22,25 +15,13 @@ ELIWindow::ELIWindow(QWidget* parent) : QWidget(parent) {
     QVBoxLayout* filterLayout = new QVBoxLayout(filterGroup);
     pollutantComboBox = new QComboBox(this);
     locationComboBox = new QComboBox(this);
-    typeComboBox = new QComboBox(this);
-    loadPollutants();
     loadFilters();
     filterLayout->addWidget(new QLabel("Pollutant:"));
     filterLayout->addWidget(pollutantComboBox);
     filterLayout->addWidget(new QLabel("Location:"));
     filterLayout->addWidget(locationComboBox);
-    filterLayout->addWidget(new QLabel("Type:"));
-    filterLayout->addWidget(typeComboBox);
     filterGroup->setLayout(filterLayout);
     mainLayout->addWidget(filterGroup);
-
-    QGroupBox* complianceGroup = new QGroupBox("Compliance Status", this);
-    QVBoxLayout* complianceLayout = new QVBoxLayout(complianceGroup);
-    complianceLabel = new QLabel("Select a pollutant to see compliance.", this);
-    complianceLabel->setStyleSheet("color: green;");
-    complianceLayout->addWidget(complianceLabel);
-    complianceGroup->setLayout(complianceLayout);
-    mainLayout->addWidget(complianceGroup);
 
     chartLayout = new QVBoxLayout();
     container = new QWidget();
@@ -57,73 +38,49 @@ ELIWindow::ELIWindow(QWidget* parent) : QWidget(parent) {
     setLayout(mainLayout);
 
     connect(pollutantComboBox, &QComboBox::currentIndexChanged, this, &ELIWindow::updateChart);
+    connect(pollutantComboBox, &QComboBox::currentTextChanged, this, &ELIWindow::updateLocs);
     connect(locationComboBox, &QComboBox::currentIndexChanged, this, &ELIWindow::updateChart);
-    connect(typeComboBox, &QComboBox::currentIndexChanged, this, &ELIWindow::updateChart);
     showMaximized();
 
 }
 
-void ELIWindow::loadPollutants() {
-    QString filePath = QDir(QCoreApplication::applicationDirPath()).filePath("../data/Y-2024-M.csv");
-    QFile file(filePath);
-    if (file.open(QIODevice::ReadOnly)) {
-        QTextStream in(&file);
-        while (!in.atEnd()) {
-            QString line = in.readLine();
-            QStringList fields = line.split(',');
-            if (fields.size() > 1) {
-                pollutantComboBox->addItem(fields[1].trimmed());
-            }
-        }
-        file.close();
-    } else {
-        qWarning() << "Unable to open file at:" << filePath;
-    }
-}
-
 void ELIWindow::loadFilters() {
-    QString filePath = QDir(QCoreApplication::applicationDirPath()).filePath("../data/Y-2024-M.csv");
-    QFile file(filePath);
-    if (file.open(QIODevice::ReadOnly)) {
-        QTextStream in(&file);
-        QSet<QString> locations, types;
-        while (!in.atEnd()) {
-            QString line = in.readLine();
-            QStringList fields = line.split(',');
-            if (fields.size() > 4) {
-                locations.insert(fields[3].trimmed());
-                types.insert(fields[4].trimmed());
-            }
-        }
-        file.close();
-        foreach (const QString &location, locations)
-            locationComboBox->addItem(location);
-        foreach (const QString &type, types)
-            typeComboBox->addItem(type);
-    } else {
-        qWarning() << "Unable to open file at:" << filePath;
+    QString filePath = "../data/Y-2024-M.csv";  
+    int columnIndex = 3;  
+
+    QStringList allLakes = ExtractUniqueColumns::extractUniqueColumnItems(filePath, columnIndex);
+
+    QStringList filteredLakes;
+    for (const QString& lake : allLakes) {
+        filteredLakes.append(lake);
+    }
+    locationComboBox->addItems(filteredLakes);
+
+    std::set<std::string> pollutantSet;
+    for (int i=0; i<data.sampleSize(); i++) {
+        Sample temp = data.sampleAt(i);
+        pollutantSet.insert(temp.getDeterminand());
+    }
+    for (const auto& pollutant : pollutantSet) {
+        pollutantComboBox->addItem(QString::fromStdString(pollutant));
     }
 }
 
-void ELIWindow::updateCompliance(const QString& pollutant) {
-    QString filePath = QDir(QCoreApplication::applicationDirPath()).filePath("../data/Y-2024-M.csv");
-    QFile file(filePath);
-    if (file.open(QIODevice::ReadOnly)) {
-        QTextStream in(&file);
-        bool isCompliant = true;
-        while (!in.atEnd()) {
-            QString line = in.readLine();
-            QStringList fields = line.split(',');
-            if (fields[1].trimmed() == pollutant && fields[4].trimmed().toLower() == "non-compliant") {
-                isCompliant = false;
-                break;
-            }
-        }
-        file.close();
-        complianceLabel->setText(isCompliant ? "Compliant" : "Non-compliant");
-        complianceLabel->setStyleSheet(isCompliant ? "color: green;" : "color: red;");
-    } else {
-        qWarning() << "Unable to open file at:" << filePath;
+void ELIWindow::updateLocs(const QString& searchText) {
+    locationComboBox->clear();
+    QString filePath = "../data/Y-2024-M.csv"; 
+    SampleSet filtered =  data.filterName(searchText.toStdString());
+    int columnIndex = 3;  
+
+    QStringList filteredLakes;
+
+    std::set<std::string> locs;
+    for (int i=0; i<filtered.sampleSize(); i++) {
+        locs.insert(filtered.sampleAt(i).getLocation());
+    }
+
+    for (const auto& loc : locs) {
+        locationComboBox->addItem(QString::fromStdString(loc));
     }
 }
 
@@ -132,48 +89,62 @@ void ELIWindow::updateChart() {
 
     QString selectedPollutant = pollutantComboBox->currentText();
     QString selectedLocation = locationComboBox->currentText();
-    QString selectedType = typeComboBox->currentText();
+    
+    //call filters
+    SampleSet filtered = data.filterName(selectedPollutant.toStdString());
+    filtered = data.filterLocation(selectedLocation.toStdString());
+    //get set of all times
+    std::set<QDateTime> dateSet;
+    for (int i=0; i<filtered.sampleSize(); i++) {
+        Sample temp = filtered.sampleAt(i);
+        dateSet.insert(QDateTime::fromString(QString::fromStdString(temp.getTime()), "yyyy-MM-ddTHH:mm:ss"));
+    }
+    
+    std::vector<QDateTime> dates(dateSet.begin(), dateSet.end());
 
-    QString filePath = QDir(QCoreApplication::applicationDirPath()).filePath("../data/testData.csv");
-    QFile file(filePath);
-    if (file.open(QIODevice::ReadOnly)) {
-        QTextStream in(&file);
-        QMap<QDateTime, double> dataMap;
-        while (!in.atEnd()) {
-            QString line = in.readLine();
-            QStringList fields = line.split(',');
-            if (fields.size() > 4 && fields[1] == selectedPollutant && fields[3] == selectedLocation && fields[4] == selectedType) {
-                QDateTime date = QDateTime::fromString(fields[0], "yyyy-MM-ddTHH:mm:ss");
-                double level = fields[2].toDouble();
-                dataMap[date] += level;
-            }
-        }
-        file.close();
+    std::vector<float> averages;
+    QMap<QDateTime, double> dataMap; 
+    for (int i = 0; i < dates.size(); i++) {
+        float current = filtered.filterDate(dates[i].toString("yyyy-MM-ddTHH:mm:ss").toStdString()).getAvg();
+        QDateTime date = dates[i];
+        dataMap[date] += current;
+    }
 
-        if (dataMap.isEmpty()) {
-            QLabel *noDataLabel = new QLabel("No data available for the selected filters.");
-            noDataLabel->setAlignment(Qt::AlignCenter);
-            noDataLabel->setStyleSheet("font-size: 16px; color: red;");
-            chartLayout->addWidget(noDataLabel);
-        } else {
-            QChart *chart = new QChart();
-            QLineSeries *series = new QLineSeries();
-            for (auto it = dataMap.begin(); it != dataMap.end(); ++it) {
-                series->append(it.key().toMSecsSinceEpoch(), it.value());
-            }
-            chart->addSeries(series);
-            chart->createDefaultAxes();
-            chart->setTitle("Environmental Data Over Time");
 
-            QChartView *chartView = new QChartView(chart);
-            chartLayout->addWidget(chartView);
-        }
-
-        updateCompliance(selectedPollutant);
+    if (dataMap.isEmpty()) {
+        QLabel *noDataLabel = new QLabel("No data available for the selected filters.");
+        noDataLabel->setAlignment(Qt::AlignCenter);
+        noDataLabel->setStyleSheet("font-size: 16px; color: red;");
+        chartLayout->addWidget(noDataLabel);
     } else {
-        qWarning() << "Unable to open file at:" << filePath;
+        QChart *chart = new QChart();
+        QBarSeries *series = new QBarSeries();
+        QBarSet *avgset = new QBarSet("Avg set");
+    
+        QStringList cats;
+        for (auto it = dataMap.begin(); it != dataMap.end(); ++it) { 
+            *avgset << it.value(); cats << it.key().toString("yyyy-MM-dd"); 
+        }
+        series->append(avgset);
+        chart->addSeries(series);
+
+        QBarCategoryAxis *axisX = new QBarCategoryAxis(); 
+        axisX->append(cats); 
+        chart->addAxis(axisX, Qt::AlignBottom); 
+        series->attachAxis(axisX); 
+
+        QValueAxis *axisY = new QValueAxis(); 
+        axisY->setTitleText("Average Level"); 
+        chart->addAxis(axisY, Qt::AlignLeft); 
+        series->attachAxis(axisY);
+
+        chart->setTitle("Average Levels over Time");
+
+        QChartView *chartView = new QChartView(chart);
+        chartLayout->addWidget(chartView);
     }
 }
+
 
 void ELIWindow::clearCharts() {
     QLayoutItem* child;

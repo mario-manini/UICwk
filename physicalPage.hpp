@@ -2,6 +2,19 @@
 
 #include <QWidget>
 #include "sampleset.hpp"
+#include <QLabel>
+#include <QVBoxLayout>
+#include <QHBoxLayout>
+#include <QLineEdit>
+#include <QFont>
+#include <QTableWidget>
+#include <QTableWidgetItem>
+#include <QPushButton>
+#include <QBrush>
+#include <QColor>
+#include <QListWidget>
+#include <QListWidgetItem>
+#include <QMessageBox>
 
 class QComboBox;
 class QLabel;
@@ -11,6 +24,8 @@ class QLineEdit;
 class QTableWidget;
 class QTableWidgetItem;
 class QPushButton;
+class QListWidget;
+class QListWidgetItem;
 
 
 class PhysicalPage : public QWidget
@@ -19,9 +34,9 @@ public:
     //constructor
     explicit PhysicalPage(QWidget* parent = nullptr);
     void loadData() { data = SampleSet("../data/Y-2024-M.csv"); }
-    
+
 public slots:
-    void onBackButtonClicked();
+    void addFilters();
 
 private:
     Q_OBJECT
@@ -29,23 +44,29 @@ private:
     void createWidgets();
     void arrangeWidgets();
     void showData(SampleSet);
-    void addFilters();
+    void updateSearchResults(const QString& searchText, QListWidget* resultsList);
 
-    QComboBox* comboBox;
-    QLabel* label;
-    QLineEdit* lineEdit;
-    QHBoxLayout* horiz_layout1;
-    QHBoxLayout* horiz_layout2;
-    QVBoxLayout* vertical_layout;
-    QVBoxLayout* main_layout;
-    QFont* title_font;
+    //layouts
+    QVBoxLayout* mainLayout;
+    QHBoxLayout* searchBarsLayout;
+    QVBoxLayout* searchBox1Layout;
+    QVBoxLayout* searchBox2Layout;
+    QVBoxLayout* tableLayout;
+    //widgets
     QLabel* title_label;
-    QTableWidget* table;
-    QTableWidgetItem* item;
+    QLineEdit* locationSearch;
+    QListWidget* locResults;
+    QLineEdit* pollSearch;
+    QListWidget* pollResults;
     QPushButton* filter_button;
-    QLabel* location_label;
-    QLineEdit* pollutant_edit;
     QPushButton* back_button;
+    QTableWidget* table;
 
     SampleSet data;
+
+private slots:
+    void handleSearchLoc(const QString& searchText);
+    void handleSearchPoll(const QString& searchText);
+    void updateSearchLoc(QListWidgetItem* item);
+    void updateSearchPoll(QListWidgetItem* item);
 };

@@ -374,13 +374,65 @@ CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.o: \
  /usr/include/qt6/QtCharts/qxyseries.h /usr/include/qt6/QtGui/QImage \
  /usr/include/qt6/QtGui/qimage.h /usr/include/qt6/QtWidgets/QScrollArea \
  /usr/include/qt6/QtWidgets/qscrollarea.h \
+ /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/main_autogen/EWIEGA46WW/../../../sampleset.hpp \
+ /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/main_autogen/EWIEGA46WW/../../../sample.hpp \
+ /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
+ /usr/include/c++/11/ios /usr/include/c++/11/bits/basic_ios.h \
+ /usr/include/c++/11/bits/locale_facets.h /usr/include/c++/11/cwctype \
+ /usr/include/wctype.h /usr/include/bits/wctype-wchar.h \
+ /usr/include/c++/11/x86_64-redhat-linux/bits/ctype_base.h \
+ /usr/include/c++/11/x86_64-redhat-linux/bits/ctype_inline.h \
+ /usr/include/c++/11/bits/locale_facets.tcc \
+ /usr/include/c++/11/bits/basic_ios.tcc \
+ /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
+ /usr/include/c++/11/bits/istream.tcc \
+ /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/main_autogen/EWIEGA46WW/../../../determinand.hpp \
+ /usr/include/c++/11/set /usr/include/c++/11/bits/stl_set.h \
+ /usr/include/c++/11/bits/stl_multiset.h \
+ /usr/include/qt6/QtWidgets/QGroupBox \
+ /usr/include/qt6/QtWidgets/qgroupbox.h /usr/include/qt6/QtCore/QFile \
+ /usr/include/qt6/QtCore/qfile.h /usr/include/qt6/QtCore/qfiledevice.h \
+ /usr/include/c++/11/filesystem /usr/include/c++/11/bits/fs_fwd.h \
+ /usr/include/c++/11/bits/fs_path.h /usr/include/c++/11/locale \
+ /usr/include/c++/11/bits/locale_facets_nonio.h \
+ /usr/include/c++/11/x86_64-redhat-linux/bits/time_members.h \
+ /usr/include/c++/11/x86_64-redhat-linux/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/11/bits/codecvt.h \
+ /usr/include/c++/11/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/11/bits/locale_conv.h /usr/include/c++/11/iomanip \
+ /usr/include/c++/11/bits/quoted_string.h /usr/include/c++/11/sstream \
+ /usr/include/c++/11/bits/sstream.tcc /usr/include/c++/11/codecvt \
+ /usr/include/c++/11/bits/fs_dir.h /usr/include/c++/11/bits/fs_ops.h \
+ /usr/include/qt6/QtCore/QTextStream \
+ /usr/include/qt6/QtCore/qtextstream.h /usr/include/qt6/QtCore/QDir \
+ /usr/include/qt6/QtCore/qdir.h /usr/include/qt6/QtCore/qfile.h \
+ /usr/include/qt6/QtCore/qfileinfo.h /usr/include/qt6/QtCore/qdatetime.h \
+ /usr/include/qt6/QtCore/qcalendar.h /usr/include/qt6/QtCore/qtimezone.h \
+ /usr/include/qt6/QtCore/QCoreApplication \
+ /usr/include/qt6/QtCore/qcoreapplication.h \
+ /usr/include/qt6/QtCore/qeventloop.h \
+ /usr/include/qt6/QtCore/qcoreapplication_platform.h \
+ /usr/include/qt6/QtCore/qcoreapplication.h \
+ /usr/include/qt6/QtCore/QDebug /usr/include/qt6/QtCore/qdebug.h \
+ /usr/include/qt6/QtCharts/QDateTimeAxis \
+ /usr/include/qt6/QtCharts/qdatetimeaxis.h \
+ /usr/include/qt6/QtCharts/QValueAxis \
+ /usr/include/qt6/QtCharts/qvalueaxis.h \
+ /usr/include/qt6/QtCharts/QBarCategoryAxis \
+ /usr/include/qt6/QtCharts/qbarcategoryaxis.h \
+ /usr/include/qt6/QtCharts/QBarSeries \
+ /usr/include/qt6/QtCharts/qbarseries.h \
+ /usr/include/qt6/QtCharts/QAbstractBarSeries \
+ /usr/include/qt6/QtCharts/qabstractbarseries.h \
+ /usr/include/qt6/QtCore/QStringList \
+ /usr/include/qt6/QtCore/qstringlist.h /usr/include/qt6/QtCharts/QBarSet \
+ /usr/include/qt6/QtCharts/qbarset.h \
+ /usr/include/qt6/QtCharts/qchartglobal.h \
  /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/main_autogen/EWIEGA46WW/moc_fluorinated.cpp \
  /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/main_autogen/EWIEGA46WW/../../../fluorinated.hpp \
  /usr/include/qt6/QtWidgets/QLineEdit \
  /usr/include/qt6/QtWidgets/qlineedit.h /usr/include/qt6/QtGui/QFont \
  /usr/include/qt6/QtWidgets/QHBoxLayout \
- /usr/include/qt6/QtWidgets/QGroupBox \
- /usr/include/qt6/QtWidgets/qgroupbox.h \
  /usr/include/qt6/QtWidgets/QListWidget \
  /usr/include/qt6/QtWidgets/qlistwidget.h \
  /usr/include/qt6/QtWidgets/qlistview.h \
@@ -402,7 +454,6 @@ CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.o: \
  /usr/include/qt6/QtCore/q23utility.h \
  /usr/include/qt6/QtCore/qabstractanimation.h \
  /usr/include/qt6/QtCore/qabstracteventdispatcher.h \
- /usr/include/qt6/QtCore/qeventloop.h \
  /usr/include/qt6/QtCore/qabstractitemmodel.h \
  /usr/include/qt6/QtCore/qabstractnativeeventfilter.h \
  /usr/include/qt6/QtCore/qabstractproxymodel.h \
@@ -415,8 +466,6 @@ CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.o: \
  /usr/include/qt6/QtCore/qdeadlinetimer.h \
  /usr/include/qt6/QtCore/qelapsedtimer.h \
  /usr/include/qt6/QtCore/qtsan_impl.h \
- /usr/include/qt6/QtCore/qcoreapplication.h \
- /usr/include/qt6/QtCore/qcoreapplication_platform.h \
  /usr/include/qt6/QtCore/qarraydata.h \
  /usr/include/qt6/QtCore/qarraydataops.h \
  /usr/include/qt6/QtCore/qarraydatapointer.h \
@@ -433,8 +482,7 @@ CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.o: \
  /usr/include/qt6/QtCore/qbytearrayview.h \
  /usr/include/qt6/QtCore/qcache.h /usr/include/qt6/QtCore/qcalendar.h \
  /usr/include/qt6/QtCore/qcborarray.h \
- /usr/include/qt6/QtCore/qcborvalue.h /usr/include/qt6/QtCore/qdatetime.h \
- /usr/include/qt6/QtCore/qcalendar.h \
+ /usr/include/qt6/QtCore/qcborvalue.h \
  /usr/include/qt6/QtCore/qcborcommon.h /usr/include/qt6/QtCore/quuid.h \
  /usr/include/qt6/QtCore/qendian.h /usr/include/qt6/QtCore/qcborcommon.h \
  /usr/include/qt6/QtCore/qcbormap.h /usr/include/qt6/QtCore/qcborstream.h \
@@ -454,37 +502,12 @@ CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.o: \
  /usr/include/qt6/QtCore/qcontainerfwd.h \
  /usr/include/qt6/QtCore/qcontainerinfo.h \
  /usr/include/qt6/QtCore/qcontiguouscache.h \
- /usr/include/qt6/QtCore/qcoreapplication.h \
  /usr/include/qt6/QtCore/qcoreevent.h \
  /usr/include/qt6/QtCore/qcryptographichash.h \
  /usr/include/qt6/QtCore/qdarwinhelpers.h \
  /usr/include/qt6/QtCore/qdatastream.h \
  /usr/include/qt6/QtCore/qdatetime.h \
  /usr/include/qt6/QtCore/qdeadlinetimer.h \
- /usr/include/qt6/QtCore/qdebug.h /usr/include/qt6/QtCore/qdir.h \
- /usr/include/qt6/QtCore/qfile.h /usr/include/qt6/QtCore/qfiledevice.h \
- /usr/include/c++/11/filesystem /usr/include/c++/11/bits/fs_fwd.h \
- /usr/include/c++/11/bits/fs_path.h /usr/include/c++/11/locale \
- /usr/include/c++/11/bits/locale_facets.h /usr/include/c++/11/cwctype \
- /usr/include/wctype.h /usr/include/bits/wctype-wchar.h \
- /usr/include/c++/11/x86_64-redhat-linux/bits/ctype_base.h \
- /usr/include/c++/11/x86_64-redhat-linux/bits/ctype_inline.h \
- /usr/include/c++/11/bits/locale_facets.tcc \
- /usr/include/c++/11/bits/locale_facets_nonio.h \
- /usr/include/c++/11/x86_64-redhat-linux/bits/time_members.h \
- /usr/include/c++/11/x86_64-redhat-linux/bits/messages_members.h \
- /usr/include/libintl.h /usr/include/c++/11/bits/codecvt.h \
- /usr/include/c++/11/bits/locale_facets_nonio.tcc \
- /usr/include/c++/11/bits/locale_conv.h /usr/include/c++/11/iomanip \
- /usr/include/c++/11/bits/quoted_string.h /usr/include/c++/11/sstream \
- /usr/include/c++/11/istream /usr/include/c++/11/ios \
- /usr/include/c++/11/bits/basic_ios.h \
- /usr/include/c++/11/bits/basic_ios.tcc /usr/include/c++/11/ostream \
- /usr/include/c++/11/bits/ostream.tcc \
- /usr/include/c++/11/bits/istream.tcc \
- /usr/include/c++/11/bits/sstream.tcc /usr/include/c++/11/codecvt \
- /usr/include/c++/11/bits/fs_dir.h /usr/include/c++/11/bits/fs_ops.h \
- /usr/include/qt6/QtCore/qfileinfo.h /usr/include/qt6/QtCore/qtimezone.h \
  /usr/include/qt6/QtCore/qdiriterator.h /usr/include/qt6/QtCore/qdir.h \
  /usr/include/qt6/QtCore/qeasingcurve.h \
  /usr/include/qt6/QtCore/qelapsedtimer.h \
@@ -492,11 +515,9 @@ CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.o: \
  /usr/include/qt6/QtCore/qexception.h \
  /usr/include/qt6/QtCore/qexceptionhandling.h \
  /usr/include/qt6/QtCore/qfactoryinterface.h \
- /usr/include/qt6/QtCore/qfile.h /usr/include/qt6/QtCore/qfiledevice.h \
+ /usr/include/qt6/QtCore/qfiledevice.h \
  /usr/include/qt6/QtCore/qfileinfo.h \
  /usr/include/qt6/QtCore/qfileselector.h \
- /usr/include/qt6/QtCore/QStringList \
- /usr/include/qt6/QtCore/qstringlist.h \
  /usr/include/qt6/QtCore/qfilesystemwatcher.h \
  /usr/include/qt6/QtCore/qflags.h /usr/include/qt6/QtCore/qforeach.h \
  /usr/include/qt6/QtCore/qfunctionpointer.h \
@@ -704,8 +725,7 @@ CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.o: \
  /usr/include/qt6/QtCore/qtemporaryfile.h \
  /usr/include/qt6/QtCore/qtenvironmentvariables.h \
  /usr/include/qt6/QtCore/qtextboundaryfinder.h \
- /usr/include/qt6/QtCore/qtextstream.h /usr/include/qt6/QtCore/qthread.h \
- /usr/include/qt6/QtCore/qthreadpool.h \
+ /usr/include/qt6/QtCore/qthread.h /usr/include/qt6/QtCore/qthreadpool.h \
  /usr/include/qt6/QtCore/qthreadstorage.h \
  /usr/include/qt6/QtCore/qtimeline.h /usr/include/qt6/QtCore/qtimer.h \
  /usr/include/qt6/QtCore/qbasictimer.h \
@@ -1004,19 +1024,13 @@ CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.o: \
  /usr/include/qt6/QtOpenGLWidgets/qtopenglwidgetsglobal.h \
  /usr/include/qt6/QtWidgets/QWidget \
  /usr/include/qt6/QtOpenGLWidgets/qtopenglwidgetsversion.h \
- /usr/include/qt6/QtCharts/qabstractbarseries.h \
  /usr/include/qt6/QtCharts/qarealegendmarker.h \
  /usr/include/qt6/QtCharts/QLegendMarker \
  /usr/include/qt6/QtCharts/qlegendmarker.h \
  /usr/include/qt6/QtCharts/QAreaSeries \
  /usr/include/qt6/QtCharts/qareaseries.h \
- /usr/include/qt6/QtCharts/qbarcategoryaxis.h \
  /usr/include/qt6/QtCharts/qbarlegendmarker.h \
- /usr/include/qt6/QtCharts/QAbstractBarSeries \
- /usr/include/qt6/QtCharts/QBarSet /usr/include/qt6/QtCharts/qbarset.h \
- /usr/include/qt6/QtCharts/qchartglobal.h \
  /usr/include/qt6/QtCharts/qbarmodelmapper.h \
- /usr/include/qt6/QtCharts/qbarseries.h \
  /usr/include/qt6/QtCharts/qboxplotlegendmarker.h \
  /usr/include/qt6/QtCharts/QBoxPlotSeries \
  /usr/include/qt6/QtCharts/qboxplotseries.h \
@@ -1028,10 +1042,7 @@ CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.o: \
  /usr/include/qt6/QtCharts/qcandlestickmodelmapper.h \
  /usr/include/qt6/QtCharts/qcandlestickset.h \
  /usr/include/qt6/QtCharts/qcategoryaxis.h \
- /usr/include/qt6/QtCharts/QValueAxis \
- /usr/include/qt6/QtCharts/qvalueaxis.h \
  /usr/include/qt6/QtCharts/qcoloraxis.h \
- /usr/include/qt6/QtCharts/qdatetimeaxis.h \
  /usr/include/qt6/QtCharts/qhbarmodelmapper.h \
  /usr/include/qt6/QtCharts/QBarModelMapper \
  /usr/include/qt6/QtCharts/qhboxplotmodelmapper.h \
@@ -1066,9 +1077,9 @@ CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.o: \
  /usr/include/qt6/QtCharts/qvcandlestickmodelmapper.h \
  /usr/include/qt6/QtCharts/qvpiemodelmapper.h \
  /usr/include/qt6/QtCharts/qvxymodelmapper.h \
- /usr/include/qt6/QtCharts/qxylegendmarker.h /usr/include/c++/11/iostream \
- /usr/include/qt6/QtCore/QDebug /usr/include/qt6/QtGui/QBrush \
- /usr/include/qt6/QtGui/QColor /usr/include/qt6/QtGui/QPen \
+ /usr/include/qt6/QtCharts/qxylegendmarker.h \
+ /usr/include/qt6/QtGui/QBrush /usr/include/qt6/QtGui/QColor \
+ /usr/include/qt6/QtGui/QPen \
  /usr/include/qt6/QtCharts/qabstractbarseries.h \
  /usr/include/qt6/QtCharts/qvbarmodelmapper.h \
  /usr/include/qt6/QtCharts/qboxplotseries.h \
@@ -1076,13 +1087,13 @@ CMakeFiles/main.dir/main_autogen/mocs_compilation.cpp.o: \
  /usr/include/qt6/QtCharts/qpieseries.h \
  /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/main_autogen/EWIEGA46WW/moc_physicalPage.cpp \
  /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/main_autogen/EWIEGA46WW/../../../physicalPage.hpp \
- /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/main_autogen/EWIEGA46WW/../../../sampleset.hpp \
- /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/main_autogen/EWIEGA46WW/../../../sample.hpp \
- /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/main_autogen/EWIEGA46WW/../../../determinand.hpp \
+ /usr/include/qt6/QtWidgets/QTableWidget \
+ /usr/include/qt6/QtWidgets/QTableWidgetItem \
+ /usr/include/qt6/QtWidgets/QListWidgetItem \
+ /usr/include/qt6/QtWidgets/QMessageBox \
  /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/main_autogen/EWIEGA46WW/moc_pollutants_overview.cpp \
  /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/main_autogen/EWIEGA46WW/../../../pollutants_overview.hpp \
  /usr/include/qt6/QtWidgets/QtWidgets \
- /usr/include/qt6/QtWidgets/QTableWidget \
  /usr/include/qt6/QtWidgets/QHeaderView \
  /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/main_autogen/EWIEGA46WW/moc_pop.cpp \
  /uolstore/home/users/sc23mm2/Documents/UI/UICwk/build/main_autogen/EWIEGA46WW/../../../pop.hpp

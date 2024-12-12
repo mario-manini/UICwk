@@ -33,18 +33,4 @@ set_target_properties(main PROPERTIES
     MACOSX_BUNDLE OFF
 )
 
-# Test executable
-qt_add_executable(testRead
-    sampleset.cpp
-    determinand.cpp
-    sample.cpp
-    testRead.cpp
-)
 
-# Link only Qt Widgets for the test executable
-target_link_libraries(testRead PRIVATE Qt6::Widgets Qt6::Charts)
-
-set_target_properties(testRead PROPERTIES
-    WIN32_EXECUTABLE ON
-    MACOSX_BUNDLE OFF
-)

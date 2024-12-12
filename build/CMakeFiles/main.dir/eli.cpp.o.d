@@ -365,16 +365,26 @@ CMakeFiles/main.dir/eli.cpp.o: \
  /usr/include/qt6/QtCharts/qxyseries.h /usr/include/qt6/QtGui/QImage \
  /usr/include/qt6/QtGui/qimage.h /usr/include/qt6/QtWidgets/QScrollArea \
  /usr/include/qt6/QtWidgets/qscrollarea.h \
- /usr/include/qt6/QtWidgets/QGroupBox \
- /usr/include/qt6/QtWidgets/qgroupbox.h /usr/include/qt6/QtCore/QFile \
- /usr/include/qt6/QtCore/qfile.h /usr/include/qt6/QtCore/qfiledevice.h \
- /usr/include/c++/11/filesystem /usr/include/c++/11/bits/fs_fwd.h \
- /usr/include/c++/11/bits/fs_path.h /usr/include/c++/11/locale \
+ /uolstore/home/users/sc23mm2/Documents/UI/UICwk/sampleset.hpp \
+ /uolstore/home/users/sc23mm2/Documents/UI/UICwk/sample.hpp \
+ /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
+ /usr/include/c++/11/ios /usr/include/c++/11/bits/basic_ios.h \
  /usr/include/c++/11/bits/locale_facets.h /usr/include/c++/11/cwctype \
  /usr/include/wctype.h /usr/include/bits/wctype-wchar.h \
  /usr/include/c++/11/x86_64-redhat-linux/bits/ctype_base.h \
  /usr/include/c++/11/x86_64-redhat-linux/bits/ctype_inline.h \
  /usr/include/c++/11/bits/locale_facets.tcc \
+ /usr/include/c++/11/bits/basic_ios.tcc \
+ /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
+ /usr/include/c++/11/bits/istream.tcc \
+ /uolstore/home/users/sc23mm2/Documents/UI/UICwk/determinand.hpp \
+ /usr/include/c++/11/set /usr/include/c++/11/bits/stl_set.h \
+ /usr/include/c++/11/bits/stl_multiset.h \
+ /usr/include/qt6/QtWidgets/QGroupBox \
+ /usr/include/qt6/QtWidgets/qgroupbox.h /usr/include/qt6/QtCore/QFile \
+ /usr/include/qt6/QtCore/qfile.h /usr/include/qt6/QtCore/qfiledevice.h \
+ /usr/include/c++/11/filesystem /usr/include/c++/11/bits/fs_fwd.h \
+ /usr/include/c++/11/bits/fs_path.h /usr/include/c++/11/locale \
  /usr/include/c++/11/bits/locale_facets_nonio.h \
  /usr/include/c++/11/x86_64-redhat-linux/bits/time_members.h \
  /usr/include/c++/11/x86_64-redhat-linux/bits/messages_members.h \
@@ -382,11 +392,6 @@ CMakeFiles/main.dir/eli.cpp.o: \
  /usr/include/c++/11/bits/locale_facets_nonio.tcc \
  /usr/include/c++/11/bits/locale_conv.h /usr/include/c++/11/iomanip \
  /usr/include/c++/11/bits/quoted_string.h /usr/include/c++/11/sstream \
- /usr/include/c++/11/istream /usr/include/c++/11/ios \
- /usr/include/c++/11/bits/basic_ios.h \
- /usr/include/c++/11/bits/basic_ios.tcc /usr/include/c++/11/ostream \
- /usr/include/c++/11/bits/ostream.tcc \
- /usr/include/c++/11/bits/istream.tcc \
  /usr/include/c++/11/bits/sstream.tcc /usr/include/c++/11/codecvt \
  /usr/include/c++/11/bits/fs_dir.h /usr/include/c++/11/bits/fs_ops.h \
  /usr/include/qt6/QtCore/QTextStream \
@@ -403,4 +408,16 @@ CMakeFiles/main.dir/eli.cpp.o: \
  /usr/include/qt6/QtCharts/QDateTimeAxis \
  /usr/include/qt6/QtCharts/qdatetimeaxis.h \
  /usr/include/qt6/QtCharts/QValueAxis \
- /usr/include/qt6/QtCharts/qvalueaxis.h
+ /usr/include/qt6/QtCharts/qvalueaxis.h \
+ /usr/include/qt6/QtCharts/QBarCategoryAxis \
+ /usr/include/qt6/QtCharts/qbarcategoryaxis.h \
+ /usr/include/qt6/QtCharts/QBarSeries \
+ /usr/include/qt6/QtCharts/qbarseries.h \
+ /usr/include/qt6/QtCharts/QAbstractBarSeries \
+ /usr/include/qt6/QtCharts/qabstractbarseries.h \
+ /usr/include/qt6/QtCore/QStringList \
+ /usr/include/qt6/QtCore/qstringlist.h /usr/include/qt6/QtCharts/QBarSet \
+ /usr/include/qt6/QtCharts/qbarset.h \
+ /usr/include/qt6/QtCharts/qchartglobal.h \
+ /uolstore/home/users/sc23mm2/Documents/UI/UICwk/getUniqueItems.hpp \
+ /usr/include/qt6/QtCore/QStringList

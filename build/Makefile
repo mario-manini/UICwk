@@ -130,19 +130,6 @@ main/fast:
 .PHONY : main/fast
 
 #=============================================================================
-# Target rules for targets named testRead
-
-# Build rule for target.
-testRead: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testRead
-.PHONY : testRead
-
-# fast build rule for target.
-testRead/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testRead.dir/build.make CMakeFiles/testRead.dir/build
-.PHONY : testRead/fast
-
-#=============================================================================
 # Target rules for targets named main_autogen
 
 # Build rule for target.
@@ -154,19 +141,6 @@ main_autogen: cmake_check_build_system
 main_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_autogen.dir/build.make CMakeFiles/main_autogen.dir/build
 .PHONY : main_autogen/fast
-
-#=============================================================================
-# Target rules for targets named testRead_autogen
-
-# Build rule for target.
-testRead_autogen: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testRead_autogen
-.PHONY : testRead_autogen
-
-# fast build rule for target.
-testRead_autogen/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testRead_autogen.dir/build.make CMakeFiles/testRead_autogen.dir/build
-.PHONY : testRead_autogen/fast
 
 dashboard.o: dashboard.cpp.o
 .PHONY : dashboard.o
@@ -198,7 +172,6 @@ determinand.o: determinand.cpp.o
 # target to build an object file
 determinand.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/determinand.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testRead.dir/build.make CMakeFiles/testRead.dir/determinand.cpp.o
 .PHONY : determinand.cpp.o
 
 determinand.i: determinand.cpp.i
@@ -207,7 +180,6 @@ determinand.i: determinand.cpp.i
 # target to preprocess a source file
 determinand.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/determinand.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testRead.dir/build.make CMakeFiles/testRead.dir/determinand.cpp.i
 .PHONY : determinand.cpp.i
 
 determinand.s: determinand.cpp.s
@@ -216,7 +188,6 @@ determinand.s: determinand.cpp.s
 # target to generate assembly for a file
 determinand.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/determinand.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testRead.dir/build.make CMakeFiles/testRead.dir/determinand.cpp.s
 .PHONY : determinand.cpp.s
 
 eli.o: eli.cpp.o
@@ -417,7 +388,6 @@ sample.o: sample.cpp.o
 # target to build an object file
 sample.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/sample.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testRead.dir/build.make CMakeFiles/testRead.dir/sample.cpp.o
 .PHONY : sample.cpp.o
 
 sample.i: sample.cpp.i
@@ -426,7 +396,6 @@ sample.i: sample.cpp.i
 # target to preprocess a source file
 sample.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/sample.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testRead.dir/build.make CMakeFiles/testRead.dir/sample.cpp.i
 .PHONY : sample.cpp.i
 
 sample.s: sample.cpp.s
@@ -435,7 +404,6 @@ sample.s: sample.cpp.s
 # target to generate assembly for a file
 sample.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/sample.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testRead.dir/build.make CMakeFiles/testRead.dir/sample.cpp.s
 .PHONY : sample.cpp.s
 
 sampleset.o: sampleset.cpp.o
@@ -444,7 +412,6 @@ sampleset.o: sampleset.cpp.o
 # target to build an object file
 sampleset.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/sampleset.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testRead.dir/build.make CMakeFiles/testRead.dir/sampleset.cpp.o
 .PHONY : sampleset.cpp.o
 
 sampleset.i: sampleset.cpp.i
@@ -453,7 +420,6 @@ sampleset.i: sampleset.cpp.i
 # target to preprocess a source file
 sampleset.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/sampleset.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testRead.dir/build.make CMakeFiles/testRead.dir/sampleset.cpp.i
 .PHONY : sampleset.cpp.i
 
 sampleset.s: sampleset.cpp.s
@@ -462,56 +428,7 @@ sampleset.s: sampleset.cpp.s
 # target to generate assembly for a file
 sampleset.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/sampleset.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testRead.dir/build.make CMakeFiles/testRead.dir/sampleset.cpp.s
 .PHONY : sampleset.cpp.s
-
-testRead.o: testRead.cpp.o
-.PHONY : testRead.o
-
-# target to build an object file
-testRead.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testRead.dir/build.make CMakeFiles/testRead.dir/testRead.cpp.o
-.PHONY : testRead.cpp.o
-
-testRead.i: testRead.cpp.i
-.PHONY : testRead.i
-
-# target to preprocess a source file
-testRead.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testRead.dir/build.make CMakeFiles/testRead.dir/testRead.cpp.i
-.PHONY : testRead.cpp.i
-
-testRead.s: testRead.cpp.s
-.PHONY : testRead.s
-
-# target to generate assembly for a file
-testRead.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testRead.dir/build.make CMakeFiles/testRead.dir/testRead.cpp.s
-.PHONY : testRead.cpp.s
-
-testRead_autogen/mocs_compilation.o: testRead_autogen/mocs_compilation.cpp.o
-.PHONY : testRead_autogen/mocs_compilation.o
-
-# target to build an object file
-testRead_autogen/mocs_compilation.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testRead.dir/build.make CMakeFiles/testRead.dir/testRead_autogen/mocs_compilation.cpp.o
-.PHONY : testRead_autogen/mocs_compilation.cpp.o
-
-testRead_autogen/mocs_compilation.i: testRead_autogen/mocs_compilation.cpp.i
-.PHONY : testRead_autogen/mocs_compilation.i
-
-# target to preprocess a source file
-testRead_autogen/mocs_compilation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testRead.dir/build.make CMakeFiles/testRead.dir/testRead_autogen/mocs_compilation.cpp.i
-.PHONY : testRead_autogen/mocs_compilation.cpp.i
-
-testRead_autogen/mocs_compilation.s: testRead_autogen/mocs_compilation.cpp.s
-.PHONY : testRead_autogen/mocs_compilation.s
-
-# target to generate assembly for a file
-testRead_autogen/mocs_compilation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testRead.dir/build.make CMakeFiles/testRead.dir/testRead_autogen/mocs_compilation.cpp.s
-.PHONY : testRead_autogen/mocs_compilation.cpp.s
 
 # Help Target
 help:
@@ -522,9 +439,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main_autogen"
-	@echo "... testRead_autogen"
 	@echo "... main"
-	@echo "... testRead"
 	@echo "... dashboard.o"
 	@echo "... dashboard.i"
 	@echo "... dashboard.s"
@@ -561,12 +476,6 @@ help:
 	@echo "... sampleset.o"
 	@echo "... sampleset.i"
 	@echo "... sampleset.s"
-	@echo "... testRead.o"
-	@echo "... testRead.i"
-	@echo "... testRead.s"
-	@echo "... testRead_autogen/mocs_compilation.o"
-	@echo "... testRead_autogen/mocs_compilation.i"
-	@echo "... testRead_autogen/mocs_compilation.s"
 .PHONY : help
 
 

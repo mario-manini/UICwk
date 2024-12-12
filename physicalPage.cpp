@@ -1,16 +1,8 @@
 #include "physicalPage.hpp"
 #include "sampleset.hpp"
 #include "dashboard.hpp"
-#include <QLabel>
-#include <QVBoxLayout>
-#include <QHBoxLayout>
-#include <QLineEdit>
-#include <QFont>
-#include <QTableWidget>
-#include <QTableWidgetItem>
-#include <QPushButton>
-#include <QBrush>
-#include <QColor>
+#include "getUniqueItems.hpp"
+
 
 PhysicalPage::PhysicalPage(QWidget* parent) : QWidget(parent)
 {
@@ -22,65 +14,69 @@ PhysicalPage::PhysicalPage(QWidget* parent) : QWidget(parent)
 
 void PhysicalPage::createWidgets()
 {
-    //new widgets
-    title_label = new QLabel("Compliance Dashboard");
-    pollutant_edit = new QLineEdit("Enter pollutant",this);
-    label = new QLabel("Pollutant Searched:", this);
-    lineEdit = new QLineEdit("Enter location", this);
-    table = new QTableWidget(this);
+    //set/style title widget
+    title_label = new QLabel("Compliance Dashboard",this);
+    title_label->setStyleSheet("font-size: 24px; font-weight: bold; text-align: center;");
+
+    //set up search bars for pollutant/lake
+    locationSearch = new QLineEdit(this);
+    locationSearch->setPlaceholderText("Search locations...");
+    locResults = new QListWidget(this);
+    locResults->setFixedHeight(200);
+    pollSearch = new QLineEdit(this);
+    pollSearch->setPlaceholderText("Search pollutants...");
+    pollResults = new QListWidget(this);
+    pollResults->setFixedHeight(200);
+
     filter_button = new QPushButton("Filter",this);
-    location_label = new QLabel("Location Searched:",this);
     back_button = new QPushButton("Back",this);
 
-    //sets font/allignment
-    title_font = new QFont("Arial",30);
-    title_label->setFont(*title_font);
+    //controls search bars/buttons
+    connect(filter_button, SIGNAL(clicked()), this, SLOT(addFilters())); 
+    connect(back_button, &QPushButton::clicked, this, &QWidget::close); 
+    connect(locationSearch, &QLineEdit::textChanged, this, &PhysicalPage::handleSearchLoc);
+    connect(pollSearch, &QLineEdit::textChanged, this, &PhysicalPage::handleSearchPoll);
+    connect(locResults, &QListWidget::itemClicked, this, &PhysicalPage::updateSearchLoc);
+    connect(pollResults, &QListWidget::itemClicked, this, &PhysicalPage::updateSearchPoll);
 
-    //links box/label/button to their function
-    connect(pollutant_edit, &QLineEdit::textChanged, label, &QLabel::setText);
-    connect(lineEdit, &QLineEdit::textChanged, location_label, &QLabel::setText);
-    connect(filter_button, &QPushButton::clicked, this, &PhysicalPage::addFilters);
-    QObject::connect(back_button, SIGNAL(clicked()), this, SLOT(onBackButtonClicked())); 
+    table = new QTableWidget(this);
 
     //set up table columns
-    table->setColumnCount(4);
-    table->setHorizontalHeaderLabels({"Name", "Compliancy", "Location", "Safe Level"});
+    table->setColumnCount(5);
+    table->setHorizontalHeaderLabels({"Name", "Compliancy", "Location", "date", "Safe Level"});
     table->setRowCount(4);
-    setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
 }
 
 void PhysicalPage::arrangeWidgets()
 {
-    //new layouts
-    main_layout = new QVBoxLayout(this);
-    horiz_layout1 = new QHBoxLayout();
-    horiz_layout2 = new QHBoxLayout();
-    vertical_layout = new QVBoxLayout();
+    //set up overall layout
+    mainLayout = new QVBoxLayout(this);
+    mainLayout->addWidget(title_label, 0, Qt::AlignCenter);
+    //layout for the search bars/lists
+    searchBarsLayout = new QHBoxLayout();
+    searchBox1Layout = new QVBoxLayout();
+    searchBox1Layout->addWidget(locationSearch);
+    searchBox1Layout->addWidget(locResults);
+    searchBox2Layout = new QVBoxLayout();
+    searchBox2Layout->addWidget(pollSearch);
+    searchBox2Layout->addWidget(pollResults);
 
-    //reduce space between vertical boxes
-    vertical_layout->setSpacing(0);
+    //Add search boxes to layout
+    searchBarsLayout->addLayout(searchBox1Layout);
+    searchBarsLayout->addLayout(searchBox2Layout);
+    mainLayout->addLayout(searchBarsLayout);
+    mainLayout->addWidget(filter_button, 0, Qt::AlignCenter);
 
-    //stop stretching the boxes
-    pollutant_edit->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
-    label->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
-    lineEdit->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
-    location_label->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
-    
-    //widgets to layouts
-    vertical_layout->addWidget(pollutant_edit);
-    vertical_layout->addWidget(label);
-    vertical_layout->addWidget(lineEdit);
-    vertical_layout->addWidget(location_label);
-    vertical_layout->addWidget(filter_button);
-    vertical_layout->addWidget(back_button);
-    
-    horiz_layout1->addLayout(vertical_layout);
-    horiz_layout1->addWidget(table);
-
-    main_layout->addWidget(title_label);
-    main_layout->addLayout(horiz_layout1);
-
-    setLayout(main_layout);
+    //sets table to take as much space as it can
+    table->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+    table->setMinimumHeight(800);
+    table->setMinimumWidth(600);
+    tableLayout = new QVBoxLayout();
+    tableLayout->addWidget(table, 1, Qt::AlignCenter);
+    tableLayout->setStretch(1,1);
+    mainLayout->addLayout(tableLayout, 1);
+  
+    setLayout(mainLayout);
     loadData(); 
     showData(data);
     showMaximized();
@@ -104,11 +100,12 @@ void PhysicalPage::showData(SampleSet data) {
             QString units = QString::fromStdString(groups[row].determinandAt(0).getUnits());
             QString level_units = QString::number(temp.getLevel(),'f',4) + " " + units;
             QString safe_level = QString::number(groups[row].determinandAt(0).getSafeLevel(),'f',2) + " " + units;
+            QString time = QString::fromStdString(temp.getTime());
 
             //reads to an entry then adds entry
             QStringList entry;
             QBrush colour;
-            entry << name << level_units << location  << safe_level; 
+            entry << name << level_units << location << time << safe_level; 
             table->insertRow(count);
 
             if (temp.getLevel() > groups[row].determinandAt(0).getSafeLevel()) {
@@ -117,7 +114,7 @@ void PhysicalPage::showData(SampleSet data) {
             } else if (temp.getLevel() < groups[row].determinandAt(0).getSafeLevel()) {
                 colour = QBrush(QColor(0, 255, 0));
             } else {
-                colour = QBrush(QColor(100, 100, 0));
+                colour = QBrush(QColor(255,140,0));
             }
 
             for (int i = 0; i < entry.size(); i++) {
@@ -134,14 +131,10 @@ void PhysicalPage::showData(SampleSet data) {
 void PhysicalPage::addFilters()
 {
     SampleSet filtered;
-    QString location_filter = location_label->text();
-
+    QString location_filter = locationSearch->text();
     filtered = data.filterLocation(location_filter.toStdString());
-    if (filtered.sampleSize() == 0) {
-        location_label->setText("Location doesnt exist");
-    }
 
-    QString pollutant_filter = label->text();
+    QString pollutant_filter = pollSearch->text();
     if (filtered.sampleSize() == 0) {
         filtered = data.filterName(pollutant_filter.toStdString());
     } else {
@@ -150,14 +143,58 @@ void PhysicalPage::addFilters()
 
 
     if (filtered.sampleSize() == 0) {
-        label->setText("Pollutant doesnt exist");
+        QMessageBox::warning(this, "No Data Found", "No data found for the selected filters.");
+        return;
     }
 
     showData(filtered);
 }
 
-void PhysicalPage::onBackButtonClicked() {
-    Dashboard* newWindow = new Dashboard();
-    newWindow->show();
-    this->close();
+void PhysicalPage::handleSearchLoc(const QString& searchText)
+{
+    updateSearchResults(searchText, locResults);
+}
+
+void PhysicalPage::handleSearchPoll(const QString& searchText)
+{
+    updateSearchResults(searchText, pollResults);
+}
+
+void PhysicalPage::updateSearchLoc(QListWidgetItem* item)
+{
+    locationSearch->setText(item->text());
+}
+
+void PhysicalPage::updateSearchPoll(QListWidgetItem* item)
+{
+    pollSearch->setText(item->text());
+}
+
+void PhysicalPage::updateSearchResults(const QString& searchText, QListWidget* resultsList)
+{
+    if (resultsList == locResults){
+        resultsList->clear();
+        QString filePath = "../data/Y-2024-M.csv";  
+        int columnIndex = 3;  
+
+        QStringList allLakes = ExtractUniqueColumns::extractUniqueColumnItems(filePath, columnIndex);
+
+        QStringList filteredLakes;
+        for (const QString& lake : allLakes) {
+            if (lake.contains(searchText, Qt::CaseInsensitive)) {
+                filteredLakes.append(lake);
+            }
+        }
+        resultsList->addItems(filteredLakes);
+    }
+
+    if (resultsList == pollResults) {
+        resultsList->clear();
+        for (int i = 0; i < data.deterSize(); ++i) {
+            QString pollutantName = QString::fromStdString(data.determinandAt(i).getName());
+            if (pollutantName.contains(searchText, Qt::CaseInsensitive)) {
+                resultsList->addItem(pollutantName);
+            }
+        }
+    }
 }

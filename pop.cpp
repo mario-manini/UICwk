@@ -93,11 +93,11 @@ POPWindow::POPWindow(QWidget* parent) : QWidget(parent)
     mainLayout->addLayout(statsContainerLayout);
 
     QLabel* minLabel = new QLabel("Min Value:", this);
-    QLabel* minValue = new QLabel("N/A", this);
+    minValue = new QLabel("N/A", this);
     QLabel* maxLabel = new QLabel("Max Value:", this);
-    QLabel* maxValue = new QLabel("N/A", this);
+    maxValue = new QLabel("N/A", this);
     QLabel* avgLabel = new QLabel("Average:", this);
-    QLabel* avgValue = new QLabel("N/A", this);
+    avgValue = new QLabel("N/A", this);
 
     statsLayout->addWidget(minLabel, 0, 0);
     statsLayout->addWidget(minValue, 0, 1);
@@ -237,7 +237,7 @@ void POPWindow::updateSearchResults(const QString& searchText, QListWidget* resu
 {
     if (resultsList == searchResultsLake){
         resultsList->clear();
-        QString filePath = "../data/testData.csv";  
+        QString filePath = "../data/Y-2024-M.csv";  
         int columnIndex = 3;  
 
         QStringList allLakes = ExtractUniqueColumns::extractUniqueColumnItems(filePath, columnIndex);
@@ -252,7 +252,7 @@ void POPWindow::updateSearchResults(const QString& searchText, QListWidget* resu
     }
 
     if (resultsList == searchResultsPollutant) {
-        SampleSet POPs("../data/testData.csv");
+        SampleSet POPs("../data/Y-2024-M.csv");
         SampleSet filteredPOPs = POPs.filterGroup(2);
         resultsList->clear();
         for (int i = 0; i < filteredPOPs.deterSize(); ++i) {
@@ -286,7 +286,7 @@ void POPWindow::UpdateChart() {
         return;
     }
 
-    SampleSet POPs("../data/testData.csv");
+    SampleSet POPs("../data/Y-2024-M.csv");
     SampleSet LocationFiltered = POPs.filterLocation(lakeSearchText.toStdString());
     SampleSet NameFiltered = LocationFiltered.filterName(pollutantSearchText.toStdString());
 
@@ -310,6 +310,35 @@ void POPWindow::UpdateChart() {
 
     QDateTime maxDate = QDateTime::currentDateTime();
     QDateTime minDate = maxDate;  
+
+    std::set<QDateTime> dateSet;
+        for (int i = 0; i < NameFiltered.sampleSize(); i++) {
+            QDateTime sampleDate = QDateTime::fromString(QString::fromStdString(NameFiltered.sampleAt(i).getTime()), "yyyy-MM-ddTHH:mm:ss");
+            dateSet.insert(sampleDate); 
+    }
+
+    std::vector<QDateTime> dates(dateSet.begin(), dateSet.end());
+
+    std::vector<float> averages;
+    float current = NameFiltered.filterDate(dates[0].toString("yyyy-MM-ddTHH:mm:ss").toStdString()).getAvg();
+    float min = current;
+    float max = current;
+    float avg = 0;
+    for (int i = 0; i < dates.size(); i++) {
+        float current = NameFiltered.filterDate(dates[i].toString("yyyy-MM-ddTHH:mm:ss").toStdString()).getAvg();
+        if (current < min) { 
+            min = current;
+        } else if (current > max) {
+            max = current;
+        }
+        averages.push_back(current);
+        avg = avg + current;
+    }
+    
+    avg = avg/averages.size();
+    minValue->setText(QString::number(min));
+    maxValue->setText(QString::number(max));
+    avgValue->setText(QString::number(avg));
 
     if (timePeriodSearchText == "Last month") {
         minDate = maxDate.addMonths(-1);
@@ -367,25 +396,4 @@ void POPWindow::UpdateChart() {
     chartview->setChart(MainChart);
     chartview->update();
 
-    
-
-    QLabel* minValue = statsLayout->itemAtPosition(0, 1)->widget()->findChild<QLabel*>();
-    QLabel* maxValue = statsLayout->itemAtPosition(1, 1)->widget()->findChild<QLabel*>();
-    QLabel* avgValue = statsLayout->itemAtPosition(2, 1)->widget()->findChild<QLabel*>();
-
-
-
-// Loop through the filter data and print debug information
-    for (int i = 0; i < NameFiltered.deterSize(); ++i) {
-        std::cout << "hello!" << std::endl;
-        std::cout << i << std::endl;
-    }
-
-
-
-
-
-    }
-
-
-
+}

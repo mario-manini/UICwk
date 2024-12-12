@@ -84,6 +84,7 @@ PollutantOverviewWindow::PollutantOverviewWindow(QWidget* parent) : QWidget(pare
 
     setLayout(pageLayout);
     showMaximized();
+
 }
 
 void PollutantOverviewWindow::populateTable(){

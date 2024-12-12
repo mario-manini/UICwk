@@ -16,7 +16,7 @@ Dashboard::Dashboard(QWidget* parent)
     QPushButton* CD_Button = new QPushButton("Compliance Dashboards");
 
     // Create labels
-    QLabel* OV_Label = new QLabel("Show statistics of the 25 most common pollutants:");
+    QLabel* OV_Label = new QLabel("Show statistics of the most common pollutants:");
     QLabel* POP_Label = new QLabel("Show statistics for Persistent Organic Pollutants:");
     QLabel* ELI_Label = new QLabel("Summarise Physical Pollutants such as plastic litter:");
     QLabel* FC_Label = new QLabel("Show statistics for Fluorinated Compounds Pollutants:");
